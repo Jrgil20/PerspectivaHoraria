@@ -30,11 +30,23 @@
     <div class="sidebar">
       <div class="sidebar-title">
         <span>// secciones disponibles</span>
-        <div class="sort-toggle">
-          <button class="sort-btn active" id="btn-sort-alpha" onclick="setSortMode('alpha')" title="Orden Alfabético (A)">A</button>
-          <button class="sort-btn" id="btn-sort-sem" onclick="setSortMode('semester')" title="Por Semestre (S)">S</button>
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <button class="search-toggle-btn" id="btn-search-toggle" onclick="toggleSearch()" title="Buscar sección (🔍)">🔍</button>
+          <div class="sort-toggle">
+            <button class="sort-btn active" id="btn-sort-alpha" onclick="setSortMode('alpha')" title="Orden Alfabético (A)">A</button>
+            <button class="sort-btn" id="btn-sort-sem" onclick="setSortMode('semester')" title="Por Semestre (S)">S</button>
+          </div>
         </div>
       </div>
+
+      <div class="search-container" id="search-container">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" class="search-input" placeholder="Buscar prof, nrc, código, materia..." oninput="handleSearchInput(this.value)" autocomplete="off">
+          <button class="search-clear-btn" id="search-clear-btn" onclick="clearSearch()" title="Limpiar búsqueda">✕</button>
+        </div>
+      </div>
+
       <div id="sidebar-content"></div>
     </div>
 
@@ -67,6 +79,7 @@
 
   <script src="scripts/config.js"></script>
   <script src="scripts/periods.js"></script>
+  <script src="scripts/search.js"></script>
   <script src="scripts/sidebar.js"></script>
   <script src="scripts/schedule.js"></script>
   <script src="scripts/app.js"></script>

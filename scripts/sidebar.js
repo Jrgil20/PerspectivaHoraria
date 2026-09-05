@@ -24,9 +24,22 @@ function buildSidebar() {
   const container = document.getElementById('sidebar-content');
   container.innerHTML = '';
 
+  const activeSections = typeof filterSections === 'function' ? filterSections(SECTIONS, searchQuery) : SECTIONS;
+
+  if (activeSections.length === 0) {
+    const emptyEl = document.createElement('div');
+    emptyEl.className = 'no-results-message';
+    emptyEl.innerHTML = `
+      <span>// No se encontraron secciones que coincidan</span>
+      <button class="reset-search-link" onclick="clearSearch()">Limpiar búsqueda</button>
+    `;
+    container.appendChild(emptyEl);
+    return;
+  }
+
   if (currentSortMode === 'alpha') {
     const groups = {};
-    SECTIONS.forEach(s => {
+    activeSections.forEach(s => {
       if (!groups[s.code]) groups[s.code] = [];
       groups[s.code].push(s);
     });
@@ -37,7 +50,7 @@ function buildSidebar() {
     });
   } else {
     const semGroups = {};
-    SECTIONS.forEach(s => {
+    activeSections.forEach(s => {
       const sem = s.semester || 'ELECTIVA';
       if (!semGroups[sem]) semGroups[sem] = {};
       if (!semGroups[sem][s.code]) semGroups[sem][s.code] = [];
