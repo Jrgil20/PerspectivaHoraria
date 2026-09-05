@@ -12,17 +12,19 @@ let activeShieldState = {
  */
 function openAvoidProfModal() {
   const modal = document.getElementById('avoid-prof-modal');
-  const select = document.getElementById('avoid-prof-select');
-
-  if (!modal || !select) return;
-
-  // Cargar lista de profesores de las secciones actuales
-  populateProfessorsDropdown(select);
-
-  // Ejecutar diagnóstico inicial
-  onProfSelectChange();
+  if (!modal) return;
 
   modal.classList.add('open');
+
+  const select = document.getElementById('avoid-prof-select');
+  if (select) {
+    try {
+      populateProfessorsDropdown(select);
+      onProfSelectChange();
+    } catch (e) {
+      console.error("Error al poblar profesores:", e);
+    }
+  }
 }
 
 /**
@@ -304,31 +306,6 @@ function applyProfShield() {
 
   if (typeof showToast === 'function') {
     showToast(`🛡️ Escudo activado (${shieldSec.subject}) vs Prof. ${profName}`, 4000);
-  }
-}
-
-  // Agregar la sección del escudo a placedSections si no estaba ya
-  if (!placedSections.includes(shieldSec.id)) {
-    placedSections.push(shieldSec.id);
-  }
-
-  // Guardar estado del escudo activo
-  activeShieldState = {
-    profName: profName,
-    shieldSectionId: shieldSec.id,
-    targetSubject: unwSec.subject,
-    targetCode: unwSec.code
-  };
-
-  // Re-renderizar sidebar y horario
-  if (typeof buildSidebar === 'function') buildSidebar();
-  if (typeof renderGrid === 'function') renderGrid();
-  if (typeof updateStats === 'function') updateStats();
-
-  closeAvoidProfModal();
-
-  if (typeof showToast === 'function') {
-    showToast(`🛡️ Escudo activado contra Prof. ${profName}`, 4000);
   }
 }
 
