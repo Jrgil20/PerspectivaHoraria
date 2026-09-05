@@ -487,3 +487,114 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
   pointer-events: none;
 }
+
+/* ─── LISTA SELECCIONABLE DE OPCIONES DE ESCUDO ───────────────────────────── */
+
+.shield-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 4px;
+  margin-top: 4px;
+}
+
+.shield-options-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.shield-options-list::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.shield-option-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.shield-option-card:hover {
+  border-color: rgba(124, 110, 255, 0.5);
+  background: #1e1e28;
+  transform: translateX(2px);
+}
+
+.shield-option-card.selected {
+  border-color: var(--accent);
+  background: rgba(124, 110, 255, 0.12);
+  box-shadow: 0 0 12px rgba(124, 110, 255, 0.25);
+}
+
+.shield-radio {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--text-dim);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.shield-option-card.selected .shield-radio {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.shield-radio::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.shield-option-card.selected .shield-radio::after {
+  opacity: 1;
+}
+
+.shield-option-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-grow: 1;
+}
+
+.shield-option-title {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.shield-option-meta {
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shield-overlap-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--green);
+  background: rgba(74, 222, 128, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  white-space: nowrap;
+}

@@ -116,7 +116,12 @@ async function consultarCedulaSupabase(cedula, carreraId = 2) {
 
   const dataProy = await respProy.json();
   const subjectsProyectadas = (dataProy && Array.isArray(dataProy.subjects)) ? dataProy.subjects : [];
-  const materiasProyectadasIds = subjectsProyectadas.map(s => s.id).filter(Boolean);
+  
+  if (subjectsProyectadas.length === 0) {
+    throw new Error(`No se encontraron materias proyectadas registradas para la cédula ${cedulaNum}. Verifica que la cédula sea correcta.`);
+  }
+
+  const materiasProyectadasIds = subjectsProyectadas.map(s => s.id || s.mat_cod || s.code).filter(Boolean);
 
   // 2. Consultar electivas de la carrera
   let materiasElectivasIds = [];
@@ -134,41 +139,66 @@ async function consultarCedulaSupabase(cedula, carreraId = 2) {
   }
 
   const todosLosIds = Array.from(new Set([...materiasProyectadasIds, ...materiasElectivasIds]));
-  if (todosLosIds.length === 0) {
-    throw new Error("No se encontraron materias proyectadas para esta cédula.");
-  }
 
-  // 3. Consultar horarios reales
-  const respHorarios = await fetch(`${SUPABASE_URL}/rpc/er_get_subject_schedules`, {
-    method: "POST",
-    headers: SUPABASE_HEADERS,
-    body: JSON.stringify({ p_mat_ids: todosLosIds })
-  });
+  // 3. Consultar horarios reales de Supabase
+  let ofertaCruda = [];
+  try {
+    const respHorarios = await fetch(`${SUPABASE_URL}/rpc/er_get_subject_schedules`, {
+      method: "POST",
+      headers: SUPABASE_HEADERS,
+      body: JSON.stringify({ p_mat_ids: todosLosIds })
+    });
 
-  if (!respHorarios.ok) {
-    throw new Error(`Error obteniendo la oferta académica (${respHorarios.status}).`);
-  }
-
-  const ofertaCruda = await respHorarios.json();
-  if (!Array.isArray(ofertaCruda) || ofertaCruda.length === 0) {
-    throw new Error("La consulta no devolvió oferta académica disponible.");
+    if (respHorarios.ok) {
+      ofertaCruda = await respHorarios.json();
+    }
+  } catch (e) {
+    console.warn("Error consultando horarios reales:", e);
   }
 
   // Extraer claves permitidas (códigos de materia, nombres de materias y NRCs)
   const allowedKeys = new Set();
 
-  // Agregar materias proyectadas desde la respuesta inicial
+  // 1. Agregar de la respuesta de proyecciones
   subjectsProyectadas.forEach(s => {
     if (s.name) allowedKeys.add(normStr(s.name));
+    if (s.subject_name) allowedKeys.add(normStr(s.subject_name));
     if (s.id) allowedKeys.add(normStr(s.id));
+    if (s.code) allowedKeys.add(normStr(s.code));
+    if (s.mat_cod) allowedKeys.add(normStr(s.mat_cod));
   });
 
-  // Agregar detalles de la oferta devuelta
-  ofertaCruda.forEach(row => {
-    if (row.subject_name) allowedKeys.add(normStr(row.subject_name));
-    if (row.subject_code) allowedKeys.add(normStr(row.subject_code));
-    if (row.crn) allowedKeys.add(normStr(row.crn));
-  });
+  // 2. Agregar de la oferta devuelta por Supabase
+  if (Array.isArray(ofertaCruda)) {
+    ofertaCruda.forEach(row => {
+      if (row.subject_name) allowedKeys.add(normStr(row.subject_name));
+      if (row.subject_code) allowedKeys.add(normStr(row.subject_code));
+      if (row.crn) allowedKeys.add(normStr(row.crn));
+      if (row.mat_cod) allowedKeys.add(normStr(row.mat_cod));
+    });
+  }
+
+  // 3. Emparejar flexiblemente con la oferta cargada en la aplicación (SECTIONS)
+  if (typeof SECTIONS !== 'undefined' && Array.isArray(SECTIONS)) {
+    SECTIONS.forEach(sec => {
+      const normSecSubject = normStr(sec.subject);
+      const normSecCode = normStr(sec.code);
+
+      subjectsProyectadas.forEach(s => {
+        const sName = normStr(s.name || s.subject_name);
+        const sCode = normStr(s.id || s.code || s.mat_cod);
+
+        if (
+          (sName && (normSecSubject.includes(sName) || sName.includes(normSecSubject))) ||
+          (sCode && (normSecCode === sCode || normSecCode.includes(sCode) || sCode.includes(normSecCode)))
+        ) {
+          allowedKeys.add(normSecCode);
+          allowedKeys.add(normSecSubject);
+          if (sec.nrc) allowedKeys.add(normStr(sec.nrc));
+        }
+      });
+    });
+  }
 
   return allowedKeys;
 }

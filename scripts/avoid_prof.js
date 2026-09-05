@@ -69,6 +69,12 @@ function populateProfessorsDropdown(selectEl) {
 /**
  * Handler cuando cambia el profesor seleccionado en el modal.
  */
+let currentShieldAnalysis = null;
+let selectedShieldIndex = 0;
+
+/**
+ * Handler cuando cambia el profesor seleccionado en el modal.
+ */
 function onProfSelectChange() {
   const select = document.getElementById('avoid-prof-select');
   const diagContainer = document.getElementById('shield-diag-container');
@@ -83,26 +89,11 @@ function onProfSelectChange() {
     return;
   }
 
-  const analysis = analyzeProfShield(profName);
+  currentShieldAnalysis = analyzeProfShield(profName);
+  selectedShieldIndex = 0;
 
-  if (analysis.viable) {
-    diagContainer.innerHTML = `
-      <div class="shield-diagnostic-card viable">
-        <div class="shield-diag-title">
-          <span>🛡️ ESCUDO VIABLE DISPONIBLE</span>
-        </div>
-        <p class="shield-diag-detail">
-          Se encontró una materia ${analysis.isProjected ? 'proyectada' : ''} que coincide exactamente con el horario del <strong>Prof. ${profName}</strong> en <strong>${analysis.unwantedSection.subject}</strong>.
-        </p>
-        <div class="shield-diag-item">
-          <div>
-            <div><strong>Materia Escudo:</strong> ${analysis.shieldSection.subject} (${analysis.shieldSection.code})</div>
-            <div style="font-size:0.68rem; color:var(--cyan);">Profesor: ${analysis.shieldSection.prof}</div>
-          </div>
-          <span style="font-size:0.7rem; color:var(--green); font-weight:bold;">SOLAPAMIENTO DETECTADO</span>
-        </div>
-      </div>
-    `;
+  if (currentShieldAnalysis.viable && currentShieldAnalysis.options.length > 0) {
+    renderShieldOptionsList(currentShieldAnalysis, profName);
     if (btnApply) btnApply.disabled = false;
   } else {
     diagContainer.innerHTML = `
@@ -111,7 +102,7 @@ function onProfSelectChange() {
           <span>⚠️ NO ES POSIBLE GENERAR ESCUDO</span>
         </div>
         <p class="shield-diag-detail">
-          ${analysis.reason}
+          ${currentShieldAnalysis.reason}
         </p>
       </div>
     `;
@@ -120,14 +111,68 @@ function onProfSelectChange() {
 }
 
 /**
+ * Renderiza la lista de opciones de escudo disponibles dentro del modal.
+ */
+function renderShieldOptionsList(analysis, profName) {
+  const diagContainer = document.getElementById('shield-diag-container');
+  if (!diagContainer) return;
+
+  const dayShort = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'];
+
+  let html = `
+    <div class="shield-diagnostic-card viable">
+      <div class="shield-diag-title">
+        <span>🛡️ ${analysis.options.length} ESCUDO(S) DISPONIBLE(S)</span>
+      </div>
+      <p class="shield-diag-detail">
+        Selecciona la materia que deseas colocar como conflicto a la misma hora del <strong>Prof. ${profName}</strong>:
+      </p>
+      <div class="shield-options-list">
+  `;
+
+  analysis.options.forEach((opt, idx) => {
+    const isSelected = idx === selectedShieldIndex;
+    const dayName = typeof DAY_FULL !== 'undefined' ? DAY_FULL[opt.overlapDay] : dayShort[opt.overlapDay];
+
+    html += `
+      <div class="shield-option-card ${isSelected ? 'selected' : ''}" onclick="selectShieldOption(${idx})">
+        <div class="shield-radio"></div>
+        <div class="shield-option-info">
+          <div class="shield-option-title">${opt.shieldSection.subject} (${opt.shieldSection.code})</div>
+          <div class="shield-option-meta">
+            <span>NRC ${opt.shieldSection.nrc} · Prof. ${opt.shieldSection.prof || 'Por Asignar'}</span>
+          </div>
+        </div>
+        <span class="shield-overlap-tag">${dayName ? dayName.substring(0, 3) : ''} ${opt.overlapTime}</span>
+      </div>
+    `;
+  });
+
+  html += `</div></div>`;
+  diagContainer.innerHTML = html;
+}
+
+/**
+ * Selecciona una opción de escudo por su índice en la lista.
+ */
+function selectShieldOption(index) {
+  selectedShieldIndex = index;
+  const cards = document.querySelectorAll('.shield-option-card');
+  cards.forEach((card, idx) => {
+    card.classList.toggle('selected', idx === index);
+  });
+}
+
+/**
  * Analiza la posibilidad de generar un escudo de conflicto contra un profesor no deseado.
+ * Devuelve TODAS las opciones posibles de solapamiento.
  */
 function analyzeProfShield(profName) {
   // 1. Obtener secciones dictadas por el profesor no deseado
   const unwantedSections = SECTIONS.filter(s => s.prof && s.prof.trim() === profName.trim());
 
   if (unwantedSections.length === 0) {
-    return { viable: false, reason: "No se encontraron secciones dictadas por este profesor en el período." };
+    return { viable: false, options: [], reason: "No se encontraron secciones dictadas por este profesor en el período." };
   }
 
   // Verificar si este profesor es el ÚNICO que dicta alguna materia
@@ -137,6 +182,7 @@ function analyzeProfShield(profName) {
     if (uniqueProfs.size === 1 && uniqueProfs.has(profName)) {
       return {
         viable: false,
+        options: [],
         reason: `El Prof. <strong>${profName}</strong> es el único profesor que dicta <strong>${unwSec.subject} (${unwSec.code})</strong>. No puedes evitarlo a menos que decidas no inscribir esa materia.`
       };
     }
@@ -144,45 +190,61 @@ function analyzeProfShield(profName) {
 
   // 2. Obtener lista de materias candidatas a escudo
   const hasCedulaFilter = typeof activeCedula !== 'undefined' && activeCedula && cedulaFilteredSet && cedulaFilteredSet.size > 0;
-  
+
   const candidates = SECTIONS.filter(sec => {
     if (sec.prof && sec.prof.trim() === profName.trim()) return false;
     if (!sec.slots || sec.slots.length === 0) return false;
-    
+
     if (hasCedulaFilter) {
       const code = normStr(sec.code);
       const subject = normStr(sec.subject);
       const nrc = normStr(sec.nrc);
       return cedulaFilteredSet.has(code) || cedulaFilteredSet.has(subject) || cedulaFilteredSet.has(nrc);
     }
-    
+
     return true;
   });
 
-  // 3. Buscar superposición de horarios
+  // 3. Buscar TODAS las superposiciones de horarios
+  const options = [];
+  const addedNrcs = new Set();
+
   for (const unwSec of unwantedSections) {
     if (!unwSec.slots || unwSec.slots.length === 0) continue;
 
     for (const candSec of candidates) {
       if (candSec.code === unwSec.code) continue; // Misma materia no sirve de escudo
+      if (addedNrcs.has(candSec.nrc)) continue; // Evitar duplicar la misma sección
 
       for (const unwSlot of unwSec.slots) {
         for (const candSlot of candSec.slots) {
           if (unwSlot.day === candSlot.day && slotsOverlap(unwSlot.start, unwSlot.end, candSlot.start, candSlot.end)) {
-            return {
-              viable: true,
-              unwantedSection: unwSec,
+            addedNrcs.add(candSec.nrc);
+            options.push({
               shieldSection: candSec,
-              isProjected: hasCedulaFilter
-            };
+              unwantedSection: unwSec,
+              overlapDay: candSlot.day,
+              overlapTime: `${candSlot.start}–${candSlot.end}`,
+              unwantedTime: `${unwSlot.start}–${unwSlot.end}`
+            });
+            break;
           }
         }
       }
     }
   }
 
+  if (options.length > 0) {
+    return {
+      viable: true,
+      options: options,
+      isProjected: hasCedulaFilter
+    };
+  }
+
   return {
     viable: false,
+    options: [],
     reason: `No hay materias ${hasCedulaFilter ? 'proyectadas ' : ''}disponibles que coincidan en horario para bloquear al Prof. <strong>${profName}</strong>.`
   };
 }
@@ -204,20 +266,46 @@ function slotsOverlap(startA, endA, startB, endB) {
  */
 function applyProfShield() {
   const select = document.getElementById('avoid-prof-select');
-  if (!select || !select.value) return;
+  if (!select || !select.value || !currentShieldAnalysis || !currentShieldAnalysis.viable) return;
 
   const profName = select.value;
-  const analysis = analyzeProfShield(profName);
+  const options = currentShieldAnalysis.options;
 
-  if (!analysis.viable) {
+  if (!options || options.length === 0) {
     if (typeof showToast === 'function') {
       showToast('⚠️ No se puede aplicar el escudo para este profesor');
     }
     return;
   }
 
-  const shieldSec = analysis.shieldSection;
-  const unwSec = analysis.unwantedSection;
+  const selectedOpt = options[selectedShieldIndex] || options[0];
+  const shieldSec = selectedOpt.shieldSection;
+  const unwSec = selectedOpt.unwantedSection;
+
+  // Agregar la sección del escudo a placedSections si no estaba ya
+  if (!placedSections.includes(shieldSec.id)) {
+    placedSections.push(shieldSec.id);
+  }
+
+  // Guardar estado del escudo activo
+  activeShieldState = {
+    profName: profName,
+    shieldSectionId: shieldSec.id,
+    targetSubject: unwSec.subject,
+    targetCode: unwSec.code
+  };
+
+  // Re-renderizar sidebar y horario
+  if (typeof buildSidebar === 'function') buildSidebar();
+  if (typeof renderGrid === 'function') renderGrid();
+  if (typeof updateStats === 'function') updateStats();
+
+  closeAvoidProfModal();
+
+  if (typeof showToast === 'function') {
+    showToast(`🛡️ Escudo activado (${shieldSec.subject}) vs Prof. ${profName}`, 4000);
+  }
+}
 
   // Agregar la sección del escudo a placedSections si no estaba ya
   if (!placedSections.includes(shieldSec.id)) {
