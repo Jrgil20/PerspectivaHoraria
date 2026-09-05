@@ -116,15 +116,18 @@
 
 .modal-card {
   position: relative;
-  background: rgba(20, 20, 26, 0.95);
-  border: 1px solid rgba(124, 110, 255, 0.3);
-  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
   width: 100%;
-  max-width: 460px;
-  padding: 24px 28px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(124, 110, 255, 0.15);
-  transform: scale(0.92) translateY(14px);
-  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-width: 500px;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(124, 110, 255, 0.12);
+  transform: scale(0.94) translateY(10px);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   margin: auto;
   overflow: hidden;
 }
@@ -176,13 +179,26 @@
 .modal-body {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+  padding-right: 4px;
+}
+
+.modal-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
 }
 
 .modal-desc {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--text-dim);
-  line-height: 1.45;
+  line-height: 1.4;
   font-family: 'Syne', sans-serif;
 }
 
@@ -231,7 +247,7 @@
   color: var(--text);
   font-family: 'Space Mono', monospace;
   font-size: 0.82rem;
-  padding: 10px 12px;
+  padding: 8px 12px;
   border-radius: 8px;
   width: 100%;
   outline: none;
