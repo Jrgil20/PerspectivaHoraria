@@ -8,6 +8,23 @@ let activeShieldState = {
 };
 
 /**
+ * Obtiene las secciones disponibles para evaluar en el escudo,
+ * aplicando el filtro de cédula si estuviese activo.
+ */
+function getAvailableSectionsForShield() {
+  const hasCedulaFilter = typeof activeCedula !== 'undefined' && activeCedula && cedulaFilteredSet && cedulaFilteredSet.size > 0;
+  if (!hasCedulaFilter) return SECTIONS;
+
+  return SECTIONS.filter(sec => {
+    const code = typeof normStr === 'function' ? normStr(sec.code) : (sec.code || '').toLowerCase();
+    const subject = typeof normStr === 'function' ? normStr(sec.subject) : (sec.subject || '').toLowerCase();
+    const nrc = typeof normStr === 'function' ? normStr(sec.nrc) : (sec.nrc || '').toLowerCase();
+
+    return cedulaFilteredSet.has(code) || cedulaFilteredSet.has(subject) || cedulaFilteredSet.has(nrc);
+  });
+}
+
+/**
  * Abre el modal de Evitar Profesor.
  */
 function openAvoidProfModal() {
@@ -38,13 +55,33 @@ function closeAvoidProfModal() {
 }
 
 /**
- * Llena el selector desplegable con todos los profesores de la oferta actual.
+ * Llena el selector desplegable con todos los profesores de la oferta actual (o filtrados por cédula).
  */
 function populateProfessorsDropdown(selectEl) {
   selectEl.innerHTML = '';
 
+  const hasCedulaFilter = typeof activeCedula !== 'undefined' && activeCedula && cedulaFilteredSet && cedulaFilteredSet.size > 0;
+  const availableSections = getAvailableSectionsForShield();
+
+  // Actualizar o crear badge informativo de cédula en el modal
+  let badgeEl = document.getElementById('avoid-prof-cedula-notice');
+  if (!badgeEl) {
+    badgeEl = document.createElement('div');
+    badgeEl.id = 'avoid-prof-cedula-notice';
+    badgeEl.className = 'shield-cedula-notice';
+    selectEl.parentNode.insertBefore(badgeEl, selectEl);
+  }
+
+  if (hasCedulaFilter) {
+    badgeEl.style.display = 'block';
+    badgeEl.innerHTML = `📌 <span>Filtrando profesores por materias proyectadas de la Cédula <strong>V-${activeCedula}</strong></span>`;
+  } else {
+    badgeEl.style.display = 'none';
+    badgeEl.innerHTML = '';
+  }
+
   const profsSet = new Set();
-  SECTIONS.forEach(sec => {
+  availableSections.forEach(sec => {
     if (sec.prof && sec.prof.trim() !== '' && sec.prof !== 'Por Asignar' && sec.prof !== 'Sin Asignar') {
       profsSet.add(sec.prof.trim());
     }
@@ -55,7 +92,7 @@ function populateProfessorsDropdown(selectEl) {
   if (sortedProfs.length === 0) {
     const opt = document.createElement('option');
     opt.value = '';
-    opt.textContent = 'No hay profesores disponibles';
+    opt.textContent = hasCedulaFilter ? 'No hay profesores con materias proyectadas' : 'No hay profesores disponibles';
     selectEl.appendChild(opt);
     return;
   }
@@ -170,16 +207,23 @@ function selectShieldOption(index) {
  * Devuelve TODAS las opciones posibles de solapamiento.
  */
 function analyzeProfShield(profName) {
-  // 1. Obtener secciones dictadas por el profesor no deseado
-  const unwantedSections = SECTIONS.filter(s => s.prof && s.prof.trim() === profName.trim());
+  const availableSections = getAvailableSectionsForShield();
+  const hasCedulaFilter = typeof activeCedula !== 'undefined' && activeCedula && cedulaFilteredSet && cedulaFilteredSet.size > 0;
+
+  // 1. Obtener secciones dictadas por el profesor no deseado dentro del universo disponible (cédula o global)
+  const unwantedSections = availableSections.filter(s => s.prof && s.prof.trim() === profName.trim());
 
   if (unwantedSections.length === 0) {
-    return { viable: false, options: [], reason: "No se encontraron secciones dictadas por este profesor en el período." };
+    return {
+      viable: false,
+      options: [],
+      reason: `No se encontraron secciones dictadas por este profesor ${hasCedulaFilter ? 'en tus materias proyectadas.' : 'en el período.'}`
+    };
   }
 
-  // Verificar si este profesor es el ÚNICO que dicta alguna materia
+  // Verificar si este profesor es el ÚNICO que dicta alguna materia dentro de las disponibles
   for (const unwSec of unwantedSections) {
-    const allSecsForSubject = SECTIONS.filter(s => s.code === unwSec.code);
+    const allSecsForSubject = availableSections.filter(s => s.code === unwSec.code);
     const uniqueProfs = new Set(allSecsForSubject.map(s => s.prof));
     if (uniqueProfs.size === 1 && uniqueProfs.has(profName)) {
       return {
@@ -190,20 +234,10 @@ function analyzeProfShield(profName) {
     }
   }
 
-  // 2. Obtener lista de materias candidatas a escudo
-  const hasCedulaFilter = typeof activeCedula !== 'undefined' && activeCedula && cedulaFilteredSet && cedulaFilteredSet.size > 0;
-
-  const candidates = SECTIONS.filter(sec => {
+  // 2. Obtener lista de materias candidatas a escudo dentro de las disponibles
+  const candidates = availableSections.filter(sec => {
     if (sec.prof && sec.prof.trim() === profName.trim()) return false;
     if (!sec.slots || sec.slots.length === 0) return false;
-
-    if (hasCedulaFilter) {
-      const code = normStr(sec.code);
-      const subject = normStr(sec.subject);
-      const nrc = normStr(sec.nrc);
-      return cedulaFilteredSet.has(code) || cedulaFilteredSet.has(subject) || cedulaFilteredSet.has(nrc);
-    }
-
     return true;
   });
 

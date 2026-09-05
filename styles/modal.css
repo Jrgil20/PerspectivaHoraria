@@ -614,3 +614,23 @@
   border: 1px solid rgba(74, 222, 128, 0.3);
   white-space: nowrap;
 }
+
+/* Badge informativo de cédula dentro del modal de Evitar Profesor */
+.shield-cedula-notice {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--cyan);
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.shield-cedula-notice strong {
+  color: #fff;
+}
+
