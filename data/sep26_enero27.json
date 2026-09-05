@@ -1,0 +1,4529 @@
+[
+  {
+    "id": "S1",
+    "subject": "Álgebra Lineal",
+    "code": "FING-02101",
+    "nrc": "16886",
+    "prof": "Por Asignar",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 1,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 4,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S2",
+    "subject": "Álgebra Lineal",
+    "code": "FING-02101",
+    "nrc": "16888",
+    "prof": "Por Asignar",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 0,
+        "start": "07:00",
+        "end": "08:50"
+      },
+      {
+        "day": 2,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S3",
+    "subject": "Álgebra y Trigonometría",
+    "code": "FING-02002",
+    "nrc": "16809",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 0,
+        "start": "09:00",
+        "end": "10:50"
+      },
+      {
+        "day": 4,
+        "start": "09:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S4",
+    "subject": "Álgebra y Trigonometría",
+    "code": "FING-02002",
+    "nrc": "16810",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 1,
+        "start": "16:00",
+        "end": "17:50"
+      },
+      {
+        "day": 3,
+        "start": "16:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S5",
+    "subject": "Algoritmos y Estructuras de Datos",
+    "code": "INFO-02002",
+    "nrc": "15666",
+    "prof": "Hernández Barrera, Omar Jesús",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 2,
+        "start": "11:00",
+        "end": "12:50"
+      },
+      {
+        "day": 4,
+        "start": "08:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S6",
+    "subject": "Algoritmos y Estructuras de Datos",
+    "code": "INFO-02002",
+    "nrc": "15667",
+    "prof": "León Espinoza, Yisheng",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 2,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 4,
+        "start": "08:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S7",
+    "subject": "Algoritmos y Estructuras de Datos",
+    "code": "INFO-02002",
+    "nrc": "15668",
+    "prof": "Mendoza, Lia Roxana",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 0,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 2,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S8",
+    "subject": "Algoritmos y Programación",
+    "code": "INFO-02101",
+    "nrc": "17036",
+    "prof": "Castillo Pacheco, José Gregorio",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 1,
+        "start": "09:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S9",
+    "subject": "Algoritmos y Programación",
+    "code": "INFO-02101",
+    "nrc": "17040",
+    "prof": "Holguín Valdez, Rodolfo Enrique",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 1,
+        "start": "15:00",
+        "end": "16:50"
+      },
+      {
+        "day": 3,
+        "start": "15:00",
+        "end": "16:50"
+      },
+      {
+        "day": 4,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S10",
+    "subject": "Algoritmos y Programación",
+    "code": "INFO-02101",
+    "nrc": "17041",
+    "prof": "Meza Houtteman, Oscar José",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "16:50"
+      },
+      {
+        "day": 2,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S11",
+    "subject": "Argumentación y Debates.",
+    "code": "ECON-00023",
+    "nrc": "15034",
+    "prof": "Carrasquero Medina, Alis Beatriz",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S12",
+    "subject": "Arquitectura del Computador Aplicada",
+    "code": "INFO-02015",
+    "nrc": "17001",
+    "prof": "Murillo Gonzalez, Luz Karime",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 1,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 4,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S13",
+    "subject": "Arquitectura del Computador Aplicada",
+    "code": "INFO-02015",
+    "nrc": "17004",
+    "prof": "Ruíz Rondón, Eva Alexandra",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 1,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S14",
+    "subject": "Arquitectura del Computador Aplicada",
+    "code": "INFO-02015",
+    "nrc": "17005",
+    "prof": "Ruíz Rondón, Eva Alexandra",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "10:00",
+        "end": "11:50"
+      },
+      {
+        "day": 1,
+        "start": "14:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S15",
+    "subject": "Arquitectura del Computador Aplicada",
+    "code": "INFO-02015",
+    "nrc": "17007",
+    "prof": "Ruíz Rondón, Eva Alexandra",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 2,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S16",
+    "subject": "Arquitectura del Computador Aplicada",
+    "code": "INFO-02015",
+    "nrc": "17009",
+    "prof": "Ruíz Rondón, Eva Alexandra",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "16:50"
+      },
+      {
+        "day": 2,
+        "start": "14:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S17",
+    "subject": "Arquitecturas Empresariales",
+    "code": "INFO-02029",
+    "nrc": "16268",
+    "prof": "Ortega, Dinarle Milagro",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 5,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "08SE"
+  },
+  {
+    "id": "S18",
+    "subject": "Arquitecturas Empresariales",
+    "code": "INFO-02029",
+    "nrc": "17312",
+    "prof": "Ortega, Dinarle Milagro",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 5,
+        "start": "12:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "08SE"
+  },
+  {
+    "id": "S19",
+    "subject": "Aseguramiento de la Calidad del Software",
+    "code": "INFO-02019",
+    "nrc": "15674",
+    "prof": "Suárez, Ernesto",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 0,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S20",
+    "subject": "Aseguramiento de la Calidad del Software",
+    "code": "INFO-02019",
+    "nrc": "16353",
+    "prof": "Suárez, Ernesto",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S21",
+    "subject": "Cálculo Diferencial",
+    "code": "FING-02003",
+    "nrc": "16812",
+    "prof": "Por Asignar",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 1,
+        "start": "07:00",
+        "end": "08:50"
+      },
+      {
+        "day": 3,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S22",
+    "subject": "Cálculo Integral",
+    "code": "FING-02004",
+    "nrc": "16820",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 2,
+        "start": "14:00",
+        "end": "15:50"
+      },
+      {
+        "day": 3,
+        "start": "16:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S23",
+    "subject": "Cálculo Integral",
+    "code": "FING-02004",
+    "nrc": "16816",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 2,
+        "start": "07:00",
+        "end": "08:50"
+      },
+      {
+        "day": 3,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S24",
+    "subject": "Cálculo Vectorial",
+    "code": "FING-02105",
+    "nrc": "16882",
+    "prof": "Bastidas Ravelo, Kahela de Jesús",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      },
+      {
+        "day": 2,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S25",
+    "subject": "Cálculo Vectorial",
+    "code": "FING-02105",
+    "nrc": "16885",
+    "prof": "Da Silva Abreu, Delia",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 1,
+        "start": "11:00",
+        "end": "12:50"
+      },
+      {
+        "day": 2,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S26",
+    "subject": "Ciberseguridad Ofensiva",
+    "code": "INFO-02102",
+    "nrc": "17139",
+    "prof": "Ferrer Zapata, Francis Elena",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 1,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S27",
+    "subject": "Ciberseguridad Ofensiva",
+    "code": "INFO-02102",
+    "nrc": "17144",
+    "prof": "Lara Domínguez, Gustavo Adolfo",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 1,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S28",
+    "subject": "Ciberseguridad Ofensiva",
+    "code": "INFO-02102",
+    "nrc": "17339",
+    "prof": "Martínez Marín, Jorge Alejandro",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S29",
+    "subject": "Ciberseguridad Ofensiva (Práctica)",
+    "code": "INFO-P2102",
+    "nrc": "17344",
+    "prof": "Martínez Marín, Jorge Alejandro",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 3,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S30",
+    "subject": "Ciberseguridad Ofensiva (Práctica)",
+    "code": "INFO-P2102",
+    "nrc": "17340",
+    "prof": "Lara Domínguez, Gustavo Adolfo",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 4,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S31",
+    "subject": "Ciberseguridad Ofensiva (Práctica)",
+    "code": "INFO-P2102",
+    "nrc": "17341",
+    "prof": "Lara Domínguez, Gustavo Adolfo",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 4,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S32",
+    "subject": "Ciberseguridad Ofensiva (Práctica)",
+    "code": "INFO-P2102",
+    "nrc": "17342",
+    "prof": "Ferrer Zapata, Francis Elena",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 3,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S33",
+    "subject": "Ciberseguridad Ofensiva (Práctica)",
+    "code": "INFO-P2102",
+    "nrc": "17343",
+    "prof": "Ferrer Zapata, Francis Elena",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 4,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S34",
+    "subject": "Competencia Textual en Español",
+    "code": "UCAB-00009",
+    "nrc": "15358",
+    "prof": "Ramírez de Ramírez, Fanny Haidée",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 1,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 3,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S35",
+    "subject": "Competencia Textual en Español",
+    "code": "UCAB-00009",
+    "nrc": "15818",
+    "prof": "Mestas Pérez, Marielena de la Coromoto",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      },
+      {
+        "day": 2,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S36",
+    "subject": "Competencia Textual en Español",
+    "code": "UCAB-00009",
+    "nrc": "15821",
+    "prof": "Adrián Segovia, Thays Del Valle",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      },
+      {
+        "day": 2,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S37",
+    "subject": "Competencia Textual en Español",
+    "code": "UCAB-00009",
+    "nrc": "15372",
+    "prof": "Mestas Pérez, Marielena de la Coromoto",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 1,
+        "start": "10:00",
+        "end": "11:50"
+      },
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S38",
+    "subject": "Computación en la Nube",
+    "code": "INFO-02028",
+    "nrc": "15660",
+    "prof": "Bravo Viloria, Jhoberth Andrés",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 0,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S39",
+    "subject": "Computación en la Nube",
+    "code": "INFO-02028",
+    "nrc": "16973",
+    "prof": "Por Asignar",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 1,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S40",
+    "subject": "Computación en la Nube (Práctica)",
+    "code": "INFO-P2028",
+    "nrc": "15683",
+    "prof": "Bravo Viloria, Jhoberth Andrés",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 1,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S41",
+    "subject": "Computación en la Nube (Práctica)",
+    "code": "INFO-P2028",
+    "nrc": "15684",
+    "prof": "Bravo Viloria, Jhoberth Andrés",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 2,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S42",
+    "subject": "Computación en la Nube (Práctica)",
+    "code": "INFO-P2028",
+    "nrc": "16974",
+    "prof": "Por Asignar",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 4,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S43",
+    "subject": "Computación en la Nube (Práctica)",
+    "code": "INFO-P2028",
+    "nrc": "16976",
+    "prof": "Por Asignar",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 2,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S44",
+    "subject": "Consultoría y Marca Personal",
+    "code": "UCAB-02002",
+    "nrc": "16662",
+    "prof": "González Altuna, Hirwing del Carmen",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 2,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S45",
+    "subject": "Contabilidad Financiera",
+    "code": "FACE-00024",
+    "nrc": "15246",
+    "prof": "Ávila Dos Ramos, Rafael José",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      },
+      {
+        "day": 1,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S46",
+    "subject": "Contabilidad Financiera",
+    "code": "FACE-00024",
+    "nrc": "15247",
+    "prof": "Rodríguez Rodríguez, Bricelis Rosa",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 1,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 4,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S47",
+    "subject": "Contabilidad Financiera",
+    "code": "FACE-00024",
+    "nrc": "15248",
+    "prof": "Peña Mariani, Victor Svante",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 0,
+        "start": "16:00",
+        "end": "17:50"
+      },
+      {
+        "day": 1,
+        "start": "16:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S48",
+    "subject": "Contabilidad Financiera",
+    "code": "FACE-00024",
+    "nrc": "15374",
+    "prof": "Márquez Lugo, Reinaldo José",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 0,
+        "start": "17:00",
+        "end": "18:50"
+      },
+      {
+        "day": 1,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S49",
+    "subject": "Contabilidad Financiera",
+    "code": "FACE-00024",
+    "nrc": "15566",
+    "prof": "Arias Parra, Gustavo Adolfo",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 2,
+        "start": "17:00",
+        "end": "18:50"
+      },
+      {
+        "day": 4,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S50",
+    "subject": "Desarrollo de Software",
+    "code": "INFO-02025",
+    "nrc": "15671",
+    "prof": "Alonzo Sánchez, Carlos Eduardo",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 0,
+        "start": "10:00",
+        "end": "11:50"
+      },
+      {
+        "day": 4,
+        "start": "16:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S51",
+    "subject": "Desarrollo de Software",
+    "code": "INFO-02025",
+    "nrc": "16082",
+    "prof": "Ponce Mavárez, Bismarck Ricardo",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 0,
+        "start": "18:00",
+        "end": "19:50"
+      },
+      {
+        "day": 3,
+        "start": "18:00",
+        "end": "19:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S52",
+    "subject": "Diseño de Experiencia de Usuario",
+    "code": "INFO-02104",
+    "nrc": "17156",
+    "prof": "Gómez Chacón, Carlos Esteban",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "08:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S53",
+    "subject": "Diseño de Experiencia de Usuario",
+    "code": "INFO-02104",
+    "nrc": "17157",
+    "prof": "Gómez Chacón, Carlos Esteban",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 4,
+        "start": "08:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S54",
+    "subject": "Diseño de Experiencia de Usuario",
+    "code": "INFO-02104",
+    "nrc": "17158",
+    "prof": "Gómez Chacón, Carlos Esteban",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S55",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "15006",
+    "prof": "Eizaguirre Piñera, María del Carmen",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 0,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S56",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "15813",
+    "prof": "Sánchez Castellanos, Douglas Antonio",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 3,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S57",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "16195",
+    "prof": "Cristian López, Carmen Teresa",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 4,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S58",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "16894",
+    "prof": "Cristian López, Carmen Teresa",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 4,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S59",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "16896",
+    "prof": "Sánchez Castellanos, Douglas Antonio",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 4,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S60",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "15007",
+    "prof": "Eizaguirre Piñera, María del Carmen",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S61",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "15008",
+    "prof": "Cristian López, Carmen Teresa",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 1,
+        "start": "09:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S62",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "15009",
+    "prof": "Soledad Rodríguez, Beatriz Elena",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 1,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S63",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "15010",
+    "prof": "Benitez Maal, Joaquín Patricio",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 2,
+        "start": "09:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S64",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "15011",
+    "prof": "Iskandar Nahas, Laila",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 2,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S65",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "15012",
+    "prof": "Sánchez Castellanos, Douglas Antonio",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 2,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S66",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "15388",
+    "prof": "Méndez de Carrera, Debbie Elizabeth",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 3,
+        "start": "09:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S67",
+    "subject": "Ecología, Ambiente y Sustentabilidad",
+    "code": "UCAB-00003",
+    "nrc": "15689",
+    "prof": "Cristian López, Carmen Teresa",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 3,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S68",
+    "subject": "Ecuaciones Diferenciales Ordinarias",
+    "code": "FING-02006",
+    "nrc": "15429",
+    "prof": "Estrada, Luis Enrique",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 3,
+        "start": "07:00",
+        "end": "08:50"
+      },
+      {
+        "day": 4,
+        "start": "13:00",
+        "end": "13:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S69",
+    "subject": "Ecuaciones Diferenciales Ordinarias",
+    "code": "FING-02006",
+    "nrc": "16825",
+    "prof": "Por Asignar",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 4,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S70",
+    "subject": "Electiva: Auxilio Médico Integral",
+    "code": "CISO-80560",
+    "nrc": "16153",
+    "prof": "De Faria Freitas, Christopher Orlando",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 1,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S71",
+    "subject": "Electiva: Canto Coral.",
+    "code": "FHYE-80390",
+    "nrc": "16199",
+    "prof": "Por Asignar",
+    "color": "#34d399",
+    "slots": [],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S72",
+    "subject": "Electiva: Creación en Medios Digitales",
+    "code": "LETR-02030",
+    "nrc": "15857",
+    "prof": "Marquina Lozada, Victoria Andrea",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 6,
+        "start": "20:00",
+        "end": "22:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S73",
+    "subject": "Electiva: Criptoeconomía.",
+    "code": "FACE-80491",
+    "nrc": "17282",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S74",
+    "subject": "Electiva: Desarrollo de APIs con Python",
+    "code": "INFO-82002",
+    "nrc": "17367",
+    "prof": "Castillo Pacheco, José Gregorio",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 3,
+        "start": "09:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S75",
+    "subject": "Electiva: Desarrollo de Software Cuántico",
+    "code": "INFO-82005",
+    "nrc": "-",
+    "prof": "Keller, Joaquin",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 3,
+        "start": "14:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S76",
+    "subject": "Electiva: Desarrollo de Software Fintech.",
+    "code": "FING-80425",
+    "nrc": "15383",
+    "prof": "Magin Romero, Clara Emir",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 1,
+        "start": "12:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S77",
+    "subject": "Electiva: Desarrollo de Videojuegos con Unity.",
+    "code": "INFO-82001",
+    "nrc": "15685",
+    "prof": "Gómez Chacón, Carlos Esteban",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 2,
+        "start": "09:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S78",
+    "subject": "Electiva: E-Sport Drone Soccer.",
+    "code": "INDU-82002",
+    "nrc": "17104",
+    "prof": "De Gouveia García, Joao Bernardo",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 4,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S79",
+    "subject": "Electiva: El Cine de Ciencia Ficción.",
+    "code": "FHYE-80233",
+    "nrc": "16682",
+    "prof": "Teixeira González, Carú Cristina",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 4,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S80",
+    "subject": "Electiva: Fundamentos del Italiano.",
+    "code": "UCAB-80013",
+    "nrc": "16351",
+    "prof": "Rossi Contrera, Juan Miguel",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 4,
+        "start": "12:00",
+        "end": "13:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S81",
+    "subject": "Electiva: Implementación de Redes Cisco",
+    "code": "TELE-82002",
+    "nrc": "16826",
+    "prof": "Level Manzo, Eudys Alexander",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 1,
+        "start": "14:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S82",
+    "subject": "Electiva: Inglés Intercultural",
+    "code": "UCAB-80011",
+    "nrc": "15743",
+    "prof": "Almeida Franca, Luis Alberto",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 4,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S83",
+    "subject": "Electiva: Inglés para Entornos Globales",
+    "code": "UCAB-80012",
+    "nrc": "16923",
+    "prof": "Rengel Rivas, Liz Yaremi",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 2,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S84",
+    "subject": "Electiva: Inteligencia Artificial Aplicada.",
+    "code": "TELE-82003",
+    "nrc": "17162",
+    "prof": "Accardi Bracovich, Anthony",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S85",
+    "subject": "Electiva: Introducción a la Blockchain.",
+    "code": "INFO-82003",
+    "nrc": "16401",
+    "prof": "Russoniello Antonacci, Antonio",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 3,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S86",
+    "subject": "Electiva: Introducción al Coreano",
+    "code": "UCAB-80009",
+    "nrc": "16919",
+    "prof": "Macedo Aponte, Bethania",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 1,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S87",
+    "subject": "Electiva: Introducción al Francés",
+    "code": "UCAB-80014",
+    "nrc": "16349",
+    "prof": "Rodriguez Carrillo, Karen Heleana",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 0,
+        "start": "12:00",
+        "end": "13:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S88",
+    "subject": "Electiva: Introducción al Idioma Italiano",
+    "code": "UCAB-80008",
+    "nrc": "15687",
+    "prof": "Alba Álvarez, María Gabriela",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 3,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S89",
+    "subject": "Electiva: Introducción al Idioma Portugués",
+    "code": "UCAB-80010",
+    "nrc": "15742",
+    "prof": "Tavares Lourenco, Ricardo",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 1,
+        "start": "09:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S90",
+    "subject": "Electiva: Introduction to Data Science",
+    "code": "ECON-8I003",
+    "nrc": "16582",
+    "prof": "Por Asignar",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 0,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S91",
+    "subject": "Electiva: Movilidad Eléctrica",
+    "code": "INDU-82001",
+    "nrc": "16564",
+    "prof": "Da Silva Dias, Samuel Alejandro",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 5,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S92",
+    "subject": "Electiva: Neuromarketing",
+    "code": "ADCO-00444",
+    "nrc": "17317",
+    "prof": "Luna Machado, Jorge Enrique",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 1,
+        "start": "16:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S93",
+    "subject": "Electricidad y Magnetismo",
+    "code": "FING-02107",
+    "nrc": "16891",
+    "prof": "Sucre Rosales, Orlando José",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 4,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S94",
+    "subject": "Electricidad y Magnetismo",
+    "code": "FING-02107",
+    "nrc": "17112",
+    "prof": "Lavado Sánchez, Juan Carlos",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 4,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S95",
+    "subject": "Electricidad y Magnetismo",
+    "code": "FING-02107",
+    "nrc": "17113",
+    "prof": "Lárez Natera, Joszaira del Valle",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 4,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S96",
+    "subject": "Electricidad y Magnetismo",
+    "code": "FING-02107",
+    "nrc": "17114",
+    "prof": "García Vasquez, José Manuel",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S97",
+    "subject": "Electricidad y Magnetismo",
+    "code": "FING-02107",
+    "nrc": "17117",
+    "prof": "Trabacilo, William Antonio",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S98",
+    "subject": "Electricidad y Magnetismo",
+    "code": "FING-02107",
+    "nrc": "17118",
+    "prof": "Rodriguez Sosa, José Guillermo",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S99",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17119",
+    "prof": "Sucre Rosales, Orlando José",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 2,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S100",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17128",
+    "prof": "García Vasquez, José Manuel",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 4,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S101",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17129",
+    "prof": "García Vasquez, José Manuel",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 4,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S102",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17130",
+    "prof": "García Vasquez, José Manuel",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 4,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S103",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17131",
+    "prof": "Trabacilo, William Antonio",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 1,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S104",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17132",
+    "prof": "Trabacilo, William Antonio",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 1,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S105",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17133",
+    "prof": "Trabacilo, William Antonio",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 1,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S106",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17134",
+    "prof": "Rodriguez Sosa, José Guillermo",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 3,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S107",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17135",
+    "prof": "Rodriguez Sosa, José Guillermo",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 3,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S108",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17136",
+    "prof": "Rodriguez Sosa, José Guillermo",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 3,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S109",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17120",
+    "prof": "Sucre Rosales, Orlando José",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 2,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S110",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17121",
+    "prof": "Sucre Rosales, Orlando José",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 2,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S111",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17122",
+    "prof": "Lavado Sánchez, Juan Carlos",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 0,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S112",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17123",
+    "prof": "Lavado Sánchez, Juan Carlos",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S113",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17124",
+    "prof": "Lavado Sánchez, Juan Carlos",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 0,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S114",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17125",
+    "prof": "Lárez Natera, Joszaira del Valle",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 3,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S115",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17126",
+    "prof": "Lárez Natera, Joszaira del Valle",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 3,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S116",
+    "subject": "Electricidad y Magnetismo (Práctica)",
+    "code": "FING-P2107",
+    "nrc": "17127",
+    "prof": "Lárez Natera, Joszaira del Valle",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 3,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S117",
+    "subject": "Estrategia y Proyección Profesional",
+    "code": "INFO-02032",
+    "nrc": "16932",
+    "prof": "Magin Romero, Clara Emir",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 0,
+        "start": "07:00",
+        "end": "08:50"
+      },
+      {
+        "day": 4,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S118",
+    "subject": "Estrategia y Proyección Profesional",
+    "code": "INFO-02032",
+    "nrc": "16936",
+    "prof": "Magin Romero, Clara Emir",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 1,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 3,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S119",
+    "subject": "Estrategia y Proyección Profesional",
+    "code": "INFO-02032",
+    "nrc": "16937",
+    "prof": "Hernández de López, Fanny Xiomara",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 1,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 2,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S120",
+    "subject": "Ética Profesional",
+    "code": "FING-02014",
+    "nrc": "16913",
+    "prof": "Por Asignar",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 3,
+        "start": "19:00",
+        "end": "20:50"
+      }
+    ],
+    "semester": "08SE"
+  },
+  {
+    "id": "S121",
+    "subject": "Ética Profesional",
+    "code": "FING-02014",
+    "nrc": "16899",
+    "prof": "Barroso Molina, Alexis Alexander",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 5,
+        "start": "19:00",
+        "end": "20:50"
+      }
+    ],
+    "semester": "08SE"
+  },
+  {
+    "id": "S122",
+    "subject": "Evaluación de Sistemas Informáticos",
+    "code": "INFO-02027",
+    "nrc": "17164",
+    "prof": "Vásquez García, María Carolina del Valle",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 5,
+        "start": "12:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "08SE"
+  },
+  {
+    "id": "S123",
+    "subject": "Evaluación de Sistemas Informáticos",
+    "code": "INFO-02027",
+    "nrc": "17313",
+    "prof": "Vásquez García, María Carolina del Valle",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 5,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "08SE"
+  },
+  {
+    "id": "S124",
+    "subject": "Gestión de Proyectos de Software",
+    "code": "INFO-02013",
+    "nrc": "15650",
+    "prof": "Magin Romero, Clara Emir",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 4,
+        "start": "19:00",
+        "end": "21:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S125",
+    "subject": "Gestión de Proyectos de Software",
+    "code": "INFO-02013",
+    "nrc": "16133",
+    "prof": "Magin Romero, Clara Emir",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 5,
+        "start": "19:00",
+        "end": "21:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S126",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "17359",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [],
+    "semester": "01SE"
+  },
+  {
+    "id": "S127",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15001",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S128",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15901",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 2,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S129",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15903",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 2,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S130",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15905",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 2,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S131",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15906",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 3,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S132",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15907",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 3,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S133",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15908",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 3,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S134",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15909",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 4,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S135",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15910",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 4,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S136",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15911",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 4,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S137",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15912",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 3,
+        "start": "11:00",
+        "end": "13:00"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S138",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15002",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S139",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "17222",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S140",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "17223",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 1,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S141",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "17224",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 2,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S142",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "17225",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S143",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "17226",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 2,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S144",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15456",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S145",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15457",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S146",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15458",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S147",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15460",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S148",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15898",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 1,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S149",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15899",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 1,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S150",
+    "subject": "Identidad, Liderazgo y Compromiso I",
+    "code": "UCAB-00001",
+    "nrc": "15900",
+    "prof": "Por Asignar",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 2,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S151",
+    "subject": "Identidad, Liderazgo y Compromiso II",
+    "code": "UCAB-00002",
+    "nrc": "16593",
+    "prof": "Por Asignar",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S152",
+    "subject": "Identidad, Liderazgo y Compromiso II",
+    "code": "UCAB-00002",
+    "nrc": "16610",
+    "prof": "Por Asignar",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 2,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S153",
+    "subject": "Ingeniería de Requisitos",
+    "code": "INFO-02018",
+    "nrc": "15672",
+    "prof": "Cardoso Militao, Lúcia Isabel",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 2,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S154",
+    "subject": "Ingeniería de Requisitos",
+    "code": "INFO-02018",
+    "nrc": "16354",
+    "prof": "Cardoso Militao, Lúcia Isabel",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 3,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S155",
+    "subject": "Ingeniería de Software",
+    "code": "INFO-02007",
+    "nrc": "15657",
+    "prof": "Pérez de Ovalles, María Angélica",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 1,
+        "start": "09:00",
+        "end": "10:50"
+      },
+      {
+        "day": 3,
+        "start": "09:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S156",
+    "subject": "Ingeniería de Software",
+    "code": "INFO-02007",
+    "nrc": "15787",
+    "prof": "Pérez de Ovalles, María Angélica",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 1,
+        "start": "11:00",
+        "end": "12:50"
+      },
+      {
+        "day": 3,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S157",
+    "subject": "Ingeniería de Software",
+    "code": "INFO-02007",
+    "nrc": "16359",
+    "prof": "Goncalves Da Silva, Marlene",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "16:50"
+      },
+      {
+        "day": 2,
+        "start": "16:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S158",
+    "subject": "Ingeniería Económica",
+    "code": "FING-02016",
+    "nrc": "15541",
+    "prof": "Quintero Davila, José Luis",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 4,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S159",
+    "subject": "Ingeniería Económica",
+    "code": "FING-02016",
+    "nrc": "16917",
+    "prof": "Por Asignar",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 0,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S160",
+    "subject": "Inglés",
+    "code": "INFO-02030",
+    "nrc": "16938",
+    "prof": "Rivas García, Fredi Alfonso",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 2,
+        "start": "09:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S161",
+    "subject": "Inglés",
+    "code": "INFO-02030",
+    "nrc": "16939",
+    "prof": "Youssif Jorge, Rosa",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 3,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S162",
+    "subject": "Inglés",
+    "code": "INFO-02030",
+    "nrc": "16940",
+    "prof": "González Nahmens, Amasilis del Carmen",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 2,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S163",
+    "subject": "Inglés",
+    "code": "INFO-02030",
+    "nrc": "17295",
+    "prof": "Rivas García, Fredi Alfonso",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 4,
+        "start": "11:00",
+        "end": "13:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S164",
+    "subject": "Inglés",
+    "code": "INFO-02030",
+    "nrc": "17296",
+    "prof": "González Nahmens, Amasilis del Carmen",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S165",
+    "subject": "Inglés",
+    "code": "INFO-02030",
+    "nrc": "17297",
+    "prof": "Youssif Jorge, Rosa",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 1,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S166",
+    "subject": "Inglés Técnico",
+    "code": "INFO-02026",
+    "nrc": "15651",
+    "prof": "Lista Mancilla, Olga Carolina",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 4,
+        "start": "17:00",
+        "end": "19:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S167",
+    "subject": "Inglés Técnico",
+    "code": "INFO-02026",
+    "nrc": "17311",
+    "prof": "Lista Mancilla, Olga Carolina",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 5,
+        "start": "17:00",
+        "end": "19:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S168",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "15189",
+    "prof": "González Altuna, Hirwing del Carmen",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 5,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S169",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "16181",
+    "prof": "Rodríguez Guerrero, Francisco José",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 6,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S170",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "16182",
+    "prof": "Barrios Álvarez, Jesús Enrique",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 5,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S171",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "16183",
+    "prof": "Por Asignar",
+    "color": "#4ade80",
+    "slots": [],
+    "semester": "06SE"
+  },
+  {
+    "id": "S172",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "15190",
+    "prof": "González Bravo, Yoel Modesto",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 6,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S173",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "15191",
+    "prof": "González Bravo, Yoel Modesto",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 5,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S174",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "15192",
+    "prof": "Sulbarán Hereira, Werner José",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 6,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S175",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "15193",
+    "prof": "Sulbarán Hereira, Werner José",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 5,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S176",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "15194",
+    "prof": "García Castro, Wladimir",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 6,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S177",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "15195",
+    "prof": "García Castro, Wladimir",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 5,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S178",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "15197",
+    "prof": "Lanz Rodríguez, Adriana Carolina",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 6,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S179",
+    "subject": "Innovación y Emprendimiento",
+    "code": "UCAB-00008",
+    "nrc": "15758",
+    "prof": "Aponte Castillo, Scampola Carolina",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 5,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S180",
+    "subject": "Inteligencia Artificial: Aprendizaje Automático",
+    "code": "INFO-02020",
+    "nrc": "15772",
+    "prof": "La Fontaine García, Gustavo Adolfo",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 2,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S181",
+    "subject": "Inteligencia Artificial: Aprendizaje Automático",
+    "code": "INFO-02020",
+    "nrc": "17043",
+    "prof": "Palma Navarrete, Guillermo",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 1,
+        "start": "11:00",
+        "end": "12:50"
+      },
+      {
+        "day": 3,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S182",
+    "subject": "Inteligencia Artificial: Aprendizaje Automático",
+    "code": "INFO-02020",
+    "nrc": "17044",
+    "prof": "Ramsaran Chin, Diego Israel",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 1,
+        "start": "16:00",
+        "end": "17:50"
+      },
+      {
+        "day": 2,
+        "start": "16:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S183",
+    "subject": "Inteligencia de Negocios",
+    "code": "INFO-02024",
+    "nrc": "15673",
+    "prof": "Martínez Marín, Jorge Alejandro",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 0,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S184",
+    "subject": "Inteligencia de Negocios",
+    "code": "INFO-02024",
+    "nrc": "15675",
+    "prof": "Di Vasta Valente, Concettina",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 0,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S185",
+    "subject": "Inteligencia de Negocios",
+    "code": "INFO-02024",
+    "nrc": "17115",
+    "prof": "Di Vasta Valente, Concettina",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S186",
+    "subject": "Investigación de Operaciones",
+    "code": "INFO-02022",
+    "nrc": "15782",
+    "prof": "Quintero Davila, José Luis",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "07:00",
+        "end": "08:50"
+      },
+      {
+        "day": 2,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S187",
+    "subject": "Investigación de Operaciones",
+    "code": "INFO-02022",
+    "nrc": "16313",
+    "prof": "Becemberg Lippo, Rafael Enrique",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 1,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 3,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "07SE"
+  },
+  {
+    "id": "S188",
+    "subject": "Lógica",
+    "code": "FING-02009",
+    "nrc": "16832",
+    "prof": "Por Asignar",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "11:50"
+      },
+      {
+        "day": 3,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S189",
+    "subject": "Lógica",
+    "code": "FING-02009",
+    "nrc": "16835",
+    "prof": "Por Asignar",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "15:50"
+      },
+      {
+        "day": 2,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S190",
+    "subject": "Lógica",
+    "code": "FING-02009",
+    "nrc": "16186",
+    "prof": "Por Asignar",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 0,
+        "start": "08:00",
+        "end": "08:50"
+      },
+      {
+        "day": 3,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S191",
+    "subject": "Lógica",
+    "code": "FING-02009",
+    "nrc": "16915",
+    "prof": "Por Asignar",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 0,
+        "start": "14:00",
+        "end": "14:50"
+      },
+      {
+        "day": 3,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S192",
+    "subject": "Lógica",
+    "code": "FING-02009",
+    "nrc": "16303",
+    "prof": "Por Asignar",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 0,
+        "start": "07:00",
+        "end": "07:50"
+      },
+      {
+        "day": 4,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "01SE"
+  },
+  {
+    "id": "S193",
+    "subject": "Matemáticas Discretas",
+    "code": "INFO-02000",
+    "nrc": "15661",
+    "prof": "Martínez León, Henry José",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 0,
+        "start": "09:00",
+        "end": "10:50"
+      },
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "10:50"
+      },
+      {
+        "day": 4,
+        "start": "09:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S194",
+    "subject": "Matemáticas Discretas",
+    "code": "INFO-02000",
+    "nrc": "15662",
+    "prof": "Valencia Zambrano, Irving Alfredo",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 2,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 3,
+        "start": "13:00",
+        "end": "13:50"
+      },
+      {
+        "day": 4,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S195",
+    "subject": "Matemáticas Discretas",
+    "code": "INFO-02000",
+    "nrc": "15691",
+    "prof": "Varela Costa, María Teresa",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 1,
+        "start": "09:00",
+        "end": "10:50"
+      },
+      {
+        "day": 2,
+        "start": "09:00",
+        "end": "09:50"
+      },
+      {
+        "day": 3,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S196",
+    "subject": "Matemáticas Discretas",
+    "code": "INFO-02000",
+    "nrc": "17045",
+    "prof": "Espitia Moronta, Robert",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 0,
+        "start": "09:00",
+        "end": "11:50"
+      },
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "02SE"
+  },
+  {
+    "id": "S197",
+    "subject": "Mecánica",
+    "code": "FING-02115",
+    "nrc": "17071",
+    "prof": "García León, Pedro José",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S198",
+    "subject": "Mecánica",
+    "code": "FING-02115",
+    "nrc": "17072",
+    "prof": "García Sánchez, María Belén Mercedes",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S199",
+    "subject": "Mecánica",
+    "code": "FING-02115",
+    "nrc": "17073",
+    "prof": "Ferreira Arévalo, Edgar José",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "13:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S200",
+    "subject": "Mecánica",
+    "code": "FING-02115",
+    "nrc": "17075",
+    "prof": "García Vasquez, José Manuel",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "13:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S201",
+    "subject": "Mecánica",
+    "code": "FING-02115",
+    "nrc": "17077",
+    "prof": "Peraza Cabello, Francisco José",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 3,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S202",
+    "subject": "Mecánica",
+    "code": "FING-02115",
+    "nrc": "17109",
+    "prof": "Por Asignar",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 3,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S203",
+    "subject": "Mecánica",
+    "code": "FING-02115",
+    "nrc": "17110",
+    "prof": "Por Asignar",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 3,
+        "start": "12:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S204",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17078",
+    "prof": "García León, Pedro José",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 1,
+        "start": "09:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S205",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17089",
+    "prof": "García Vasquez, José Manuel",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 2,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S206",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17090",
+    "prof": "García Vasquez, José Manuel",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 2,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S207",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17091",
+    "prof": "García Vasquez, José Manuel",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 2,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S208",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17106",
+    "prof": "Peraza Cabello, Francisco José",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 5,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S209",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17107",
+    "prof": "Peraza Cabello, Francisco José",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 5,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S210",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17108",
+    "prof": "Peraza Cabello, Francisco José",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 5,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S211",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17346",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 4,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S212",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17347",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 4,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S213",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17348",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 4,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S214",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17079",
+    "prof": "García León, Pedro José",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 1,
+        "start": "12:00",
+        "end": "13:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S215",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17349",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 0,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S216",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17350",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S217",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17351",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 0,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S218",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17080",
+    "prof": "García León, Pedro José",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 1,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S219",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17082",
+    "prof": "García Sánchez, María Belén Mercedes",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 1,
+        "start": "09:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S220",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17083",
+    "prof": "García Sánchez, María Belén Mercedes",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 1,
+        "start": "12:00",
+        "end": "13:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S221",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17084",
+    "prof": "García Sánchez, María Belén Mercedes",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 1,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S222",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17085",
+    "prof": "Ferreira Arévalo, Edgar José",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 2,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S223",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17086",
+    "prof": "Ferreira Arévalo, Edgar José",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 2,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S224",
+    "subject": "Mecánica (Práctica)",
+    "code": "FING-P2115",
+    "nrc": "17087",
+    "prof": "Ferreira Arévalo, Edgar José",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 2,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S225",
+    "subject": "Métodos Numéricos",
+    "code": "FING-02010",
+    "nrc": "16087",
+    "prof": "Alvarez Méndez, Adonahis Arlette",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S226",
+    "subject": "Métodos Numéricos",
+    "code": "FING-02010",
+    "nrc": "17306",
+    "prof": "Alvarez Méndez, Adonahis Arlette",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 4,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S227",
+    "subject": "Métodos Numéricos",
+    "code": "FING-02010",
+    "nrc": "17308",
+    "prof": "Guzman Jaimes, Norma Elisa",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 4,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S228",
+    "subject": "Métodos Numéricos",
+    "code": "FING-02010",
+    "nrc": "17338",
+    "prof": "Por Asignar",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 3,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S229",
+    "subject": "Organización del Computador",
+    "code": "INFO-02005",
+    "nrc": "15658",
+    "prof": "Hernández Barrera, Omar Jesús",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "09:00",
+        "end": "10:50"
+      },
+      {
+        "day": 2,
+        "start": "09:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S230",
+    "subject": "Organización del Computador",
+    "code": "INFO-02005",
+    "nrc": "15785",
+    "prof": "Hernández Barrera, Omar Jesús",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 4,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S231",
+    "subject": "Organización del Computador",
+    "code": "INFO-02005",
+    "nrc": "16079",
+    "prof": "Hernández Barrera, Omar Jesús",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 3,
+        "start": "12:00",
+        "end": "13:50"
+      },
+      {
+        "day": 4,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S232",
+    "subject": "Planificación Estratégica",
+    "code": "ADCO-00429",
+    "nrc": "15255",
+    "prof": "Por Asignar",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 6,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "ELECTIVA"
+  },
+  {
+    "id": "S233",
+    "subject": "Probabilidad y Estadística",
+    "code": "FING-02011",
+    "nrc": "15431",
+    "prof": "Campos Marrero, José Miguel",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 1,
+        "start": "14:00",
+        "end": "15:50"
+      },
+      {
+        "day": 4,
+        "start": "16:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S234",
+    "subject": "Probabilidad y Estadística",
+    "code": "FING-02011",
+    "nrc": "15753",
+    "prof": "Campos Marrero, José Miguel",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 2,
+        "start": "16:00",
+        "end": "17:50"
+      },
+      {
+        "day": 4,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S235",
+    "subject": "Probabilidad y Estadística",
+    "code": "FING-02011",
+    "nrc": "16605",
+    "prof": "Campos Marrero, José Miguel",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 1,
+        "start": "16:00",
+        "end": "17:50"
+      },
+      {
+        "day": 3,
+        "start": "16:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S236",
+    "subject": "Programación Orientada a Objetos",
+    "code": "INFO-02003",
+    "nrc": "17031",
+    "prof": "Castillo Pacheco, José Gregorio",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 0,
+        "start": "10:00",
+        "end": "12:50"
+      },
+      {
+        "day": 1,
+        "start": "07:00",
+        "end": "08:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S237",
+    "subject": "Programación Orientada a Objetos",
+    "code": "INFO-02003",
+    "nrc": "17032",
+    "prof": "Castro Gonzalez, Marcel Jose",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 3,
+        "start": "09:00",
+        "end": "10:50"
+      },
+      {
+        "day": 4,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S238",
+    "subject": "Programación Orientada a Objetos",
+    "code": "INFO-02003",
+    "nrc": "17034",
+    "prof": "De Sousa De Abreu, Joselito Anselmo",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 1,
+        "start": "14:00",
+        "end": "15:50"
+      },
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S239",
+    "subject": "Programación Orientada a Objetos",
+    "code": "INFO-02003",
+    "nrc": "17035",
+    "prof": "Mendoza, Lia Roxana",
+    "color": "#a78bfa",
+    "slots": [
+      {
+        "day": 1,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 3,
+        "start": "09:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S240",
+    "subject": "Redes de Comunicación de Datos",
+    "code": "INFO-02016",
+    "nrc": "17016",
+    "prof": "Murillo Gonzalez, Luz Karime",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 2,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S241",
+    "subject": "Redes de Comunicación de Datos",
+    "code": "INFO-02016",
+    "nrc": "17018",
+    "prof": "Russoniello Antonacci, Antonio",
+    "color": "#34d399",
+    "slots": [
+      {
+        "day": 1,
+        "start": "16:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S242",
+    "subject": "Redes de Comunicación de Datos (Práctica)",
+    "code": "INFO-P2016",
+    "nrc": "16090",
+    "prof": "Russoniello Antonacci, Antonio",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 1,
+        "start": "09:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S243",
+    "subject": "Redes de Comunicación de Datos (Práctica)",
+    "code": "INFO-P2016",
+    "nrc": "16091",
+    "prof": "Russoniello Antonacci, Antonio",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 1,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S244",
+    "subject": "Redes de Comunicación de Datos (Práctica)",
+    "code": "INFO-P2016",
+    "nrc": "16314",
+    "prof": "Murillo Gonzalez, Luz Karime",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 2,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S245",
+    "subject": "Redes de Comunicación de Datos (Práctica)",
+    "code": "INFO-P2016",
+    "nrc": "16315",
+    "prof": "Murillo Gonzalez, Luz Karime",
+    "color": "#7c6eff",
+    "slots": [
+      {
+        "day": 2,
+        "start": "14:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S246",
+    "subject": "Sistemas de Bases de Datos",
+    "code": "INFO-02012",
+    "nrc": "15652",
+    "prof": "Cardoso Militao, Lúcia Isabel",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 0,
+        "start": "11:00",
+        "end": "12:50"
+      },
+      {
+        "day": 1,
+        "start": "11:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S247",
+    "subject": "Sistemas de Bases de Datos",
+    "code": "INFO-02012",
+    "nrc": "15653",
+    "prof": "Cardoso Militao, Lúcia Isabel",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 0,
+        "start": "14:00",
+        "end": "15:50"
+      },
+      {
+        "day": 2,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S248",
+    "subject": "Sistemas de Bases de Datos",
+    "code": "INFO-02012",
+    "nrc": "16358",
+    "prof": "Cardoso Militao, Lúcia Isabel",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 1,
+        "start": "14:00",
+        "end": "15:50"
+      },
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S249",
+    "subject": "Sistemas de Bases de Datos",
+    "code": "INFO-02012",
+    "nrc": "16375",
+    "prof": "Goncalves Da Silva, Marlene",
+    "color": "#22d3ee",
+    "slots": [
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 2,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S250",
+    "subject": "Sistemas de Información",
+    "code": "INFO-02004",
+    "nrc": "15659",
+    "prof": "Hernández de López, Fanny Xiomara",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 3,
+        "start": "09:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S251",
+    "subject": "Sistemas de Información",
+    "code": "INFO-02004",
+    "nrc": "15677",
+    "prof": "Ortega, Dinarle Milagro",
+    "color": "#4ade80",
+    "slots": [
+      {
+        "day": 1,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "03SE"
+  },
+  {
+    "id": "S252",
+    "subject": "Sistemas Operativos",
+    "code": "INFO-02010",
+    "nrc": "15784",
+    "prof": "Lara Domínguez, Gustavo Adolfo",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 3,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S253",
+    "subject": "Sistemas Operativos",
+    "code": "INFO-02010",
+    "nrc": "16081",
+    "prof": "Hernández Barrera, Omar Jesús",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "16:50"
+      },
+      {
+        "day": 2,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S254",
+    "subject": "Sistemas Operativos",
+    "code": "INFO-02010",
+    "nrc": "16356",
+    "prof": "Hernández Barrera, Omar Jesús",
+    "color": "#fbbf24",
+    "slots": [
+      {
+        "day": 2,
+        "start": "07:00",
+        "end": "08:50"
+      },
+      {
+        "day": 3,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "04SE"
+  },
+  {
+    "id": "S255",
+    "subject": "Tópicos Especiales de Programación",
+    "code": "INFO-02011",
+    "nrc": "15654",
+    "prof": "Fuentes Salazar, Luis Reynaldo",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 1,
+        "start": "10:00",
+        "end": "11:50"
+      },
+      {
+        "day": 3,
+        "start": "14:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S256",
+    "subject": "Tópicos Especiales de Programación",
+    "code": "INFO-02011",
+    "nrc": "15773",
+    "prof": "Fuentes Salazar, Luis Reynaldo",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 1,
+        "start": "14:00",
+        "end": "15:50"
+      },
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S257",
+    "subject": "Tópicos Especiales de Programación",
+    "code": "INFO-02011",
+    "nrc": "16511",
+    "prof": "Visconti Montemarano, Ítalo",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 2,
+        "start": "10:00",
+        "end": "11:50"
+      },
+      {
+        "day": 3,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S258",
+    "subject": "Tópicos Especiales de Programación",
+    "code": "INFO-02011",
+    "nrc": "17026",
+    "prof": "León Espinoza, Yisheng",
+    "color": "#f472b6",
+    "slots": [
+      {
+        "day": 0,
+        "start": "17:00",
+        "end": "18:50"
+      },
+      {
+        "day": 2,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "05SE"
+  },
+  {
+    "id": "S259",
+    "subject": "Tópicos Especiales para la Gestión de Datos",
+    "code": "INFO-02017",
+    "nrc": "15680",
+    "prof": "Djenanian Dertorossian, Armen",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "06SE"
+  },
+  {
+    "id": "S260",
+    "subject": "Tópicos Especiales para la Gestión de Datos",
+    "code": "INFO-02017",
+    "nrc": "16613",
+    "prof": "Djenanian Dertorossian, Armen",
+    "color": "#fb923c",
+    "slots": [
+      {
+        "day": 0,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "06SE"
+  }
+]

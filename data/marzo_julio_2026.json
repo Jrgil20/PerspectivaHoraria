@@ -7,9 +7,18 @@
     "prof": "Murillo Gonzalez, Luz Karime",
     "color": "#7c6eff",
     "slots": [
-      { "day": 1, "start": "08:00", "end": "09:50" },
-      { "day": 4, "start": "13:00", "end": "14:50" }
-    ]
+      {
+        "day": 1,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 4,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "06SE"
   },
   {
     "id": "S2",
@@ -19,9 +28,18 @@
     "prof": "Ruíz Rondón, Eva Alexandra",
     "color": "#22d3ee",
     "slots": [
-      { "day": 0, "start": "13:00", "end": "14:50" },
-      { "day": 1, "start": "13:00", "end": "14:50" }
-    ]
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 1,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "06SE"
   },
   {
     "id": "S3",
@@ -31,9 +49,18 @@
     "prof": "Ruíz Rondón, Eva Alexandra",
     "color": "#4ade80",
     "slots": [
-      { "day": 0, "start": "08:00", "end": "09:50" },
-      { "day": 1, "start": "08:00", "end": "09:50" }
-    ]
+      {
+        "day": 0,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 1,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "06SE"
   },
   {
     "id": "S4",
@@ -43,9 +70,18 @@
     "prof": "La Fontaine García, Gustavo A.",
     "color": "#fbbf24",
     "slots": [
-      { "day": 2, "start": "13:00", "end": "14:50" },
-      { "day": 3, "start": "10:00", "end": "11:50" }
-    ]
+      {
+        "day": 2,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "07SE"
   },
   {
     "id": "S5",
@@ -55,8 +91,13 @@
     "prof": "González Nahmens, Amasilis",
     "color": "#f472b6",
     "slots": [
-      { "day": 2, "start": "15:00", "end": "17:50" }
-    ]
+      {
+        "day": 2,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S6",
@@ -66,8 +107,13 @@
     "prof": "González Nahmens, Amasilis",
     "color": "#fb923c",
     "slots": [
-      { "day": 1, "start": "15:00", "end": "17:50" }
-    ]
+      {
+        "day": 1,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S7",
@@ -77,8 +123,13 @@
     "prof": "González Nahmens, Amasilis",
     "color": "#a78bfa",
     "slots": [
-      { "day": 0, "start": "15:00", "end": "17:50" }
-    ]
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S8",
@@ -88,9 +139,18 @@
     "prof": "Ponce Mavárez, Bismarck R.",
     "color": "#34d399",
     "slots": [
-      { "day": 0, "start": "18:00", "end": "19:50" },
-      { "day": 3, "start": "16:00", "end": "17:50" }
-    ]
+      {
+        "day": 0,
+        "start": "18:00",
+        "end": "19:50"
+      },
+      {
+        "day": 3,
+        "start": "16:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "07SE"
   },
   {
     "id": "S9",
@@ -100,9 +160,18 @@
     "prof": "Alonzo Sánchez, Carlos E.",
     "color": "#7c6eff",
     "slots": [
-      { "day": 0, "start": "08:00", "end": "09:50" },
-      { "day": 4, "start": "16:00", "end": "17:50" }
-    ]
+      {
+        "day": 0,
+        "start": "08:00",
+        "end": "09:50"
+      },
+      {
+        "day": 4,
+        "start": "16:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "07SE"
   },
   {
     "id": "S10",
@@ -112,8 +181,13 @@
     "prof": "Por Asignar",
     "color": "#22d3ee",
     "slots": [
-      { "day": 3, "start": "08:00", "end": "09:50" }
-    ]
+      {
+        "day": 3,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "06SE"
   },
   {
     "id": "S11",
@@ -123,8 +197,13 @@
     "prof": "Ruíz Rondón, Eva Alexandra",
     "color": "#4ade80",
     "slots": [
-      { "day": 0, "start": "15:00", "end": "16:50" }
-    ]
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S12",
@@ -134,8 +213,13 @@
     "prof": "Ruíz Rondón, Eva Alexandra",
     "color": "#fbbf24",
     "slots": [
-      { "day": 1, "start": "15:00", "end": "16:50" }
-    ]
+      {
+        "day": 1,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S13",
@@ -145,8 +229,13 @@
     "prof": "Ruíz Rondón, Eva Alexandra",
     "color": "#f472b6",
     "slots": [
-      { "day": 0, "start": "10:00", "end": "11:50" }
-    ]
+      {
+        "day": 0,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S14",
@@ -156,8 +245,13 @@
     "prof": "Ruíz Rondón, Eva Alexandra",
     "color": "#fb923c",
     "slots": [
-      { "day": 1, "start": "10:00", "end": "11:50" }
-    ]
+      {
+        "day": 1,
+        "start": "10:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S41",
@@ -167,8 +261,13 @@
     "prof": "Ortega, Dinarle Milagro",
     "color": "#7c6eff",
     "slots": [
-      { "day": 5, "start": "15:00", "end": "17:50" }
-    ]
+      {
+        "day": 5,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "08SE"
   },
   {
     "id": "S15",
@@ -178,8 +277,13 @@
     "prof": "Rumbos Ruíz, Henry José",
     "color": "#a78bfa",
     "slots": [
-      { "day": 0, "start": "13:00", "end": "14:50" }
-    ]
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S16",
@@ -189,8 +293,13 @@
     "prof": "León López, Elida Celestina",
     "color": "#34d399",
     "slots": [
-      { "day": 2, "start": "15:00", "end": "16:50" }
-    ]
+      {
+        "day": 2,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S17",
@@ -200,8 +309,13 @@
     "prof": "Goyo Ponte, Einar Santiago",
     "color": "#7c6eff",
     "slots": [
-      { "day": 0, "start": "15:00", "end": "17:50" }
-    ]
+      {
+        "day": 0,
+        "start": "15:00",
+        "end": "17:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S18",
@@ -211,9 +325,18 @@
     "prof": "Di Giuseppe Febles, Giann A.",
     "color": "#22d3ee",
     "slots": [
-      { "day": 0, "start": "13:00", "end": "14:50" },
-      { "day": 3, "start": "13:00", "end": "14:50" }
-    ]
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "14:50"
+      },
+      {
+        "day": 3,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S19",
@@ -223,8 +346,13 @@
     "prof": "Rossi Contrera, Juan Miguel",
     "color": "#4ade80",
     "slots": [
-      { "day": 4, "start": "12:00", "end": "13:50" }
-    ]
+      {
+        "day": 4,
+        "start": "12:00",
+        "end": "13:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S20",
@@ -234,8 +362,13 @@
     "prof": "Bravo Viloria, Jhoberth A.",
     "color": "#fbbf24",
     "slots": [
-      { "day": 0, "start": "17:00", "end": "18:50" }
-    ]
+      {
+        "day": 0,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "07SE"
   },
   {
     "id": "S21",
@@ -245,8 +378,13 @@
     "prof": "Bravo Viloria, Jhoberth A.",
     "color": "#f472b6",
     "slots": [
-      { "day": 2, "start": "17:00", "end": "18:50" }
-    ]
+      {
+        "day": 2,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "07SE"
   },
   {
     "id": "S22",
@@ -256,8 +394,13 @@
     "prof": "Bravo Viloria, Jhoberth A.",
     "color": "#fb923c",
     "slots": [
-      { "day": 1, "start": "17:00", "end": "18:50" }
-    ]
+      {
+        "day": 1,
+        "start": "17:00",
+        "end": "18:50"
+      }
+    ],
+    "semester": "07SE"
   },
   {
     "id": "S23",
@@ -267,8 +410,13 @@
     "prof": "Sarmiento Arteaga, Mariely C.",
     "color": "#a78bfa",
     "slots": [
-      { "day": 2, "start": "08:00", "end": "09:50" }
-    ]
+      {
+        "day": 2,
+        "start": "08:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S24",
@@ -278,8 +426,13 @@
     "prof": "Russoniello Antonacci, Antonio",
     "color": "#34d399",
     "slots": [
-      { "day": 3, "start": "13:00", "end": "15:50" }
-    ]
+      {
+        "day": 3,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S25",
@@ -289,8 +442,13 @@
     "prof": "Fernandes Agrela, Ana Karina",
     "color": "#7c6eff",
     "slots": [
-      { "day": 1, "start": "12:00", "end": "14:50" }
-    ]
+      {
+        "day": 1,
+        "start": "12:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S26",
@@ -300,8 +458,13 @@
     "prof": "Russoniello Antonacci, Antonio",
     "color": "#22d3ee",
     "slots": [
-      { "day": 3, "start": "09:00", "end": "11:50" }
-    ]
+      {
+        "day": 3,
+        "start": "09:00",
+        "end": "11:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S27",
@@ -311,8 +474,13 @@
     "prof": "Gómez Chacón, Carlos Esteban",
     "color": "#4ade80",
     "slots": [
-      { "day": 2, "start": "08:00", "end": "10:50" }
-    ]
+      {
+        "day": 2,
+        "start": "08:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S28",
@@ -322,8 +490,13 @@
     "prof": "Level Manzo, Eudys Alexander",
     "color": "#fbbf24",
     "slots": [
-      { "day": 1, "start": "14:00", "end": "16:50" }
-    ]
+      {
+        "day": 1,
+        "start": "14:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S29",
@@ -333,8 +506,13 @@
     "prof": "Cunto Morales, Giorgio",
     "color": "#f472b6",
     "slots": [
-      { "day": 0, "start": "07:00", "end": "09:50" }
-    ]
+      {
+        "day": 0,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S30",
@@ -344,8 +522,13 @@
     "prof": "Venegas Pereira, Gerardo Luis",
     "color": "#fb923c",
     "slots": [
-      { "day": 6, "start": "10:00", "end": "12:50" }
-    ]
+      {
+        "day": 6,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S31",
@@ -355,8 +538,13 @@
     "prof": "Bocaranda León, Rafael José",
     "color": "#a78bfa",
     "slots": [
-      { "day": 1, "start": "13:00", "end": "15:50" }
-    ]
+      {
+        "day": 1,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S32",
@@ -366,8 +554,13 @@
     "prof": "Almeida Franca, Luis Alberto",
     "color": "#34d399",
     "slots": [
-      { "day": 4, "start": "13:00", "end": "14:50" }
-    ]
+      {
+        "day": 4,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S33",
@@ -377,8 +570,13 @@
     "prof": "Rengel Rivas, Liz Yaremi",
     "color": "#7c6eff",
     "slots": [
-      { "day": 2, "start": "15:00", "end": "16:50" }
-    ]
+      {
+        "day": 2,
+        "start": "15:00",
+        "end": "16:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S34",
@@ -388,8 +586,13 @@
     "prof": "Alba Álvarez, María Gabriela",
     "color": "#22d3ee",
     "slots": [
-      { "day": 3, "start": "13:00", "end": "14:50" }
-    ]
+      {
+        "day": 3,
+        "start": "13:00",
+        "end": "14:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S35",
@@ -399,8 +602,13 @@
     "prof": "Rodriguez Carrillo, Karen H.",
     "color": "#4ade80",
     "slots": [
-      { "day": 0, "start": "12:00", "end": "13:50" }
-    ]
+      {
+        "day": 0,
+        "start": "12:00",
+        "end": "13:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S36",
@@ -410,8 +618,13 @@
     "prof": "Tavares Lourenco, Ricardo",
     "color": "#fbbf24",
     "slots": [
-      { "day": 1, "start": "09:00", "end": "10:50" }
-    ]
+      {
+        "day": 1,
+        "start": "09:00",
+        "end": "10:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S37",
@@ -421,8 +634,13 @@
     "prof": "Marquina Lozada, Victoria A.",
     "color": "#f472b6",
     "slots": [
-      { "day": 5, "start": "07:00", "end": "09:50" }
-    ]
+      {
+        "day": 5,
+        "start": "07:00",
+        "end": "09:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S38",
@@ -432,8 +650,13 @@
     "prof": "De Faria Freitas, Christopher O.",
     "color": "#fb923c",
     "slots": [
-      { "day": 1, "start": "13:00", "end": "15:50" }
-    ]
+      {
+        "day": 1,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S39",
@@ -443,8 +666,13 @@
     "prof": "Espinoza Quintero, Rafael E.",
     "color": "#a78bfa",
     "slots": [
-      { "day": 0, "start": "13:00", "end": "15:50" }
-    ]
+      {
+        "day": 0,
+        "start": "13:00",
+        "end": "15:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   },
   {
     "id": "S40",
@@ -454,7 +682,12 @@
     "prof": "Por Asignar",
     "color": "#34d399",
     "slots": [
-      { "day": 3, "start": "10:00", "end": "12:50" }
-    ]
+      {
+        "day": 3,
+        "start": "10:00",
+        "end": "12:50"
+      }
+    ],
+    "semester": "ELECTIVA"
   }
 ]

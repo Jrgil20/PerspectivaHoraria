@@ -1,0 +1,677 @@
+
+semstre1:
+Sem.	Cód.	Nombre	UC
+	01SE	FING-02002	Álgebra y Trigonometría	5
+	01SE	FING-02009	Lógica	4
+	01SE	INFO-02030	Inglés	3
+	01SE	INFO-02032	Estrategia y Proyección Profesional	5
+	01SE	UCAB-00001	Identidad, Liderazgo y Compromiso I	3
+	01SE	UCAB-00009	Competencia Textual en Español	5
+]
+
+2:
+
+Sem.	Cód.	Nombre	UC
+	02SE	FING-02003	Cálculo Diferencial	6
+	02SE	FING-02101	Álgebra Lineal	5
+	02SE	INFO-02000	Matemáticas Discretas	6
+	02SE	INFO-02026	Inglés Técnico	4
+	02SE	INFO-02101	Algoritmos y Programación	7
+	02SE	UCAB-00002	Identidad, Liderazgo y Compromiso II	3
+]
+
+Sem.	Cód.	Nombre	UC
+	03SE	FACE-00024	Contabilidad Financiera	5
+	03SE	FING-02004	Cálculo Integral	5
+	03SE	FING-02115	Mecánica	6
+	03SE	FING-P2115	Mecánica (Práctica)	0
+	03SE	INFO-02002	Algoritmos y Estructuras de Datos	7
+	03SE	INFO-02004	Sistemas de Información	4
+	03SE	INFO-02005	Organización del Computador	5
+
+
+    Sem.	Cód.	Nombre	UC
+	04SE	FING-02011	Probabilidad y Estadística	5
+	04SE	FING-02016	Ingeniería Económica	4
+	04SE	FING-02105	Cálculo Vectorial	6
+	04SE	INFO-02003	Programación Orientada a Objetos	5
+	04SE	INFO-02007	Ingeniería de Software	5
+	04SE	INFO-02010	Sistemas Operativos	5
+	04SE	UCAB-00003	Ecología, Ambiente y Sustentabilidad	3
+
+    Sem.	Cód.	Nombre	UC
+	05SE	FING-02006	Ecuaciones Diferenciales Ordinarias	4
+	05SE	FING-02107	Electricidad y Magnetismo	6
+	05SE	FING-P2107	Electricidad y Magnetismo (Práctica)	0
+	05SE	INFO-02011	Tópicos Especiales de Programación	4
+	05SE	INFO-02012	Sistemas de Bases de Datos	5
+	05SE	INFO-02013	Gestión de Proyectos de Software	4
+	05SE	INFO-02016	Redes de Comunicación de Datos	6
+	05SE	INFO-02104	Diseño de Experiencia de Usuario	4
+	05SE	INFO-P2016	Redes de Comunicación de Datos (Práctica)	0
+
+    Sem.	Cód.	Nombre	UC
+	06SE	FING-02010	Métodos Numéricos	2
+	06SE	INFO-02015	Arquitectura del Computador Aplicada	5
+	06SE	INFO-02017	Tópicos Especiales para la Gestión de Datos	4
+	06SE	INFO-02018	Ingeniería de Requisitos	4
+	06SE	INFO-02019	Aseguramiento de la Calidad del Software	4
+	06SE	INFO-02024	Inteligencia de Negocios	3
+	06SE	INFO-02102	Ciberseguridad Ofensiva	5
+	06SE	INFO-P2102	Ciberseguridad Ofensiva (Práctica)	0
+	06SE	UCAB-00008	Innovación y Emprendimiento	3
+
+
+    Sem.	Cód.	Nombre	UC
+	07SE	INFO-02020	Inteligencia Artificial: Aprendizaje Automático	4
+	07SE	INFO-02022	Investigación de Operaciones	5
+	07SE	INFO-02025	Desarrollo de Software	5
+	07SE	INFO-02028	Computación en la Nube	5
+	07SE	INFO-P2028	Computación en la Nube (Práctica)	0
+
+
+    Sem.	Cód.	Nombre	UC
+	08SE	FING-02014	Ética Profesional	3
+	08SE	INFO-02027	Evaluación de Sistemas Informáticos	4
+	08SE	INFO-02029	Arquitecturas Empresariales	4
+
+
+Horarios:
+Materia	NRC	Sección	Profesor	Modalidad	Horario
+Álgebra Lineal
+FING-02101	16886	7	Por Asignar	P	Martes 13: 00-14: 50
+Viernes 13: 00-14: 50
+Álgebra Lineal
+FING-02101	16888	8	Por Asignar	P	Lunes 07: 00-08: 50
+Miércoles 07: 00-08: 50
+Álgebra y Trigonometría
+FING-02002	16809	14	Por Asignar	P	Lunes 09: 00-10: 50
+Viernes 09: 00-10: 50
+Álgebra y Trigonometría
+FING-02002	16810	15	Por Asignar	P	Martes 16: 00-17: 50
+Jueves 16: 00-17: 50
+Algoritmos y Estructuras de Datos
+INFO-02002	15666	1	Hernández Barrera, Omar Jesús	P	Miércoles 11: 00-12: 50
+Viernes 08: 00-11: 50
+Algoritmos y Estructuras de Datos
+INFO-02002	15667	2	León Espinoza, Yisheng	P	Miércoles 08: 00-09: 50
+Viernes 08: 00-11: 50
+Algoritmos y Estructuras de Datos
+INFO-02002	15668	3	Mendoza, Lia Roxana	P	Lunes 08: 00-09: 50
+Miércoles 10: 00-11: 50
+Algoritmos y Programación
+INFO-02101	17036	1	Castillo Pacheco, José Gregorio	P	Lunes 13: 00-14: 50
+Martes 09: 00-12: 50
+Algoritmos y Programación
+INFO-02101	17040	4	Holguín Valdez, Rodolfo Enrique	P	Martes 15: 00-16: 50
+Jueves 15: 00-16: 50
+Viernes 15: 00-16: 50
+Algoritmos y Programación
+INFO-02101	17041	5	Meza Houtteman, Oscar José	P	Lunes 13: 00-16: 50
+Miércoles 15: 00-16: 50
+Argumentación y Debates.
+ECON-00023	15034	1	Carrasquero Medina, Alis Beatriz	V	Lunes 15: 00-17: 50
+Arquitectura del Computador Aplicada
+INFO-02015	17001	1	Murillo Gonzalez, Luz Karime	P	Martes 08: 00-09: 50
+Viernes 13: 00-15: 50
+Arquitectura del Computador Aplicada
+INFO-02015	17004	2	Ruíz Rondón, Eva Alexandra	P	Lunes 08: 00-09: 50
+Martes 10: 00-12: 50
+Arquitectura del Computador Aplicada
+INFO-02015	17005	3	Ruíz Rondón, Eva Alexandra	P	Lunes 10: 00-11: 50
+Martes 14: 00-16: 50
+Arquitectura del Computador Aplicada
+INFO-02015	17007	4	Ruíz Rondón, Eva Alexandra	P	Lunes 13: 00-14: 50
+Miércoles 10: 00-12: 50
+Arquitectura del Computador Aplicada
+INFO-02015	17009	5	Ruíz Rondón, Eva Alexandra	P	Lunes 15: 00-16: 50
+Miércoles 14: 00-16: 50
+Arquitecturas Empresariales
+INFO-02029	16268	1	Ortega, Dinarle Milagro	V	Sábado 15: 00-17: 50
+Arquitecturas Empresariales
+INFO-02029	17312	2	Ortega, Dinarle Milagro	V	Sábado 12: 00-14: 50
+Aseguramiento de la Calidad del Software
+INFO-02019	15674	1	Suárez, Ernesto	P	Lunes 10: 00-12: 50
+Aseguramiento de la Calidad del Software
+INFO-02019	16353	2	Suárez, Ernesto	P	Lunes 13: 00-15: 50
+Cálculo Diferencial
+FING-02003	16812	7	Por Asignar	P	Martes 07: 00-08: 50
+Jueves 07: 00-09: 50
+Cálculo Integral
+FING-02004	16820	10	Por Asignar	P	Miércoles 14: 00-15: 50
+Jueves 16: 00-17: 50
+Cálculo Integral
+FING-02004	16816	9	Por Asignar	P	Miércoles 07: 00-08: 50
+Jueves 07: 00-08: 50
+Cálculo Vectorial
+FING-02105	16882	1	Bastidas Ravelo, Kahela de Jesús	P	Lunes 11: 00-12: 50
+Miércoles 10: 00-12: 50
+Cálculo Vectorial
+FING-02105	16885	2	Da Silva Abreu, Delia	P	Martes 11: 00-12: 50
+Miércoles 10: 00-12: 50
+Ciberseguridad Ofensiva
+INFO-02102	17139	1	Ferrer Zapata, Francis Elena	P	Martes 10: 00-11: 50
+Ciberseguridad Ofensiva
+INFO-02102	17144	2	Lara Domínguez, Gustavo Adolfo	P	Martes 08: 00-09: 50
+Ciberseguridad Ofensiva
+INFO-02102	17339	3	Martínez Marín, Jorge Alejandro	P	Lunes 17: 00-18: 50
+Ciberseguridad Ofensiva (Práctica)
+INFO-P2102	17344	10	Martínez Marín, Jorge Alejandro	P	Jueves 07: 00-08: 50
+Ciberseguridad Ofensiva (Práctica)
+INFO-P2102	17340	6	Lara Domínguez, Gustavo Adolfo	P	Viernes 08: 00-09: 50
+Ciberseguridad Ofensiva (Práctica)
+INFO-P2102	17341	7	Lara Domínguez, Gustavo Adolfo	P	Viernes 10: 00-11: 50
+Ciberseguridad Ofensiva (Práctica)
+INFO-P2102	17342	8	Ferrer Zapata, Francis Elena	P	Jueves 15: 00-16: 50
+Ciberseguridad Ofensiva (Práctica)
+INFO-P2102	17343	9	Ferrer Zapata, Francis Elena	P	Viernes 13: 00-14: 50
+Competencia Textual en Español
+UCAB-00009	15358	1	Ramírez de Ramírez, Fanny Haidée	P	Martes 08: 00-09: 50
+Jueves 08: 00-09: 50
+Competencia Textual en Español
+UCAB-00009	15818	11	Mestas Pérez, Marielena de la Coromoto	P	Lunes 11: 00-12: 50
+Miércoles 11: 00-12: 50
+Competencia Textual en Español
+UCAB-00009	15821	14	Adrián Segovia, Thays Del Valle	P	Lunes 11: 00-12: 50
+Miércoles 07: 00-08: 50
+Competencia Textual en Español
+UCAB-00009	15372	6	Mestas Pérez, Marielena de la Coromoto	P	Martes 10: 00-11: 50
+Jueves 10: 00-11: 50
+Computación en la Nube
+INFO-02028	15660	1	Bravo Viloria, Jhoberth Andrés	P	Lunes 17: 00-18: 50
+Computación en la Nube
+INFO-02028	16973	2	Por Asignar	P	Martes 10: 00-11: 50
+Computación en la Nube (Práctica)
+INFO-P2028	15683	1	Bravo Viloria, Jhoberth Andrés	P	Martes 17: 00-18: 50
+Computación en la Nube (Práctica)
+INFO-P2028	15684	2	Bravo Viloria, Jhoberth Andrés	P	Miércoles 17: 00-18: 50
+Computación en la Nube (Práctica)
+INFO-P2028	16974	3	Por Asignar	P	Viernes 10: 00-11: 50
+Computación en la Nube (Práctica)
+INFO-P2028	16976	4	Por Asignar	P	Miércoles 10: 00-11: 50
+Consultoría y Marca Personal
+UCAB-02002	16662	1	González Altuna, Hirwing del Carmen	V	Miércoles 08: 00-09: 50
+Contabilidad Financiera
+FACE-00024	15246	1	Ávila Dos Ramos, Rafael José	P	Lunes 11: 00-12: 50
+Martes 07: 00-08: 50
+Contabilidad Financiera
+FACE-00024	15247	2	Rodríguez Rodríguez, Bricelis Rosa	P	Martes 13: 00-14: 50
+Viernes 13: 00-14: 50
+Contabilidad Financiera
+FACE-00024	15248	3	Peña Mariani, Victor Svante	P	Lunes 16: 00-17: 50
+Martes 16: 00-17: 50
+Contabilidad Financiera
+FACE-00024	15374	4	Márquez Lugo, Reinaldo José	P	Lunes 17: 00-18: 50
+Martes 17: 00-18: 50
+Contabilidad Financiera
+FACE-00024	15566	5	Arias Parra, Gustavo Adolfo	P	Miércoles 17: 00-18: 50
+Viernes 17: 00-18: 50
+Desarrollo de Software
+INFO-02025	15671	1	Alonzo Sánchez, Carlos Eduardo	P	Lunes 10: 00-11: 50
+Viernes 16: 00-17: 50
+Desarrollo de Software
+INFO-02025	16082	2	Ponce Mavárez, Bismarck Ricardo	P	Lunes 18: 00-19: 50
+Jueves 18: 00-19: 50
+Diseño de Experiencia de Usuario
+INFO-02104	17156	1	Gómez Chacón, Carlos Esteban	P	Lunes 08: 00-10: 50
+Diseño de Experiencia de Usuario
+INFO-02104	17157	2	Gómez Chacón, Carlos Esteban	P	Viernes 08: 00-10: 50
+Diseño de Experiencia de Usuario
+INFO-02104	17158	3	Gómez Chacón, Carlos Esteban	P	Lunes 13: 00-15: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	15006	1	Eizaguirre Piñera, María del Carmen	P	Lunes 08: 00-09: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	15813	10	Sánchez Castellanos, Douglas Antonio	P	Jueves 17: 00-18: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	16195	11	Cristian López, Carmen Teresa	P	Viernes 10: 00-11: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	16894	12	Cristian López, Carmen Teresa	P	Viernes 13: 00-14: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	16896	13	Sánchez Castellanos, Douglas Antonio	P	Viernes 17: 00-18: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	15007	2	Eizaguirre Piñera, María del Carmen	P	Lunes 13: 00-14: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	15008	3	Cristian López, Carmen Teresa	P	Martes 09: 00-10: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	15009	4	Soledad Rodríguez, Beatriz Elena	P	Martes 15: 00-16: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	15010	5	Benitez Maal, Joaquín Patricio	P	Miércoles 09: 00-10: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	15011	6	Iskandar Nahas, Laila	P	Miércoles 13: 00-14: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	15012	7	Sánchez Castellanos, Douglas Antonio	P	Miércoles 17: 00-18: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	15388	8	Méndez de Carrera, Debbie Elizabeth	P	Jueves 09: 00-10: 50
+Ecología, Ambiente y Sustentabilidad
+UCAB-00003	15689	9	Cristian López, Carmen Teresa	P	Jueves 13: 00-14: 50
+Ecuaciones Diferenciales Ordinarias
+FING-02006	15429	1	Estrada, Luis Enrique	P	Jueves 07: 00-08: 50
+Viernes 13: 00-13: 50
+Ecuaciones Diferenciales Ordinarias
+FING-02006	16825	4	Por Asignar	P	Viernes 13: 00-15: 50
+Electiva: Auxilio Médico Integral
+CISO-80560	16153	1	De Faria Freitas, Christopher Orlando	V	Martes 13: 00-15: 50
+Electiva: Canto Coral.
+FHYE-80390	16199	1	Por Asignar	P	Por definir
+Electiva: Creación en Medios Digitales
+LETR-02030	15857	1	Marquina Lozada, Victoria Andrea	V	Domingo 20: 00-22: 50
+Electiva: Criptoeconomía.
+FACE-80491	17282	1	Por Asignar	P	Jueves 10: 00-12: 50
+Electiva: Desarrollo de APIs con Python
+INFO-82002	17367	1	Castillo Pacheco, José Gregorio	P	Jueves 09: 00-11: 50
+Electiva: Desarrollo de Software Cuántico
+INFO-82005	-	1	Keller, Joaquin	P	Jueves 14: 00-16: 50
+Electiva: Desarrollo de Software Fintech.
+FING-80425	15383	1	Magin Romero, Clara Emir	P	Martes 12: 00-14: 50
+Electiva: Desarrollo de Videojuegos con Unity.
+INFO-82001	15685	1	Gómez Chacón, Carlos Esteban	P	Miércoles 09: 00-11: 50
+Electiva: E-Sport Drone Soccer.
+INDU-82002	17104	1	De Gouveia García, Joao Bernardo	P	Viernes 15: 00-17: 50
+Electiva: El Cine de Ciencia Ficción.
+FHYE-80233	16682	1	Teixeira González, Carú Cristina	P	Viernes 15: 00-16: 50
+Electiva: Fundamentos del Italiano.
+UCAB-80013	16351	2	Rossi Contrera, Juan Miguel	P	Viernes 12: 00-13: 50
+Electiva: Implementación de Redes Cisco
+TELE-82002	16826	1	Level Manzo, Eudys Alexander	P	Martes 14: 00-16: 50
+Electiva: Inglés Intercultural
+UCAB-80011	15743	1	Almeida Franca, Luis Alberto	P	Viernes 13: 00-14: 50
+Electiva: Inglés para Entornos Globales
+UCAB-80012	16923	1	Rengel Rivas, Liz Yaremi	P	Miércoles 15: 00-16: 50
+Electiva: Inteligencia Artificial Aplicada.
+TELE-82003	17162	1	Accardi Bracovich, Anthony	P	Jueves 10: 00-12: 50
+Electiva: Introducción a la Blockchain.
+INFO-82003	16401	1	Russoniello Antonacci, Antonio	P	Jueves 13: 00-15: 50
+Electiva: Introducción al Coreano
+UCAB-80009	16919	1	Macedo Aponte, Bethania	P	Martes 14: 00-15: 50
+Electiva: Introducción al Francés
+UCAB-80014	16349	1	Rodriguez Carrillo, Karen Heleana	P	Lunes 12: 00-13: 50
+Electiva: Introducción al Idioma Italiano
+UCAB-80008	15687	1	Alba Álvarez, María Gabriela	P	Jueves 15: 00-16: 50
+Electiva: Introducción al Idioma Portugués
+UCAB-80010	15742	1	Tavares Lourenco, Ricardo	P	Martes 09: 00-10: 50
+Electiva: Introduction to Data Science
+ECON-8I003	16582	1	Por Asignar	V	Lunes 07: 00-09: 50
+Electiva: Movilidad Eléctrica
+INDU-82001	16564	1	Da Silva Dias, Samuel Alejandro	P	Sábado 08: 00-09: 50
+Electiva: Neuromarketing
+ADCO-00444	17317	3	Luna Machado, Jorge Enrique	P	Martes 16: 00-18: 50
+Electricidad y Magnetismo
+FING-02107	16891	1	Sucre Rosales, Orlando José	P	Viernes 07: 00-09: 50
+Electricidad y Magnetismo
+FING-02107	17112	2	Lavado Sánchez, Juan Carlos	P	Viernes 07: 00-09: 50
+Electricidad y Magnetismo
+FING-02107	17113	3	Lárez Natera, Joszaira del Valle	P	Viernes 07: 00-09: 50
+Electricidad y Magnetismo
+FING-02107	17114	4	García Vasquez, José Manuel	P	Lunes 15: 00-17: 50
+Electricidad y Magnetismo
+FING-02107	17117	5	Trabacilo, William Antonio	P	Lunes 15: 00-17: 50
+Electricidad y Magnetismo
+FING-02107	17118	6	Rodriguez Sosa, José Guillermo	P	Lunes 15: 00-17: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17119	1	Sucre Rosales, Orlando José	P	Miércoles 08: 00-09: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17128	10	García Vasquez, José Manuel	P	Viernes 08: 00-09: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17129	11	García Vasquez, José Manuel	P	Viernes 11: 00-12: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17130	12	García Vasquez, José Manuel	P	Viernes 14: 00-15: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17131	13	Trabacilo, William Antonio	P	Martes 08: 00-09: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17132	14	Trabacilo, William Antonio	P	Martes 11: 00-12: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17133	15	Trabacilo, William Antonio	P	Martes 14: 00-15: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17134	16	Rodriguez Sosa, José Guillermo	P	Jueves 08: 00-09: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17135	17	Rodriguez Sosa, José Guillermo	P	Jueves 11: 00-12: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17136	18	Rodriguez Sosa, José Guillermo	P	Jueves 14: 00-15: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17120	2	Sucre Rosales, Orlando José	P	Miércoles 11: 00-12: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17121	3	Sucre Rosales, Orlando José	P	Miércoles 14: 00-15: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17122	4	Lavado Sánchez, Juan Carlos	P	Lunes 08: 00-09: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17123	5	Lavado Sánchez, Juan Carlos	P	Lunes 11: 00-12: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17124	6	Lavado Sánchez, Juan Carlos	P	Lunes 14: 00-15: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17125	7	Lárez Natera, Joszaira del Valle	P	Jueves 08: 00-09: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17126	8	Lárez Natera, Joszaira del Valle	P	Jueves 11: 00-12: 50
+Electricidad y Magnetismo (Práctica)
+FING-P2107	17127	9	Lárez Natera, Joszaira del Valle	P	Jueves 14: 00-15: 50
+Estrategia y Proyección Profesional
+INFO-02032	16932	1	Magin Romero, Clara Emir	P	Lunes 07: 00-08: 50
+Viernes 07: 00-08: 50
+Estrategia y Proyección Profesional
+INFO-02032	16936	2	Magin Romero, Clara Emir	P	Martes 08: 00-09: 50
+Jueves 08: 00-09: 50
+Estrategia y Proyección Profesional
+INFO-02032	16937	3	Hernández de López, Fanny Xiomara	P	Martes 08: 00-09: 50
+Miércoles 14: 00-15: 50
+Ética Profesional
+FING-02014	16913	1	Por Asignar	V	Jueves 19: 00-20: 50
+Ética Profesional
+FING-02014	16899	6	Barroso Molina, Alexis Alexander	V	Sábado 19: 00-20: 50
+Evaluación de Sistemas Informáticos
+INFO-02027	17164	1	Vásquez García, María Carolina del Valle	V	Sábado 12: 00-14: 50
+Evaluación de Sistemas Informáticos
+INFO-02027	17313	2	Vásquez García, María Carolina del Valle	V	Sábado 15: 00-17: 50
+Gestión de Proyectos de Software
+INFO-02013	15650	1	Magin Romero, Clara Emir	V	Viernes 19: 00-21: 50
+Gestión de Proyectos de Software
+INFO-02013	16133	2	Magin Romero, Clara Emir	V	Sábado 19: 00-21: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	17359	-	Por Asignar	P	Por definir
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15001	1	Por Asignar	P	Lunes 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15901	10	Por Asignar	P	Miércoles 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15903	11	Por Asignar	P	Miércoles 13: 00-14: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15905	12	Por Asignar	P	Miércoles 13: 00-14: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15906	13	Por Asignar	P	Jueves 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15907	14	Por Asignar	P	Jueves 13: 00-14: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15908	15	Por Asignar	P	Jueves 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15909	16	Por Asignar	P	Viernes 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15910	17	Por Asignar	P	Viernes 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15911	18	Por Asignar	P	Viernes 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15912	19	Por Asignar	P	Jueves 11: 00-13: 00
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15002	2	Por Asignar	P	Lunes 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	17222	20	Por Asignar	P	Lunes 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	17223	21	Por Asignar	P	Martes 13: 00-14: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	17224	22	Por Asignar	P	Miércoles 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	17225	23	Por Asignar	P	Lunes 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	17226	24	Por Asignar	P	Miércoles 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15456	3	Por Asignar	P	Lunes 13: 00-14: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15457	4	Por Asignar	P	Lunes 13: 00-14: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15458	5	Por Asignar	P	Lunes 13: 00-14: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15460	6	Por Asignar	P	Lunes 13: 00-14: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15898	7	Por Asignar	P	Martes 11: 00-12: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15899	8	Por Asignar	P	Martes 13: 00-14: 50
+Identidad, Liderazgo y Compromiso I
+UCAB-00001	15900	9	Por Asignar	P	Miércoles 11: 00-12: 50
+Identidad, Liderazgo y Compromiso II
+UCAB-00002	16593	13	Por Asignar	P	Lunes 11: 00-12: 50
+Identidad, Liderazgo y Compromiso II
+UCAB-00002	16610	14	Por Asignar	P	Miércoles 11: 00-12: 50
+Ingeniería de Requisitos
+INFO-02018	15672	1	Cardoso Militao, Lúcia Isabel	P	Miércoles 10: 00-12: 50
+Ingeniería de Requisitos
+INFO-02018	16354	2	Cardoso Militao, Lúcia Isabel	P	Jueves 13: 00-15: 50
+Ingeniería de Software
+INFO-02007	15657	1	Pérez de Ovalles, María Angélica	P	Martes 09: 00-10: 50
+Jueves 09: 00-10: 50
+Ingeniería de Software
+INFO-02007	15787	2	Pérez de Ovalles, María Angélica	P	Martes 11: 00-12: 50
+Jueves 11: 00-12: 50
+Ingeniería de Software
+INFO-02007	16359	3	Goncalves Da Silva, Marlene	P	Lunes 15: 00-16: 50
+Miércoles 16: 00-17: 50
+Ingeniería Económica
+FING-02016	15541	3	Quintero Davila, José Luis	P	Viernes 07: 00-09: 50
+Ingeniería Económica
+FING-02016	16917	5	Por Asignar	P	Lunes 07: 00-09: 50
+Inglés
+INFO-02030	16938	1	Rivas García, Fredi Alfonso	P	Miércoles 09: 00-11: 50
+Inglés
+INFO-02030	16939	2	Youssif Jorge, Rosa	P	Jueves 15: 00-17: 50
+Inglés
+INFO-02030	16940	3	González Nahmens, Amasilis del Carmen	P	Miércoles 07: 00-09: 50
+Inglés
+INFO-02030	17295	4	Rivas García, Fredi Alfonso	P	Viernes 11: 00-13: 50
+Inglés
+INFO-02030	17296	5	González Nahmens, Amasilis del Carmen	P	Lunes 15: 00-17: 50
+Inglés
+INFO-02030	17297	6	Youssif Jorge, Rosa	P	Martes 10: 00-12: 50
+Inglés Técnico
+INFO-02026	15651	1	Lista Mancilla, Olga Carolina	V	Viernes 17: 00-19: 50
+Inglés Técnico
+INFO-02026	17311	2	Lista Mancilla, Olga Carolina	V	Sábado 17: 00-19: 50
+Innovación y Emprendimiento
+UCAB-00008	15189	1	González Altuna, Hirwing del Carmen	V	Sábado 07: 00-08: 50
+Innovación y Emprendimiento
+UCAB-00008	16181	10	Rodríguez Guerrero, Francisco José	V	Domingo 07: 00-08: 50
+Innovación y Emprendimiento
+UCAB-00008	16182	11	Barrios Álvarez, Jesús Enrique	V	Sábado 07: 00-08: 50
+Innovación y Emprendimiento
+UCAB-00008	16183	12	Por Asignar	V	Por definir
+Innovación y Emprendimiento
+UCAB-00008	15190	2	González Bravo, Yoel Modesto	V	Domingo 07: 00-08: 50
+Innovación y Emprendimiento
+UCAB-00008	15191	3	González Bravo, Yoel Modesto	V	Sábado 07: 00-08: 50
+Innovación y Emprendimiento
+UCAB-00008	15192	4	Sulbarán Hereira, Werner José	V	Domingo 07: 00-08: 50
+Innovación y Emprendimiento
+UCAB-00008	15193	5	Sulbarán Hereira, Werner José	V	Sábado 07: 00-08: 50
+Innovación y Emprendimiento
+UCAB-00008	15194	6	García Castro, Wladimir	V	Domingo 07: 00-08: 50
+Innovación y Emprendimiento
+UCAB-00008	15195	7	García Castro, Wladimir	V	Sábado 07: 00-08: 50
+Innovación y Emprendimiento
+UCAB-00008	15197	8	Lanz Rodríguez, Adriana Carolina	V	Domingo 07: 00-08: 50
+Innovación y Emprendimiento
+UCAB-00008	15758	9	Aponte Castillo, Scampola Carolina	V	Sábado 07: 00-08: 50
+Inteligencia Artificial: Aprendizaje Automático
+INFO-02020	15772	1	La Fontaine García, Gustavo Adolfo	P	Miércoles 13: 00-14: 50
+Jueves 10: 00-11: 50
+Inteligencia Artificial: Aprendizaje Automático
+INFO-02020	17043	2	Palma Navarrete, Guillermo	P	Martes 11: 00-12: 50
+Jueves 11: 00-12: 50
+Inteligencia Artificial: Aprendizaje Automático
+INFO-02020	17044	3	Ramsaran Chin, Diego Israel	P	Martes 16: 00-17: 50
+Miércoles 16: 00-17: 50
+Inteligencia de Negocios
+INFO-02024	15673	1	Martínez Marín, Jorge Alejandro	P	Lunes 07: 00-09: 50
+Inteligencia de Negocios
+INFO-02024	15675	2	Di Vasta Valente, Concettina	P	Lunes 10: 00-12: 50
+Inteligencia de Negocios
+INFO-02024	17115	3	Di Vasta Valente, Concettina	P	Lunes 13: 00-15: 50
+Investigación de Operaciones
+INFO-02022	15782	1	Quintero Davila, José Luis	P	Lunes 07: 00-08: 50
+Miércoles 07: 00-08: 50
+Investigación de Operaciones
+INFO-02022	16313	2	Becemberg Lippo, Rafael Enrique	P	Martes 13: 00-14: 50
+Jueves 14: 00-15: 50
+Lógica
+FING-02009	16832	12	Por Asignar	P	Lunes 11: 00-11: 50
+Jueves 11: 00-12: 50
+Lógica
+FING-02009	16835	13	Por Asignar	P	Lunes 15: 00-15: 50
+Miércoles 14: 00-15: 50
+Lógica
+FING-02009	16186	17	Por Asignar	P	Lunes 08: 00-08: 50
+Jueves 07: 00-08: 50
+Lógica
+FING-02009	16915	18	Por Asignar	P	Lunes 14: 00-14: 50
+Jueves 14: 00-15: 50
+Lógica
+FING-02009	16303	21	Por Asignar	P	Lunes 07: 00-07: 50
+Viernes 07: 00-08: 50
+Matemáticas Discretas
+INFO-02000	15661	1	Martínez León, Henry José	P	Lunes 09: 00-10: 50
+Jueves 10: 00-10: 50
+Viernes 09: 00-10: 50
+Matemáticas Discretas
+INFO-02000	15662	2	Valencia Zambrano, Irving Alfredo	P	Miércoles 13: 00-14: 50
+Jueves 13: 00-13: 50
+Viernes 07: 00-08: 50
+Matemáticas Discretas
+INFO-02000	15691	3	Varela Costa, María Teresa	P	Martes 09: 00-10: 50
+Miércoles 09: 00-09: 50
+Jueves 11: 00-12: 50
+Matemáticas Discretas
+INFO-02000	17045	4	Espitia Moronta, Robert	P	Lunes 09: 00-11: 50
+Jueves 10: 00-11: 50
+Mecánica
+FING-02115	17071	1	García León, Pedro José	P	Lunes 13: 00-15: 50
+Mecánica
+FING-02115	17072	2	García Sánchez, María Belén Mercedes	P	Lunes 13: 00-15: 50
+Mecánica
+FING-02115	17073	3	Ferreira Arévalo, Edgar José	P	Lunes 11: 00-13: 50
+Mecánica
+FING-02115	17075	4	García Vasquez, José Manuel	P	Lunes 11: 00-13: 50
+Mecánica
+FING-02115	17077	5	Peraza Cabello, Francisco José	P	Jueves 15: 00-17: 50
+Mecánica
+FING-02115	17109	6	Por Asignar	P	Jueves 15: 00-17: 50
+Mecánica
+FING-02115	17110	7	Por Asignar	P	Jueves 12: 00-14: 50
+Mecánica (Práctica)
+FING-P2115	17078	1	García León, Pedro José	P	Martes 09: 00-10: 50
+Mecánica (Práctica)
+FING-P2115	17089	10	García Vasquez, José Manuel	P	Miércoles 08: 00-09: 50
+Mecánica (Práctica)
+FING-P2115	17090	11	García Vasquez, José Manuel	P	Miércoles 11: 00-12: 50
+Mecánica (Práctica)
+FING-P2115	17091	12	García Vasquez, José Manuel	P	Miércoles 14: 00-15: 50
+Mecánica (Práctica)
+FING-P2115	17106	13	Peraza Cabello, Francisco José	P	Sábado 08: 00-09: 50
+Mecánica (Práctica)
+FING-P2115	17107	14	Peraza Cabello, Francisco José	P	Sábado 10: 00-11: 50
+Mecánica (Práctica)
+FING-P2115	17108	15	Peraza Cabello, Francisco José	P	Sábado 13: 00-14: 50
+Mecánica (Práctica)
+FING-P2115	17346	17	Por Asignar	P	Viernes 08: 00-09: 50
+Mecánica (Práctica)
+FING-P2115	17347	18	Por Asignar	P	Viernes 11: 00-12: 50
+Mecánica (Práctica)
+FING-P2115	17348	19	Por Asignar	P	Viernes 14: 00-15: 50
+Mecánica (Práctica)
+FING-P2115	17079	2	García León, Pedro José	P	Martes 12: 00-13: 50
+Mecánica (Práctica)
+FING-P2115	17349	20	Por Asignar	P	Lunes 08: 00-09: 50
+Mecánica (Práctica)
+FING-P2115	17350	21	Por Asignar	P	Lunes 11: 00-12: 50
+Mecánica (Práctica)
+FING-P2115	17351	22	Por Asignar	P	Lunes 14: 00-15: 50
+Mecánica (Práctica)
+FING-P2115	17080	3	García León, Pedro José	P	Martes 15: 00-16: 50
+Mecánica (Práctica)
+FING-P2115	17082	4	García Sánchez, María Belén Mercedes	P	Martes 09: 00-10: 50
+Mecánica (Práctica)
+FING-P2115	17083	5	García Sánchez, María Belén Mercedes	P	Martes 12: 00-13: 50
+Mecánica (Práctica)
+FING-P2115	17084	6	García Sánchez, María Belén Mercedes	P	Martes 15: 00-16: 50
+Mecánica (Práctica)
+FING-P2115	17085	7	Ferreira Arévalo, Edgar José	P	Miércoles 08: 00-09: 50
+Mecánica (Práctica)
+FING-P2115	17086	8	Ferreira Arévalo, Edgar José	P	Miércoles 11: 00-12: 50
+Mecánica (Práctica)
+FING-P2115	17087	9	Ferreira Arévalo, Edgar José	P	Miércoles 14: 00-15: 50
+Métodos Numéricos
+FING-02010	16087	2	Alvarez Méndez, Adonahis Arlette	P	Jueves 10: 00-11: 50
+Métodos Numéricos
+FING-02010	17306	3	Alvarez Méndez, Adonahis Arlette	P	Viernes 08: 00-09: 50
+Métodos Numéricos
+FING-02010	17308	4	Guzman Jaimes, Norma Elisa	P	Viernes 10: 00-11: 50
+Métodos Numéricos
+FING-02010	17338	6	Por Asignar	P	Jueves 08: 00-09: 50
+Organización del Computador
+INFO-02005	15658	1	Hernández Barrera, Omar Jesús	P	Lunes 09: 00-10: 50
+Miércoles 09: 00-10: 50
+Organización del Computador
+INFO-02005	15785	2	Hernández Barrera, Omar Jesús	P	Lunes 13: 00-14: 50
+Viernes 15: 00-16: 50
+Organización del Computador
+INFO-02005	16079	3	Hernández Barrera, Omar Jesús	P	Jueves 12: 00-13: 50
+Viernes 13: 00-14: 50
+Planificación Estratégica
+ADCO-00429	15255	1	Por Asignar	V	Domingo 10: 00-12: 50
+Probabilidad y Estadística
+FING-02011	15431	1	Campos Marrero, José Miguel	P	Martes 14: 00-15: 50
+Viernes 16: 00-17: 50
+Probabilidad y Estadística
+FING-02011	15753	2	Campos Marrero, José Miguel	P	Miércoles 16: 00-17: 50
+Viernes 14: 00-15: 50
+Probabilidad y Estadística
+FING-02011	16605	3	Campos Marrero, José Miguel	P	Martes 16: 00-17: 50
+Jueves 16: 00-17: 50
+Programación Orientada a Objetos
+INFO-02003	17031	1	Castillo Pacheco, José Gregorio	P	Lunes 10: 00-12: 50
+Martes 07: 00-08: 50
+Programación Orientada a Objetos
+INFO-02003	17032	2	Castro Gonzalez, Marcel Jose	P	Jueves 09: 00-10: 50
+Viernes 10: 00-12: 50
+Programación Orientada a Objetos
+INFO-02003	17034	3	De Sousa De Abreu, Joselito Anselmo	P	Martes 14: 00-15: 50
+Jueves 10: 00-12: 50
+Programación Orientada a Objetos
+INFO-02003	17035	4	Mendoza, Lia Roxana	P	Martes 08: 00-09: 50
+Jueves 09: 00-11: 50
+Redes de Comunicación de Datos
+INFO-02016	17016	1	Murillo Gonzalez, Luz Karime	P	Miércoles 08: 00-09: 50
+Redes de Comunicación de Datos
+INFO-02016	17018	2	Russoniello Antonacci, Antonio	P	Martes 16: 00-17: 50
+Redes de Comunicación de Datos (Práctica)
+INFO-P2016	16090	1	Russoniello Antonacci, Antonio	P	Martes 09: 00-11: 50
+Redes de Comunicación de Datos (Práctica)
+INFO-P2016	16091	2	Russoniello Antonacci, Antonio	P	Martes 13: 00-15: 50
+Redes de Comunicación de Datos (Práctica)
+INFO-P2016	16314	3	Murillo Gonzalez, Luz Karime	P	Miércoles 10: 00-12: 50
+Redes de Comunicación de Datos (Práctica)
+INFO-P2016	16315	4	Murillo Gonzalez, Luz Karime	P	Miércoles 14: 00-16: 50
+Sistemas de Bases de Datos
+INFO-02012	15652	1	Cardoso Militao, Lúcia Isabel	P	Lunes 11: 00-12: 50
+Martes 11: 00-12: 50
+Sistemas de Bases de Datos
+INFO-02012	15653	2	Cardoso Militao, Lúcia Isabel	P	Lunes 14: 00-15: 50
+Miércoles 14: 00-15: 50
+Sistemas de Bases de Datos
+INFO-02012	16358	3	Cardoso Militao, Lúcia Isabel	P	Martes 14: 00-15: 50
+Jueves 10: 00-11: 50
+Sistemas de Bases de Datos
+INFO-02012	16375	4	Goncalves Da Silva, Marlene	P	Lunes 13: 00-14: 50
+Miércoles 13: 00-14: 50
+Sistemas de Información
+INFO-02004	15659	1	Hernández de López, Fanny Xiomara	P	Jueves 09: 00-11: 50
+Sistemas de Información
+INFO-02004	15677	2	Ortega, Dinarle Milagro	P	Martes 13: 00-15: 50
+Sistemas Operativos
+INFO-02010	15784	1	Lara Domínguez, Gustavo Adolfo	P	Lunes 08: 00-09: 50
+Jueves 08: 00-09: 50
+Sistemas Operativos
+INFO-02010	16081	2	Hernández Barrera, Omar Jesús	P	Lunes 15: 00-16: 50
+Miércoles 14: 00-15: 50
+Sistemas Operativos
+INFO-02010	16356	3	Hernández Barrera, Omar Jesús	P	Miércoles 07: 00-08: 50
+Jueves 14: 00-15: 50
+Tópicos Especiales de Programación
+INFO-02011	15654	1	Fuentes Salazar, Luis Reynaldo	P	Martes 10: 00-11: 50
+Jueves 14: 00-15: 50
+Tópicos Especiales de Programación
+INFO-02011	15773	2	Fuentes Salazar, Luis Reynaldo	P	Martes 14: 00-15: 50
+Jueves 10: 00-11: 50
+Tópicos Especiales de Programación
+INFO-02011	16511	4	Visconti Montemarano, Ítalo	P	Miércoles 10: 00-11: 50
+Jueves 13: 00-14: 50
+Tópicos Especiales de Programación
+INFO-02011	17026	5	León Espinoza, Yisheng	P	Lunes 17: 00-18: 50
+Miércoles 10: 00-11: 50
+Tópicos Especiales para la Gestión de Datos
+INFO-02017	15680	1	Djenanian Dertorossian, Armen	P	Lunes 07: 00-09: 50
+Tópicos Especiales para la Gestión de Datos
+INFO-02017	16613	2	Djenanian Dertorossian, Armen	P	Lunes 10: 00-12: 50

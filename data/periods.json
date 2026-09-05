@@ -1,5 +1,10 @@
 [
   {
+    "id": "sep26_enero27",
+    "name": "Septiembre 2026 - Enero 2027",
+    "file": "data/sep26_enero27.json"
+  },
+  {
     "id": "marzo_julio_2026",
     "name": "Marzo - Julio 2026",
     "file": "data/marzo_julio_2026.json"

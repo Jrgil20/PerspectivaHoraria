@@ -109,9 +109,56 @@
       color: var(--text-dim);
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: 8px 4px 4px;
+      padding: 8px 4px 6px;
       border-bottom: 1px solid var(--border);
       margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sort-toggle {
+      display: flex;
+      gap: 3px;
+      background: var(--bg);
+      padding: 2px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    .sort-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .sort-btn:hover {
+      color: var(--text);
+    }
+
+    .sort-btn.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .semester-header {
+      font-size: 0.68rem;
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      color: var(--cyan);
+      background: var(--surface2);
+      padding: 6px 10px;
+      border-radius: 4px;
+      margin: 12px 0 6px;
+      border-left: 3px solid var(--cyan);
+      letter-spacing: 0.05em;
     }
 
     .subject-group {
@@ -453,7 +500,13 @@
 
   <div class="layout">
     <div class="sidebar">
-      <div class="sidebar-title">// secciones disponibles</div>
+      <div class="sidebar-title">
+        <span>// secciones disponibles</span>
+        <div class="sort-toggle">
+          <button class="sort-btn active" id="btn-sort-alpha" onclick="setSortMode('alpha')" title="Orden Alfabético (A)">A</button>
+          <button class="sort-btn" id="btn-sort-sem" onclick="setSortMode('semester')" title="Por Semestre (S)">S</button>
+        </div>
+      </div>
       <div id="sidebar-content"></div>
     </div>
 
@@ -559,60 +612,110 @@
     // ─── STATE ────────────────────────────────────────────────────────────────────
     let placedSections = []; // ids de secciones colocadas
     let draggingId = null;
+    let currentSortMode = 'alpha'; // 'alpha' | 'semester'
+
+    function setSortMode(mode) {
+      if (currentSortMode === mode) return;
+      currentSortMode = mode;
+      document.getElementById('btn-sort-alpha').classList.toggle('active', mode === 'alpha');
+      document.getElementById('btn-sort-sem').classList.toggle('active', mode === 'semester');
+      buildSidebar();
+    }
 
     // ─── BUILD SIDEBAR ────────────────────────────────────────────────────────────
+    const SEMESTER_LABELS = {
+      '01SE': 'SEMESTRE 1',
+      '02SE': 'SEMESTRE 2',
+      '03SE': 'SEMESTRE 3',
+      '04SE': 'SEMESTRE 4',
+      '05SE': 'SEMESTRE 5',
+      '06SE': 'SEMESTRE 6',
+      '07SE': 'SEMESTRE 7',
+      '08SE': 'SEMESTRE 8',
+      'ELECTIVA': 'ELECTIVAS / OTROS'
+    };
+    const SEMESTER_ORDER = ['01SE', '02SE', '03SE', '04SE', '05SE', '06SE', '07SE', '08SE', 'ELECTIVA'];
+
     function buildSidebar() {
       const container = document.getElementById('sidebar-content');
       container.innerHTML = '';
 
-      // group by code
-      const groups = {};
-      SECTIONS.forEach(s => {
-        if (!groups[s.code]) groups[s.code] = [];
-        groups[s.code].push(s);
-      });
-
-      Object.entries(groups).forEach(([code, sections]) => {
-        const g = document.createElement('div');
-        g.className = 'subject-group';
-
-        const hdr = document.createElement('div');
-        hdr.className = 'subject-header';
-        hdr.textContent = code;
-        g.appendChild(hdr);
-
-        sections.forEach(sec => {
-          const card = document.createElement('div');
-          card.className = 'section-card' + (placedSections.includes(sec.id) ? ' placed' : '');
-          card.id = 'card-' + sec.id;
-          card.style.borderLeftColor = sec.color;
-          card.draggable = !placedSections.includes(sec.id);
-
-          card.innerHTML = `
-        <div class="nrc">NRC ${sec.nrc}</div>
-        <div class="name">${sec.subject}</div>
-        <div class="prof">${sec.prof}</div>
-        <div class="slots">${sec.slots.map(sl =>
-            `<span class="slot-badge">${DAY_FULL[sl.day].substring(0, 3)} ${sl.start}–${sl.end}</span>`
-          ).join('')}</div>
-      `;
-
-          if (!placedSections.includes(sec.id)) {
-            card.addEventListener('dragstart', e => {
-              draggingId = sec.id;
-              card.classList.add('dragging');
-              e.dataTransfer.effectAllowed = 'copy';
-            });
-            card.addEventListener('dragend', () => {
-              card.classList.remove('dragging');
-            });
-          }
-
-          g.appendChild(card);
+      if (currentSortMode === 'alpha') {
+        const groups = {};
+        SECTIONS.forEach(s => {
+          if (!groups[s.code]) groups[s.code] = [];
+          groups[s.code].push(s);
         });
 
-        container.appendChild(g);
+        const sortedCodes = Object.keys(groups).sort();
+        sortedCodes.forEach(code => {
+          renderSubjectGroup(container, code, groups[code]);
+        });
+      } else {
+        const semGroups = {};
+        SECTIONS.forEach(s => {
+          const sem = s.semester || 'ELECTIVA';
+          if (!semGroups[sem]) semGroups[sem] = {};
+          if (!semGroups[sem][s.code]) semGroups[sem][s.code] = [];
+          semGroups[sem][s.code].push(s);
+        });
+
+        SEMESTER_ORDER.forEach(semKey => {
+          if (!semGroups[semKey] || Object.keys(semGroups[semKey]).length === 0) return;
+
+          const semHeader = document.createElement('div');
+          semHeader.className = 'semester-header';
+          semHeader.textContent = `// ${SEMESTER_LABELS[semKey] || semKey}`;
+          container.appendChild(semHeader);
+
+          const sortedCodes = Object.keys(semGroups[semKey]).sort();
+          sortedCodes.forEach(code => {
+            renderSubjectGroup(container, code, semGroups[semKey][code]);
+          });
+        });
+      }
+    }
+
+    function renderSubjectGroup(container, code, sections) {
+      const g = document.createElement('div');
+      g.className = 'subject-group';
+
+      const hdr = document.createElement('div');
+      hdr.className = 'subject-header';
+      hdr.textContent = code;
+      g.appendChild(hdr);
+
+      sections.forEach(sec => {
+        const card = document.createElement('div');
+        card.className = 'section-card' + (placedSections.includes(sec.id) ? ' placed' : '');
+        card.id = 'card-' + sec.id;
+        card.style.borderLeftColor = sec.color;
+        card.draggable = !placedSections.includes(sec.id);
+
+        card.innerHTML = `
+          <div class="nrc">NRC ${sec.nrc}</div>
+          <div class="name">${sec.subject}</div>
+          <div class="prof">${sec.prof}</div>
+          <div class="slots">${sec.slots.map(sl =>
+            `<span class="slot-badge">${DAY_FULL[sl.day].substring(0, 3)} ${sl.start}–${sl.end}</span>`
+          ).join('')}</div>
+        `;
+
+        if (!placedSections.includes(sec.id)) {
+          card.addEventListener('dragstart', e => {
+            draggingId = sec.id;
+            card.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'copy';
+          });
+          card.addEventListener('dragend', () => {
+            card.classList.remove('dragging');
+          });
+        }
+
+        g.appendChild(card);
       });
+
+      container.appendChild(g);
     }
 
     // ─── BUILD GRID ───────────────────────────────────────────────────────────────
