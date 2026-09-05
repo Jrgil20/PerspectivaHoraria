@@ -67,6 +67,25 @@
       border: 1px solid var(--border);
     }
 
+    .period-select {
+      background: var(--surface2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .period-select:hover,
+    .period-select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 8px rgba(124, 110, 255, 0.2);
+    }
+
     .layout {
       display: grid;
       grid-template-columns: 300px 1fr;
@@ -426,6 +445,10 @@
   <header>
     <h1>⬡ HORARIO UNIVERSITARIO</h1>
     <span>IINE · drag & drop</span>
+    <div class="period-selector-wrap" style="margin-left: auto; display: flex; align-items: center; gap: 8px;">
+      <label for="period-select" style="font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--text-dim);">PERÍODO:</label>
+      <select id="period-select" class="period-select" onchange="changePeriod(this.value)"></select>
+    </div>
   </header>
 
   <div class="layout">
@@ -481,237 +504,57 @@
       return (h - START_HOUR) * SLOTS_PER_HOUR + Math.floor(m / 30);
     }
 
-    const SECTIONS = [
-      {
-        id: 'S1', subject: 'Arquitectura del Computador', code: 'INFO-02015', nrc: '26992',
-        prof: 'Murillo Gonzalez, Luz Karime', color: COLORS[0],
-        slots: [
-          { day: 1, start: '08:00', end: '09:50' },
-          { day: 4, start: '13:00', end: '14:50' }
-        ]
-      },
-      {
-        id: 'S2', subject: 'Arquitectura del Computador', code: 'INFO-02015', nrc: '25785',
-        prof: 'Ruíz Rondón, Eva Alexandra', color: COLORS[1],
-        slots: [
-          { day: 0, start: '13:00', end: '14:50' },
-          { day: 1, start: '13:00', end: '14:50' }
-        ]
-      },
-      {
-        id: 'S3', subject: 'Arquitectura del Computador', code: 'INFO-02015', nrc: '26990',
-        prof: 'Ruíz Rondón, Eva Alexandra', color: COLORS[2],
-        slots: [
-          { day: 0, start: '08:00', end: '09:50' },
-          { day: 1, start: '08:00', end: '09:50' }
-        ]
-      },
-      {
-        id: 'S4', subject: 'IA: Aprendizaje Automático', code: 'INFO-02020', nrc: '25795',
-        prof: 'La Fontaine García, Gustavo A.', color: COLORS[3],
-        slots: [
-          { day: 2, start: '13:00', end: '14:50' },
-          { day: 3, start: '10:00', end: '11:50' }
-        ]
-      },
-      {
-        id: 'S5', subject: 'Inglés II', code: 'INFO-02021', nrc: '27093',
-        prof: 'González Nahmens, Amasilis', color: COLORS[4],
-        slots: [{ day: 2, start: '15:00', end: '17:50' }]
-      },
-      {
-        id: 'S6', subject: 'Inglés II', code: 'INFO-02021', nrc: '25775',
-        prof: 'González Nahmens, Amasilis', color: COLORS[5],
-        slots: [{ day: 1, start: '15:00', end: '17:50' }]
-      },
-      {
-        id: 'S7', subject: 'Inglés II', code: 'INFO-02021', nrc: '25774',
-        prof: 'González Nahmens, Amasilis', color: COLORS[6],
-        slots: [{ day: 0, start: '15:00', end: '17:50' }]
-      },
-      {
-        id: 'S8', subject: 'Desarrollo de Software', code: 'INFO-02025', nrc: '27111',
-        prof: 'Ponce Mavárez, Bismarck R.', color: COLORS[7],
-        slots: [
-          { day: 0, start: '18:00', end: '19:50' },
-          { day: 3, start: '16:00', end: '17:50' }
-        ]
-      },
-      {
-        id: 'S9', subject: 'Desarrollo de Software', code: 'INFO-02025', nrc: '25783',
-        prof: 'Alonzo Sánchez, Carlos E.', color: COLORS[0],
-        slots: [
-          { day: 0, start: '08:00', end: '09:50' },
-          { day: 4, start: '16:00', end: '17:50' }
-        ]
-      },
-      {
-        id: 'S10', subject: 'Métodos Numéricos', code: 'FING-02010', nrc: '27019',
-        prof: 'Por Asignar', color: COLORS[1],
-        slots: [{ day: 3, start: '08:00', end: '09:50' }]
-      },
-      {
-        id: 'S11', subject: 'Arq. Computador (Práctica)', code: 'INFO-P2015', nrc: '26995',
-        prof: 'Ruíz Rondón, Eva Alexandra', color: COLORS[2],
-        slots: [{ day: 0, start: '15:00', end: '16:50' }]
-      },
-      {
-        id: 'S12', subject: 'Arq. Computador (Práctica)', code: 'INFO-P2015', nrc: '26994',
-        prof: 'Ruíz Rondón, Eva Alexandra', color: COLORS[3],
-        slots: [{ day: 1, start: '15:00', end: '16:50' }]
-      },
-      {
-        id: 'S13', subject: 'Arq. Computador (Práctica)', code: 'INFO-P2015', nrc: '26154',
-        prof: 'Ruíz Rondón, Eva Alexandra', color: COLORS[4],
-        slots: [{ day: 0, start: '10:00', end: '11:50' }]
-      },
-      {
-        id: 'S14', subject: 'Arq. Computador (Práctica)', code: 'INFO-P2015', nrc: '25802',
-        prof: 'Ruíz Rondón, Eva Alexandra', color: COLORS[5],
-        slots: [{ day: 1, start: '10:00', end: '11:50' }]
-      },
+    let SECTIONS = [];
+    let availablePeriods = [];
+    let currentPeriodId = null;
 
-      {
-        id: 'S41', subject: 'Arquitecturas Empresariales', code: 'INFO-02029', nrc: '26986',
-        prof: 'Ortega, Dinarle Milagro', color: COLORS[0],
-        slots: [{ day: 5, start: '15:00', end: '17:50' }]
-      },
+    async function initPeriods() {
+      try {
+        const res = await fetch('data/periods.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        availablePeriods = await res.json();
 
-      // ── ELECTIVAS y nuevas materias ────────────────────────────────────────────
-      {
-        id: 'S15', subject: 'Electiva: Lengua de Señas Venezolana', code: 'FHYE-80372', nrc: '25440',
-        prof: 'Rumbos Ruíz, Henry José', color: COLORS[6],
-        slots: [{ day: 0, start: '13:00', end: '14:50' }]
-      },
-      {
-        id: 'S16', subject: 'Electiva: Enigmas in Edgar Allan Poe', code: 'FHYE-80387', nrc: '26619',
-        prof: 'León López, Elida Celestina', color: COLORS[7],
-        slots: [{ day: 2, start: '15:00', end: '16:50' }]
-      },
-      {
-        id: 'S17', subject: 'Literatura General: Medioevo', code: 'LETR-02010', nrc: '26243',
-        prof: 'Goyo Ponte, Einar Santiago', color: COLORS[0],
-        slots: [{ day: 0, start: '15:00', end: '17:50' }]
-      },
-      {
-        id: 'S18', subject: 'Pensamiento y Estética', code: 'LETR-02034', nrc: '26878',
-        prof: 'Di Giuseppe Febles, Giann A.', color: COLORS[1],
-        slots: [
-          { day: 0, start: '13:00', end: '14:50' },
-          { day: 3, start: '13:00', end: '14:50' }
-        ]
-      },
-      {
-        id: 'S19', subject: 'Electiva: Fundamentos del Italiano', code: 'UCAB-80013', nrc: '26320',
-        prof: 'Rossi Contrera, Juan Miguel', color: COLORS[2],
-        slots: [{ day: 4, start: '12:00', end: '13:50' }]
-      },
-      {
-        id: 'S20', subject: 'Computación en la Nube', code: 'INFO-02028', nrc: '25995',
-        prof: 'Bravo Viloria, Jhoberth A.', color: COLORS[3],
-        slots: [{ day: 0, start: '17:00', end: '18:50' }]
-      },
-      {
-        id: 'S21', subject: 'Computación en la Nube (Práctica)', code: 'INFO-P2028', nrc: '25805',
-        prof: 'Bravo Viloria, Jhoberth A.', color: COLORS[4],
-        slots: [{ day: 2, start: '17:00', end: '18:50' }]
-      },
-      {
-        id: 'S22', subject: 'Computación en la Nube (Práctica)', code: 'INFO-P2028', nrc: '25804',
-        prof: 'Bravo Viloria, Jhoberth A.', color: COLORS[5],
-        slots: [{ day: 1, start: '17:00', end: '18:50' }]
-      },
-      {
-        id: 'S23', subject: 'Consultoría y Marca Personal', code: 'UCAB-02002', nrc: '26993',
-        prof: 'Sarmiento Arteaga, Mariely C.', color: COLORS[6],
-        slots: [{ day: 2, start: '08:00', end: '09:50' }]
-      },
-      {
-        id: 'S24', subject: 'Electiva: Internet de las Cosas', code: 'INFO-82004', nrc: '27258',
-        prof: 'Russoniello Antonacci, Antonio', color: COLORS[7],
-        slots: [{ day: 3, start: '13:00', end: '15:50' }]
-      },
-      {
-        id: 'S25', subject: 'Electiva: Desarrollo Software Fintech', code: 'FING-80425', nrc: '25447',
-        prof: 'Fernandes Agrela, Ana Karina', color: COLORS[0],
-        slots: [{ day: 1, start: '12:00', end: '14:50' }]
-      },
-      {
-        id: 'S26', subject: 'Electiva: Introducción a la Blockchain', code: 'INFO-82003', nrc: '27118',
-        prof: 'Russoniello Antonacci, Antonio', color: COLORS[1],
-        slots: [{ day: 3, start: '09:00', end: '11:50' }]
-      },
-      {
-        id: 'S27', subject: 'Electiva: Videojuegos con Unity', code: 'INFO-82001', nrc: '25809',
-        prof: 'Gómez Chacón, Carlos Esteban', color: COLORS[2],
-        slots: [{ day: 2, start: '08:00', end: '10:50' }]
-      },
-      {
-        id: 'S28', subject: 'Electiva: Implementación Redes Cisco', code: 'TELE-82002', nrc: '26903',
-        prof: 'Level Manzo, Eudys Alexander', color: COLORS[3],
-        slots: [{ day: 1, start: '14:00', end: '16:50' }]
-      },
-      {
-        id: 'S29', subject: 'Electiva: Introduction to Data Science', code: 'ECON-8I003', nrc: '26534',
-        prof: 'Cunto Morales, Giorgio', color: COLORS[4],
-        slots: [{ day: 0, start: '07:00', end: '09:50' }]
-      },
-      {
-        id: 'S30', subject: 'Electiva: Planificación Estratégica', code: 'ADCO-00429', nrc: '25298',
-        prof: 'Venegas Pereira, Gerardo Luis', color: COLORS[5],
-        slots: [{ day: 6, start: '10:00', end: '12:50' }]
-      },
-      {
-        id: 'S31', subject: 'Electiva: Neuromarketing', code: 'ADCO-00444', nrc: '25307',
-        prof: 'Bocaranda León, Rafael José', color: COLORS[6],
-        slots: [{ day: 1, start: '13:00', end: '15:50' }]
-      },
-      {
-        id: 'S32', subject: 'Electiva: Inglés Intercultural', code: 'UCAB-80011', nrc: '25909',
-        prof: 'Almeida Franca, Luis Alberto', color: COLORS[7],
-        slots: [{ day: 4, start: '13:00', end: '14:50' }]
-      },
-      {
-        id: 'S33', subject: 'Electiva: Inglés para Entornos Globales', code: 'UCAB-80012', nrc: '25910',
-        prof: 'Rengel Rivas, Liz Yaremi', color: COLORS[0],
-        slots: [{ day: 2, start: '15:00', end: '16:50' }]
-      },
-      {
-        id: 'S34', subject: 'Electiva: Intro Idioma Italiano', code: 'UCAB-80008', nrc: '25811',
-        prof: 'Alba Álvarez, María Gabriela', color: COLORS[1],
-        slots: [{ day: 3, start: '13:00', end: '14:50' }]
-      },
-      {
-        id: 'S35', subject: 'Electiva: Introducción al Francés', code: 'UCAB-80014', nrc: '26321',
-        prof: 'Rodriguez Carrillo, Karen H.', color: COLORS[2],
-        slots: [{ day: 0, start: '12:00', end: '13:50' }]
-      },
-      {
-        id: 'S36', subject: 'Electiva: Intro Idioma Portugués', code: 'UCAB-80010', nrc: '25908',
-        prof: 'Tavares Lourenco, Ricardo', color: COLORS[3],
-        slots: [{ day: 1, start: '09:00', end: '10:50' }]
-      },
-      {
-        id: 'S37', subject: 'Electiva: Creación en Medios Digitales', code: 'LETR-02030', nrc: '26257',
-        prof: 'Marquina Lozada, Victoria A.', color: COLORS[4],
-        slots: [{ day: 5, start: '07:00', end: '09:50' }]
-      },
-      {
-        id: 'S38', subject: 'Electiva: Auxilio Médico Integral', code: 'CISO-80560', nrc: '26871',
-        prof: 'De Faria Freitas, Christopher O.', color: COLORS[5],
-        slots: [{ day: 1, start: '13:00', end: '15:50' }]
-      },
-      {
-        id: 'S39', subject: 'Electiva: Canto Coral', code: 'FHYE-80390', nrc: '26617',
-        prof: 'Espinoza Quintero, Rafael E.', color: COLORS[6],
-        slots: [{ day: 0, start: '13:00', end: '15:50' }]
-      },
-      {
-        id: 'S40', subject: 'Electiva: Criptoeconomía', code: 'FACE-80491', nrc: '26925',
-        prof: 'Por Asignar', color: COLORS[7],
-        slots: [{ day: 3, start: '10:00', end: '12:50' }]
-      },
-    ];
+        const selectEl = document.getElementById('period-select');
+        selectEl.innerHTML = '';
+        availablePeriods.forEach(p => {
+          const opt = document.createElement('option');
+          opt.value = p.id;
+          opt.textContent = p.name;
+          selectEl.appendChild(opt);
+        });
+
+        if (availablePeriods.length > 0) {
+          await loadPeriod(availablePeriods[0].id);
+        }
+      } catch (err) {
+        console.error('Error cargando los períodos:', err);
+        showToast('⚠ Error al cargar los períodos', 'var(--accent2)');
+      }
+    }
+
+    async function loadPeriod(periodId) {
+      const period = availablePeriods.find(p => p.id === periodId);
+      if (!period) return;
+
+      try {
+        const res = await fetch(period.file);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        SECTIONS = await res.json();
+        currentPeriodId = periodId;
+
+        clearAll();
+        showToast(`✓ Cargado: ${period.name}`, 'var(--green)');
+      } catch (err) {
+        console.error(`Error cargando el período ${periodId}:`, err);
+        showToast(`⚠ Error al cargar las materias del período`, 'var(--accent2)');
+      }
+    }
+
+    async function changePeriod(periodId) {
+      if (periodId !== currentPeriodId) {
+        await loadPeriod(periodId);
+      }
+    }
 
     // ─── STATE ────────────────────────────────────────────────────────────────────
     let placedSections = []; // ids de secciones colocadas
@@ -1000,9 +843,8 @@
     }
 
     // ─── INIT ─────────────────────────────────────────────────────────────────────
-    buildSidebar();
     buildGrid();
-    updateStats();
+    initPeriods();
   </script>
 </body>
 

@@ -1,0 +1,460 @@
+[
+  {
+    "id": "S1",
+    "subject": "Arquitectura del Computador",
+    "code": "INFO-02015",
+    "nrc": "26992",
+    "prof": "Murillo Gonzalez, Luz Karime",
+    "color": "#7c6eff",
+    "slots": [
+      { "day": 1, "start": "08:00", "end": "09:50" },
+      { "day": 4, "start": "13:00", "end": "14:50" }
+    ]
+  },
+  {
+    "id": "S2",
+    "subject": "Arquitectura del Computador",
+    "code": "INFO-02015",
+    "nrc": "25785",
+    "prof": "Ruíz Rondón, Eva Alexandra",
+    "color": "#22d3ee",
+    "slots": [
+      { "day": 0, "start": "13:00", "end": "14:50" },
+      { "day": 1, "start": "13:00", "end": "14:50" }
+    ]
+  },
+  {
+    "id": "S3",
+    "subject": "Arquitectura del Computador",
+    "code": "INFO-02015",
+    "nrc": "26990",
+    "prof": "Ruíz Rondón, Eva Alexandra",
+    "color": "#4ade80",
+    "slots": [
+      { "day": 0, "start": "08:00", "end": "09:50" },
+      { "day": 1, "start": "08:00", "end": "09:50" }
+    ]
+  },
+  {
+    "id": "S4",
+    "subject": "IA: Aprendizaje Automático",
+    "code": "INFO-02020",
+    "nrc": "25795",
+    "prof": "La Fontaine García, Gustavo A.",
+    "color": "#fbbf24",
+    "slots": [
+      { "day": 2, "start": "13:00", "end": "14:50" },
+      { "day": 3, "start": "10:00", "end": "11:50" }
+    ]
+  },
+  {
+    "id": "S5",
+    "subject": "Inglés II",
+    "code": "INFO-02021",
+    "nrc": "27093",
+    "prof": "González Nahmens, Amasilis",
+    "color": "#f472b6",
+    "slots": [
+      { "day": 2, "start": "15:00", "end": "17:50" }
+    ]
+  },
+  {
+    "id": "S6",
+    "subject": "Inglés II",
+    "code": "INFO-02021",
+    "nrc": "25775",
+    "prof": "González Nahmens, Amasilis",
+    "color": "#fb923c",
+    "slots": [
+      { "day": 1, "start": "15:00", "end": "17:50" }
+    ]
+  },
+  {
+    "id": "S7",
+    "subject": "Inglés II",
+    "code": "INFO-02021",
+    "nrc": "25774",
+    "prof": "González Nahmens, Amasilis",
+    "color": "#a78bfa",
+    "slots": [
+      { "day": 0, "start": "15:00", "end": "17:50" }
+    ]
+  },
+  {
+    "id": "S8",
+    "subject": "Desarrollo de Software",
+    "code": "INFO-02025",
+    "nrc": "27111",
+    "prof": "Ponce Mavárez, Bismarck R.",
+    "color": "#34d399",
+    "slots": [
+      { "day": 0, "start": "18:00", "end": "19:50" },
+      { "day": 3, "start": "16:00", "end": "17:50" }
+    ]
+  },
+  {
+    "id": "S9",
+    "subject": "Desarrollo de Software",
+    "code": "INFO-02025",
+    "nrc": "25783",
+    "prof": "Alonzo Sánchez, Carlos E.",
+    "color": "#7c6eff",
+    "slots": [
+      { "day": 0, "start": "08:00", "end": "09:50" },
+      { "day": 4, "start": "16:00", "end": "17:50" }
+    ]
+  },
+  {
+    "id": "S10",
+    "subject": "Métodos Numéricos",
+    "code": "FING-02010",
+    "nrc": "27019",
+    "prof": "Por Asignar",
+    "color": "#22d3ee",
+    "slots": [
+      { "day": 3, "start": "08:00", "end": "09:50" }
+    ]
+  },
+  {
+    "id": "S11",
+    "subject": "Arq. Computador (Práctica)",
+    "code": "INFO-P2015",
+    "nrc": "26995",
+    "prof": "Ruíz Rondón, Eva Alexandra",
+    "color": "#4ade80",
+    "slots": [
+      { "day": 0, "start": "15:00", "end": "16:50" }
+    ]
+  },
+  {
+    "id": "S12",
+    "subject": "Arq. Computador (Práctica)",
+    "code": "INFO-P2015",
+    "nrc": "26994",
+    "prof": "Ruíz Rondón, Eva Alexandra",
+    "color": "#fbbf24",
+    "slots": [
+      { "day": 1, "start": "15:00", "end": "16:50" }
+    ]
+  },
+  {
+    "id": "S13",
+    "subject": "Arq. Computador (Práctica)",
+    "code": "INFO-P2015",
+    "nrc": "26154",
+    "prof": "Ruíz Rondón, Eva Alexandra",
+    "color": "#f472b6",
+    "slots": [
+      { "day": 0, "start": "10:00", "end": "11:50" }
+    ]
+  },
+  {
+    "id": "S14",
+    "subject": "Arq. Computador (Práctica)",
+    "code": "INFO-P2015",
+    "nrc": "25802",
+    "prof": "Ruíz Rondón, Eva Alexandra",
+    "color": "#fb923c",
+    "slots": [
+      { "day": 1, "start": "10:00", "end": "11:50" }
+    ]
+  },
+  {
+    "id": "S41",
+    "subject": "Arquitecturas Empresariales",
+    "code": "INFO-02029",
+    "nrc": "26986",
+    "prof": "Ortega, Dinarle Milagro",
+    "color": "#7c6eff",
+    "slots": [
+      { "day": 5, "start": "15:00", "end": "17:50" }
+    ]
+  },
+  {
+    "id": "S15",
+    "subject": "Electiva: Lengua de Señas Venezolana",
+    "code": "FHYE-80372",
+    "nrc": "25440",
+    "prof": "Rumbos Ruíz, Henry José",
+    "color": "#a78bfa",
+    "slots": [
+      { "day": 0, "start": "13:00", "end": "14:50" }
+    ]
+  },
+  {
+    "id": "S16",
+    "subject": "Electiva: Enigmas in Edgar Allan Poe",
+    "code": "FHYE-80387",
+    "nrc": "26619",
+    "prof": "León López, Elida Celestina",
+    "color": "#34d399",
+    "slots": [
+      { "day": 2, "start": "15:00", "end": "16:50" }
+    ]
+  },
+  {
+    "id": "S17",
+    "subject": "Literatura General: Medioevo",
+    "code": "LETR-02010",
+    "nrc": "26243",
+    "prof": "Goyo Ponte, Einar Santiago",
+    "color": "#7c6eff",
+    "slots": [
+      { "day": 0, "start": "15:00", "end": "17:50" }
+    ]
+  },
+  {
+    "id": "S18",
+    "subject": "Pensamiento y Estética",
+    "code": "LETR-02034",
+    "nrc": "26878",
+    "prof": "Di Giuseppe Febles, Giann A.",
+    "color": "#22d3ee",
+    "slots": [
+      { "day": 0, "start": "13:00", "end": "14:50" },
+      { "day": 3, "start": "13:00", "end": "14:50" }
+    ]
+  },
+  {
+    "id": "S19",
+    "subject": "Electiva: Fundamentos del Italiano",
+    "code": "UCAB-80013",
+    "nrc": "26320",
+    "prof": "Rossi Contrera, Juan Miguel",
+    "color": "#4ade80",
+    "slots": [
+      { "day": 4, "start": "12:00", "end": "13:50" }
+    ]
+  },
+  {
+    "id": "S20",
+    "subject": "Computación en la Nube",
+    "code": "INFO-02028",
+    "nrc": "25995",
+    "prof": "Bravo Viloria, Jhoberth A.",
+    "color": "#fbbf24",
+    "slots": [
+      { "day": 0, "start": "17:00", "end": "18:50" }
+    ]
+  },
+  {
+    "id": "S21",
+    "subject": "Computación en la Nube (Práctica)",
+    "code": "INFO-P2028",
+    "nrc": "25805",
+    "prof": "Bravo Viloria, Jhoberth A.",
+    "color": "#f472b6",
+    "slots": [
+      { "day": 2, "start": "17:00", "end": "18:50" }
+    ]
+  },
+  {
+    "id": "S22",
+    "subject": "Computación en la Nube (Práctica)",
+    "code": "INFO-P2028",
+    "nrc": "25804",
+    "prof": "Bravo Viloria, Jhoberth A.",
+    "color": "#fb923c",
+    "slots": [
+      { "day": 1, "start": "17:00", "end": "18:50" }
+    ]
+  },
+  {
+    "id": "S23",
+    "subject": "Consultoría y Marca Personal",
+    "code": "UCAB-02002",
+    "nrc": "26993",
+    "prof": "Sarmiento Arteaga, Mariely C.",
+    "color": "#a78bfa",
+    "slots": [
+      { "day": 2, "start": "08:00", "end": "09:50" }
+    ]
+  },
+  {
+    "id": "S24",
+    "subject": "Electiva: Internet de las Cosas",
+    "code": "INFO-82004",
+    "nrc": "27258",
+    "prof": "Russoniello Antonacci, Antonio",
+    "color": "#34d399",
+    "slots": [
+      { "day": 3, "start": "13:00", "end": "15:50" }
+    ]
+  },
+  {
+    "id": "S25",
+    "subject": "Electiva: Desarrollo Software Fintech",
+    "code": "FING-80425",
+    "nrc": "25447",
+    "prof": "Fernandes Agrela, Ana Karina",
+    "color": "#7c6eff",
+    "slots": [
+      { "day": 1, "start": "12:00", "end": "14:50" }
+    ]
+  },
+  {
+    "id": "S26",
+    "subject": "Electiva: Introducción a la Blockchain",
+    "code": "INFO-82003",
+    "nrc": "27118",
+    "prof": "Russoniello Antonacci, Antonio",
+    "color": "#22d3ee",
+    "slots": [
+      { "day": 3, "start": "09:00", "end": "11:50" }
+    ]
+  },
+  {
+    "id": "S27",
+    "subject": "Electiva: Videojuegos con Unity",
+    "code": "INFO-82001",
+    "nrc": "25809",
+    "prof": "Gómez Chacón, Carlos Esteban",
+    "color": "#4ade80",
+    "slots": [
+      { "day": 2, "start": "08:00", "end": "10:50" }
+    ]
+  },
+  {
+    "id": "S28",
+    "subject": "Electiva: Implementación Redes Cisco",
+    "code": "TELE-82002",
+    "nrc": "26903",
+    "prof": "Level Manzo, Eudys Alexander",
+    "color": "#fbbf24",
+    "slots": [
+      { "day": 1, "start": "14:00", "end": "16:50" }
+    ]
+  },
+  {
+    "id": "S29",
+    "subject": "Electiva: Introduction to Data Science",
+    "code": "ECON-8I003",
+    "nrc": "26534",
+    "prof": "Cunto Morales, Giorgio",
+    "color": "#f472b6",
+    "slots": [
+      { "day": 0, "start": "07:00", "end": "09:50" }
+    ]
+  },
+  {
+    "id": "S30",
+    "subject": "Electiva: Planificación Estratégica",
+    "code": "ADCO-00429",
+    "nrc": "25298",
+    "prof": "Venegas Pereira, Gerardo Luis",
+    "color": "#fb923c",
+    "slots": [
+      { "day": 6, "start": "10:00", "end": "12:50" }
+    ]
+  },
+  {
+    "id": "S31",
+    "subject": "Electiva: Neuromarketing",
+    "code": "ADCO-00444",
+    "nrc": "25307",
+    "prof": "Bocaranda León, Rafael José",
+    "color": "#a78bfa",
+    "slots": [
+      { "day": 1, "start": "13:00", "end": "15:50" }
+    ]
+  },
+  {
+    "id": "S32",
+    "subject": "Electiva: Inglés Intercultural",
+    "code": "UCAB-80011",
+    "nrc": "25909",
+    "prof": "Almeida Franca, Luis Alberto",
+    "color": "#34d399",
+    "slots": [
+      { "day": 4, "start": "13:00", "end": "14:50" }
+    ]
+  },
+  {
+    "id": "S33",
+    "subject": "Electiva: Inglés para Entornos Globales",
+    "code": "UCAB-80012",
+    "nrc": "25910",
+    "prof": "Rengel Rivas, Liz Yaremi",
+    "color": "#7c6eff",
+    "slots": [
+      { "day": 2, "start": "15:00", "end": "16:50" }
+    ]
+  },
+  {
+    "id": "S34",
+    "subject": "Electiva: Intro Idioma Italiano",
+    "code": "UCAB-80008",
+    "nrc": "25811",
+    "prof": "Alba Álvarez, María Gabriela",
+    "color": "#22d3ee",
+    "slots": [
+      { "day": 3, "start": "13:00", "end": "14:50" }
+    ]
+  },
+  {
+    "id": "S35",
+    "subject": "Electiva: Introducción al Francés",
+    "code": "UCAB-80014",
+    "nrc": "26321",
+    "prof": "Rodriguez Carrillo, Karen H.",
+    "color": "#4ade80",
+    "slots": [
+      { "day": 0, "start": "12:00", "end": "13:50" }
+    ]
+  },
+  {
+    "id": "S36",
+    "subject": "Electiva: Intro Idioma Portugués",
+    "code": "UCAB-80010",
+    "nrc": "25908",
+    "prof": "Tavares Lourenco, Ricardo",
+    "color": "#fbbf24",
+    "slots": [
+      { "day": 1, "start": "09:00", "end": "10:50" }
+    ]
+  },
+  {
+    "id": "S37",
+    "subject": "Electiva: Creación en Medios Digitales",
+    "code": "LETR-02030",
+    "nrc": "26257",
+    "prof": "Marquina Lozada, Victoria A.",
+    "color": "#f472b6",
+    "slots": [
+      { "day": 5, "start": "07:00", "end": "09:50" }
+    ]
+  },
+  {
+    "id": "S38",
+    "subject": "Electiva: Auxilio Médico Integral",
+    "code": "CISO-80560",
+    "nrc": "26871",
+    "prof": "De Faria Freitas, Christopher O.",
+    "color": "#fb923c",
+    "slots": [
+      { "day": 1, "start": "13:00", "end": "15:50" }
+    ]
+  },
+  {
+    "id": "S39",
+    "subject": "Electiva: Canto Coral",
+    "code": "FHYE-80390",
+    "nrc": "26617",
+    "prof": "Espinoza Quintero, Rafael E.",
+    "color": "#a78bfa",
+    "slots": [
+      { "day": 0, "start": "13:00", "end": "15:50" }
+    ]
+  },
+  {
+    "id": "S40",
+    "subject": "Electiva: Criptoeconomía",
+    "code": "FACE-80491",
+    "nrc": "26925",
+    "prof": "Por Asignar",
+    "color": "#34d399",
+    "slots": [
+      { "day": 3, "start": "10:00", "end": "12:50" }
+    ]
+  }
+]
