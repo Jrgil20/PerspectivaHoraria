@@ -86,6 +86,35 @@
       box-shadow: 0 0 8px rgba(124, 110, 255, 0.2);
     }
 
+    .github-star-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.72rem;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.2s ease;
+      margin-right: 6px;
+    }
+
+    .github-star-btn .star-icon {
+      color: var(--yellow);
+      font-size: 0.85rem;
+    }
+
+    .github-star-btn:hover {
+      border-color: var(--yellow);
+      box-shadow: 0 0 10px rgba(251, 191, 36, 0.25);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
     .layout {
       display: grid;
       grid-template-columns: 300px 1fr;
@@ -552,6 +581,10 @@
     <h1>⬡ HORARIO UNIVERSITARIO</h1>
     <span>IINE · drag & drop</span>
     <div class="period-selector-wrap" style="margin-left: auto; display: flex; align-items: center; gap: 8px;">
+      <a href="https://github.com/Jrgil20/PerspectivaHoraria" target="_blank" rel="noopener noreferrer" class="github-star-btn" title="Dar una estrella en GitHub">
+        <span class="star-icon">★</span>
+        <span class="github-text">Star on GitHub</span>
+      </a>
       <label for="period-select" style="font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--text-dim);">PERÍODO:</label>
       <select id="period-select" class="period-select" onchange="changePeriod(this.value)"></select>
     </div>
