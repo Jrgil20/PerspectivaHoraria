@@ -69,12 +69,18 @@ function updateCedulaBadgeUI() {
   const valEl = document.getElementById('cedula-badge-val');
   const btnToggle = document.getElementById('btn-cedula-toggle');
 
-  if (activeCedula && cedulaFilteredSet) {
-    if (container) container.classList.add('visible');
+  if (activeCedula && cedulaFilteredSet && cedulaFilteredSet.size > 0) {
+    if (container) {
+      container.style.display = 'block';
+      container.classList.add('visible');
+    }
     if (valEl) valEl.textContent = activeCedula;
     if (btnToggle) btnToggle.classList.add('active');
   } else {
-    if (container) container.classList.remove('visible');
+    if (container) {
+      container.style.display = 'none';
+      container.classList.remove('visible');
+    }
     if (valEl) valEl.textContent = '';
     if (btnToggle) btnToggle.classList.remove('active');
   }

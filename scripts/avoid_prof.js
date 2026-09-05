@@ -8,25 +8,15 @@ let activeShieldState = {
 };
 
 /**
- * Abre el modal de Evitar Profesor. Si no hay cédula activa, advierte y abre el modal de cédula.
+ * Abre el modal de Evitar Profesor.
  */
 function openAvoidProfModal() {
-  if (typeof activeCedula === 'undefined' || !activeCedula || !cedulaFilteredSet || cedulaFilteredSet.size === 0) {
-    if (typeof showToast === 'function') {
-      showToast('⚠️ Debes activar tu filtro por cédula primero para usar Evitar Profesor', 3500);
-    }
-    if (typeof openCedulaModal === 'function') {
-      openCedulaModal();
-    }
-    return;
-  }
-
   const modal = document.getElementById('avoid-prof-modal');
   const select = document.getElementById('avoid-prof-select');
 
   if (!modal || !select) return;
 
-  // Cargar lista de profesores de la oferta proyectada del alumno
+  // Cargar lista de profesores de las secciones actuales
   populateProfessorsDropdown(select);
 
   // Ejecutar diagnóstico inicial
@@ -46,27 +36,19 @@ function closeAvoidProfModal() {
 }
 
 /**
- * Llena el selector desplegable con los profesores disponibles en las materias proyectadas.
+ * Llena el selector desplegable con todos los profesores de la oferta actual.
  */
 function populateProfessorsDropdown(selectEl) {
   selectEl.innerHTML = '';
 
-  // Filtrar secciones correspondientes a la proyección del alumno
-  const projectedSections = SECTIONS.filter(sec => {
-    const code = normStr(sec.code);
-    const subject = normStr(sec.subject);
-    const nrc = normStr(sec.nrc);
-    return cedulaFilteredSet.has(code) || cedulaFilteredSet.has(subject) || cedulaFilteredSet.has(nrc);
-  });
-
   const profsSet = new Set();
-  projectedSections.forEach(sec => {
-    if (sec.prof && sec.prof !== 'Por Asignar' && sec.prof !== 'Sin Asignar') {
+  SECTIONS.forEach(sec => {
+    if (sec.prof && sec.prof.trim() !== '' && sec.prof !== 'Por Asignar' && sec.prof !== 'Sin Asignar') {
       profsSet.add(sec.prof.trim());
     }
   });
 
-  const sortedProfs = Array.from(profsSet).sort();
+  const sortedProfs = Array.from(profsSet).sort((a, b) => a.localeCompare(b));
 
   if (sortedProfs.length === 0) {
     const opt = document.createElement('option');
@@ -110,7 +92,7 @@ function onProfSelectChange() {
           <span>🛡️ ESCUDO VIABLE DISPONIBLE</span>
         </div>
         <p class="shield-diag-detail">
-          Se encontró una materia proyectada que coincide exactamente con el horario del <strong>Prof. ${profName}</strong> en <strong>${analysis.unwantedSection.subject}</strong>.
+          Se encontró una materia ${analysis.isProjected ? 'proyectada' : ''} que coincide exactamente con el horario del <strong>Prof. ${profName}</strong> en <strong>${analysis.unwantedSection.subject}</strong>.
         </p>
         <div class="shield-diag-item">
           <div>
@@ -160,31 +142,38 @@ function analyzeProfShield(profName) {
     }
   }
 
-  // 2. Obtener materias proyectadas del alumno (excluyendo las materias del profesor no deseado)
-  const projectedCandidates = SECTIONS.filter(sec => {
+  // 2. Obtener lista de materias candidatas a escudo
+  const hasCedulaFilter = typeof activeCedula !== 'undefined' && activeCedula && cedulaFilteredSet && cedulaFilteredSet.size > 0;
+  
+  const candidates = SECTIONS.filter(sec => {
     if (sec.prof && sec.prof.trim() === profName.trim()) return false;
-    const code = normStr(sec.code);
-    const subject = normStr(sec.subject);
-    const nrc = normStr(sec.nrc);
-    return (cedulaFilteredSet.has(code) || cedulaFilteredSet.has(subject) || cedulaFilteredSet.has(nrc)) && sec.slots && sec.slots.length > 0;
+    if (!sec.slots || sec.slots.length === 0) return false;
+    
+    if (hasCedulaFilter) {
+      const code = normStr(sec.code);
+      const subject = normStr(sec.subject);
+      const nrc = normStr(sec.nrc);
+      return cedulaFilteredSet.has(code) || cedulaFilteredSet.has(subject) || cedulaFilteredSet.has(nrc);
+    }
+    
+    return true;
   });
 
-  // 3. Buscar superposición de horarios entre la sección del profesor no deseado y alguna materia proyectada
+  // 3. Buscar superposición de horarios
   for (const unwSec of unwantedSections) {
     if (!unwSec.slots || unwSec.slots.length === 0) continue;
 
-    for (const candSec of projectedCandidates) {
-      // No usar la misma materia que dicta el profesor no deseado como escudo
-      if (candSec.code === unwSec.code) continue;
+    for (const candSec of candidates) {
+      if (candSec.code === unwSec.code) continue; // Misma materia no sirve de escudo
 
-      // Verificar si chocan en algún slot de día y hora
       for (const unwSlot of unwSec.slots) {
         for (const candSlot of candSec.slots) {
           if (unwSlot.day === candSlot.day && slotsOverlap(unwSlot.start, unwSlot.end, candSlot.start, candSlot.end)) {
             return {
               viable: true,
               unwantedSection: unwSec,
-              shieldSection: candSec
+              shieldSection: candSec,
+              isProjected: hasCedulaFilter
             };
           }
         }
@@ -194,7 +183,7 @@ function analyzeProfShield(profName) {
 
   return {
     viable: false,
-    reason: `No hay ninguna materia proyectada en tu horario disponible que choque en el mismo bloque con las clases del Prof. <strong>${profName}</strong>.`
+    reason: `No hay materias ${hasCedulaFilter ? 'proyectadas ' : ''}disponibles que coincidan en horario para bloquear al Prof. <strong>${profName}</strong>.`
   };
 }
 
