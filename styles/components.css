@@ -1,0 +1,333 @@
+.semester-header {
+  font-size: 0.68rem;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  color: var(--cyan);
+  background: var(--surface2);
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin: 12px 0 6px;
+  border-left: 3px solid var(--cyan);
+  letter-spacing: 0.05em;
+}
+
+.subject-group {
+  margin-bottom: 8px;
+}
+
+.subject-header {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  font-family: 'Space Mono', monospace;
+  padding: 4px 6px;
+  letter-spacing: 0.05em;
+}
+
+.section-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: transform 0.15s, border-color 0.2s, box-shadow 0.2s;
+  user-select: none;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.section-card:hover:not(.placed) {
+  border-color: var(--accent);
+  background: #1e1e28;
+  transform: translateX(3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.section-card.dragging {
+  opacity: 0.4;
+  cursor: grabbing;
+}
+
+.section-card.placed {
+  opacity: 0.35;
+  cursor: not-allowed;
+  filter: grayscale(0.5);
+}
+
+.section-card .nrc {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--accent);
+  margin-bottom: 3px;
+}
+
+.section-card .name {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+  margin-bottom: 2px;
+}
+
+.section-card .prof {
+  font-size: 0.62rem;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+
+.section-card .slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.slot-badge {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  background: rgba(124, 110, 255, 0.15);
+  color: var(--accent);
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid rgba(124, 110, 255, 0.3);
+}
+
+.slot-badge.no-slots {
+  background: rgba(255, 107, 107, 0.15);
+  color: var(--accent2);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+.clear-btn {
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s;
+  letter-spacing: 0.05em;
+}
+
+.clear-btn:hover {
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.grid-col-header {
+  background: var(--surface2);
+  padding: 10px 6px;
+  text-align: center;
+  font-size: 0.68rem;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  letter-spacing: 0.05em;
+}
+
+.time-label {
+  background: var(--surface2);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  color: var(--text-dim);
+  padding: 0 4px;
+}
+
+.grid-cell {
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  min-height: 36px;
+  position: relative;
+  transition: background 0.1s;
+}
+
+.grid-cell.drop-target {
+  background: rgba(124, 110, 255, 0.06);
+}
+
+.grid-cell.drag-over {
+  background: rgba(124, 110, 255, 0.18);
+  outline: 2px dashed var(--accent);
+  outline-offset: -2px;
+}
+
+.placed-block {
+  position: absolute;
+  inset: 2px;
+  border-radius: 5px;
+  padding: 4px 6px;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.15s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.placed-block:hover {
+  opacity: 0.8;
+  transform: scale(0.98);
+}
+
+.placed-block .pb-nrc {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.5rem;
+  opacity: 0.8;
+}
+
+.placed-block .pb-name {
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.placed-block .pb-time {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.5rem;
+  opacity: 0.75;
+  margin-top: 1px;
+}
+
+.placed-block .pb-remove {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  font-size: 0.65rem;
+  opacity: 0;
+  transition: opacity 0.15s;
+  line-height: 1;
+}
+
+.placed-block:hover .pb-remove {
+  opacity: 1;
+}
+
+.conflict-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 107, 107, 0.15);
+  border: 2px solid var(--accent2);
+  border-radius: 5px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  color: var(--accent2);
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  pointer-events: none;
+  animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent2);
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-family: 'Space Mono', monospace;
+  color: var(--accent2);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.2s;
+  z-index: 100;
+  pointer-events: none;
+  max-width: 420px;
+  word-break: break-all;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stats-bar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.stat-chip {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.62rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-chip .val {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 1.1rem;
+  }
+
+  .period-selector-wrap {
+    width: 100%;
+    margin-left: 0 !important;
+    justify-content: space-between;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    max-height: 320px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .schedule-container {
+    padding: 16px;
+  }
+
+  .grid-wrap {
+    overflow-x: auto;
+  }
+
+  .grid-table {
+    min-width: 680px;
+  }
+}
