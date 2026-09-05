@@ -61,10 +61,11 @@
     <div class="schedule-container">
       <div class="schedule-header">
         <h2>// horario consolidado</h2>
-        <button class="shield-btn" id="btn-avoid-prof" onclick="openAvoidProfModal()" title="Generar Escudo de Conflicto Anti-Profesor">🛡️ EVITAR PROFESOR</button>
-        <button class="clear-btn" onclick="copyNRCs()" style="border-color: var(--cyan); color: var(--cyan);">⎘ COPIAR
-          NRCs</button>
-        <button class="clear-btn" onclick="clearAll()">⟳ LIMPIAR TODO</button>
+        <div class="schedule-header-actions">
+          <button class="shield-btn" id="btn-avoid-prof" onclick="openAvoidProfModal()" title="Generar Escudo de Conflicto Anti-Profesor">🛡️ EVITAR PROFESOR</button>
+          <button class="clear-btn" onclick="copyNRCs()" style="border-color: var(--cyan); color: var(--cyan);">⎘ COPIAR NRCs</button>
+          <button class="clear-btn" onclick="clearAll()">⟳ LIMPIAR TODO</button>
+        </div>
       </div>
 
       <div class="stats-bar" id="stats-bar">
