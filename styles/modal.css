@@ -1,0 +1,313 @@
+/* ─── MODAL Y BADGE DE FILTRO POR CÉDULA ──────────────────────────────── */
+
+/* Botón en el sidebar */
+.cedula-toggle-btn {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cedula-toggle-btn:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  box-shadow: 0 0 8px rgba(124, 110, 255, 0.2);
+}
+
+.cedula-toggle-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(124, 110, 255, 0.4);
+}
+
+/* Badge de filtro activo en el sidebar */
+.cedula-badge-container {
+  margin-bottom: 8px;
+  display: none;
+}
+
+.cedula-badge-container.visible {
+  display: block;
+}
+
+.cedula-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(124, 110, 255, 0.12);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--text);
+  animation: fadeIn 0.2s ease-out;
+}
+
+.cedula-badge-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cedula-badge-text strong {
+  color: var(--cyan);
+}
+
+.cedula-clear-btn {
+  background: transparent;
+  border: none;
+  color: var(--accent2);
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 2px;
+  line-height: 1;
+  transition: transform 0.15s;
+}
+
+.cedula-clear-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Modal Overlay & Container */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 440px;
+  padding: 24px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(124, 110, 255, 0.1);
+  transform: translateY(12px) scale(0.96);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.open .modal-card {
+  transform: translateY(0) scale(1);
+}
+
+/* Encabezado del Modal */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.modal-title {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-close-x {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.modal-close-x:hover {
+  color: var(--accent2);
+  background: rgba(255, 107, 107, 0.1);
+}
+
+/* Cuerpo del Modal */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-desc {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+
+.modal-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modal-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.modal-input-wrap {
+  display: flex;
+  align-items: center;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.modal-input-wrap:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(124, 110, 255, 0.25);
+}
+
+.modal-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.modal-input::placeholder {
+  color: var(--text-dim);
+  opacity: 0.6;
+}
+
+/* Mensajes de estado (Carga/Error/Éxito) */
+.modal-status {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-status.loading {
+  display: flex;
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid var(--cyan);
+  color: var(--cyan);
+}
+
+.modal-status.error {
+  display: flex;
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+}
+
+.modal-status.success {
+  display: flex;
+  background: rgba(74, 222, 128, 0.1);
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Pie del Modal */
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.modal-btn {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.modal-btn-cancel {
+  background: transparent;
+  color: var(--text-dim);
+  border-color: var(--border);
+}
+
+.modal-btn-cancel:hover {
+  background: var(--surface2);
+  color: var(--text);
+}
+
+.modal-btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(124, 110, 255, 0.3);
+}
+
+.modal-btn-primary:hover {
+  background: #6a5af9;
+  box-shadow: 0 0 14px rgba(124, 110, 255, 0.5);
+}
+
+.modal-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}

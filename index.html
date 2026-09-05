@@ -31,6 +31,7 @@
       <div class="sidebar-title">
         <span>// secciones disponibles</span>
         <div style="display: flex; align-items: center; gap: 6px;">
+          <button class="cedula-toggle-btn" id="btn-cedula-toggle" onclick="openCedulaModal()" title="Filtrar por Cédula (🆔)">🆔</button>
           <button class="search-toggle-btn" id="btn-search-toggle" onclick="toggleSearch()" title="Buscar sección (🔍)">🔍</button>
           <div class="sort-toggle">
             <button class="sort-btn active" id="btn-sort-alpha" onclick="setSortMode('alpha')" title="Orden Alfabético (A)">A</button>
@@ -44,6 +45,13 @@
           <span class="search-icon">🔍</span>
           <input type="text" id="search-input" class="search-input" placeholder="Buscar prof, nrc, código, materia..." oninput="handleSearchInput(this.value)" autocomplete="off">
           <button class="search-clear-btn" id="search-clear-btn" onclick="clearSearch()" title="Limpiar búsqueda">✕</button>
+        </div>
+      </div>
+
+      <div class="cedula-badge-container" id="cedula-badge-container">
+        <div class="cedula-badge">
+          <span class="cedula-badge-text">🪪 Cédula: <strong id="cedula-badge-val"></strong></span>
+          <button class="cedula-clear-btn" onclick="clearCedulaFilter()" title="Remover filtro de cédula">✕</button>
         </div>
       </div>
 
@@ -77,10 +85,37 @@
 
   <div class="toast" id="toast"></div>
 
+  <!-- Modal de Consulta por Cédula -->
+  <div class="modal-overlay" id="cedula-modal" onclick="if(event.target === this) closeCedulaModal()">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="modal-title">🆔 CONSULTAR PROYECCIÓN</span>
+        <button class="modal-close-x" onclick="closeCedulaModal()" title="Cerrar modal">✕</button>
+      </div>
+      <form onsubmit="handleCedulaSubmit(event)">
+        <div class="modal-body">
+          <p class="modal-desc">Ingresa tu número de cédula para consultar tus materias proyectadas en Supabase y filtrar la oferta académica del período.</p>
+          <div class="modal-input-group">
+            <label class="modal-label" for="cedula-input">Número de Cédula</label>
+            <div class="modal-input-wrap">
+              <input type="number" id="cedula-input" class="modal-input" placeholder="Ej. 30123456" required autocomplete="off">
+            </div>
+          </div>
+          <div id="modal-status-msg" class="modal-status"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modal-btn modal-btn-cancel" onclick="closeCedulaModal()">Cancelar</button>
+          <button type="submit" id="modal-submit-btn" class="modal-btn modal-btn-primary">Cargar Proyección</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="scripts/config.js"></script>
   <script src="scripts/periods.js"></script>
   <script src="scripts/search.js"></script>
   <script src="scripts/sidebar.js"></script>
+  <script src="scripts/supabase.js"></script>
   <script src="scripts/schedule.js"></script>
   <script src="scripts/app.js"></script>
 </body>

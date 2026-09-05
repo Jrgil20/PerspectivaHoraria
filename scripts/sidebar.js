@@ -20,18 +20,36 @@ function setSortMode(mode) {
   buildSidebar();
 }
 
+function applyCedulaFilter(sections) {
+  if (typeof activeCedula === 'undefined' || !activeCedula || !cedulaFilteredSet || cedulaFilteredSet.size === 0) {
+    return sections;
+  }
+  return sections.filter(sec => {
+    const code = typeof normStr === 'function' ? normStr(sec.code) : (sec.code || '').toLowerCase();
+    const subject = typeof normStr === 'function' ? normStr(sec.subject) : (sec.subject || '').toLowerCase();
+    const nrc = typeof normStr === 'function' ? normStr(sec.nrc) : (sec.nrc || '').toLowerCase();
+
+    return cedulaFilteredSet.has(code) || cedulaFilteredSet.has(subject) || cedulaFilteredSet.has(nrc);
+  });
+}
+
 function buildSidebar() {
   const container = document.getElementById('sidebar-content');
   container.innerHTML = '';
 
-  const activeSections = typeof filterSections === 'function' ? filterSections(SECTIONS, searchQuery) : SECTIONS;
+  let activeSections = typeof filterSections === 'function' ? filterSections(SECTIONS, searchQuery) : SECTIONS;
+  activeSections = applyCedulaFilter(activeSections);
 
   if (activeSections.length === 0) {
     const emptyEl = document.createElement('div');
     emptyEl.className = 'no-results-message';
+    const isCedulaActive = typeof activeCedula !== 'undefined' && activeCedula;
     emptyEl.innerHTML = `
-      <span>// No se encontraron secciones que coincidan</span>
-      <button class="reset-search-link" onclick="clearSearch()">Limpiar búsqueda</button>
+      <span>// No se encontraron secciones que coincidan ${isCedulaActive ? 'con la cédula ' + activeCedula : ''}</span>
+      ${isCedulaActive 
+        ? '<button class="reset-search-link" onclick="clearCedulaFilter()">Remover filtro de cédula</button>' 
+        : '<button class="reset-search-link" onclick="clearSearch()">Limpiar búsqueda</button>'
+      }
     `;
     container.appendChild(emptyEl);
     return;
