@@ -61,6 +61,7 @@
     <div class="schedule-container">
       <div class="schedule-header">
         <h2>// horario consolidado</h2>
+        <button class="shield-btn" id="btn-avoid-prof" onclick="openAvoidProfModal()" title="Generar Escudo de Conflicto Anti-Profesor">🛡️ EVITAR PROFESOR</button>
         <button class="clear-btn" onclick="copyNRCs()" style="border-color: var(--cyan); color: var(--cyan);">⎘ COPIAR
           NRCs</button>
         <button class="clear-btn" onclick="clearAll()">⟳ LIMPIAR TODO</button>
@@ -111,11 +112,36 @@
     </div>
   </div>
 
+  <!-- Modal Evitar Profesor (Escudo) -->
+  <div class="modal-overlay" id="avoid-prof-modal" onclick="if(event.target === this) closeAvoidProfModal()">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="modal-title">🛡️ EVITAR PROFESOR (ESCUDO)</span>
+        <button class="modal-close-x" onclick="closeAvoidProfModal()" title="Cerrar modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">
+          Selecciona un profesor que desees evitar. El sistema buscará qué materia proyectada coincide a su misma hora para colocarla como <strong>Escudo de Conflicto</strong> y prevenir asignaciones forzadas.
+        </p>
+        <div class="modal-input-group">
+          <label class="modal-label" for="avoid-prof-select">Profesor a Evitar</label>
+          <select id="avoid-prof-select" class="modal-select" onchange="onProfSelectChange()"></select>
+        </div>
+        <div id="shield-diag-container"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-btn modal-btn-cancel" onclick="closeAvoidProfModal()">Cancelar</button>
+        <button type="button" id="shield-apply-btn" class="modal-btn modal-btn-primary" onclick="applyProfShield()">Aplicar Escudo</button>
+      </div>
+    </div>
+  </div>
+
   <script src="scripts/config.js"></script>
   <script src="scripts/periods.js"></script>
   <script src="scripts/search.js"></script>
   <script src="scripts/sidebar.js"></script>
   <script src="scripts/supabase.js"></script>
+  <script src="scripts/avoid_prof.js"></script>
   <script src="scripts/schedule.js"></script>
   <script src="scripts/app.js"></script>
 </body>

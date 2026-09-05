@@ -133,8 +133,10 @@ function renderPlacedBlocks() {
 
       const spanLen = s1 - s0;
 
+      const isShieldBlock = typeof activeShieldState !== 'undefined' && activeShieldState && activeShieldState.shieldSectionId === secId;
+
       const block = document.createElement('div');
-      block.className = 'placed-block';
+      block.className = 'placed-block' + (isShieldBlock ? ' shield-block' : '');
       block.style.background = sec.color + 'cc';
       block.style.borderLeft = `3px solid ${sec.color}`;
       block.style.color = '#fff';
@@ -147,7 +149,13 @@ function renderPlacedBlocks() {
         <div class="pb-time">${sl.start}–${sl.end}</div>
         <div class="pb-remove">✕</div>
       `;
-      block.title = `${sec.subject} · ${sec.prof}\nClick para eliminar`;
+
+      if (isShieldBlock) {
+        block.title = `🛡️ ESTA MATERIA EVITA LA SECCIÓN DE ${activeShieldState.targetSubject} (${activeShieldState.targetCode}) CON EL PROF. ${activeShieldState.profName}\nClick para eliminar`;
+      } else {
+        block.title = `${sec.subject} · ${sec.prof}\nClick para eliminar`;
+      }
+
       block.addEventListener('click', () => removeSection(secId));
 
       // Check conflict at this slot
@@ -180,6 +188,7 @@ function updateStats() {
   let totalMinutes = 0;
   placedSections.forEach(id => {
     const sec = SECTIONS.find(s => s.id === id);
+    if (!sec) return;
     sec.slots.forEach(sl => {
       const [h0, m0] = sl.start.split(':').map(Number);
       const [h1, m1] = sl.end.split(':').map(Number);
@@ -188,6 +197,28 @@ function updateStats() {
   });
   document.getElementById('stat-hours').textContent =
     (totalMinutes / 60).toFixed(1) + 'h';
+
+  // Mostrar / ocultar chip de escudo activo en la barra de estadísticas
+  const statsBar = document.getElementById('stats-bar');
+  let shieldChip = document.getElementById('stat-shield-chip');
+
+  if (typeof activeShieldState !== 'undefined' && activeShieldState && activeShieldState.profName) {
+    if (!shieldChip && statsBar) {
+      shieldChip = document.createElement('div');
+      shieldChip.id = 'stat-shield-chip';
+      shieldChip.className = 'stat-chip stat-chip-shield';
+      statsBar.appendChild(shieldChip);
+    }
+    if (shieldChip) {
+      shieldChip.innerHTML = `
+        <span>🛡️ Escudo vs Prof. <strong>${activeShieldState.profName}</strong></span>
+        <button class="stat-chip-shield-btn" onclick="removeProfShield()" title="Remover escudo">✕</button>
+      `;
+      shieldChip.style.display = 'inline-flex';
+    }
+  } else if (shieldChip) {
+    shieldChip.style.display = 'none';
+  }
 }
 
 // ─── NOTIFICACIONES TOAST ─────────────────────────────────────────────────────

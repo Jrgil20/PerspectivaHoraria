@@ -311,3 +311,151 @@
   cursor: not-allowed;
   box-shadow: none;
 }
+
+/* ─── ESTILOS DE LA FUNCIÓN "EVITAR PROFESOR" ────────────────────────────── */
+
+.shield-btn {
+  background: var(--surface2);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.shield-btn:hover {
+  background: rgba(124, 110, 255, 0.15);
+  box-shadow: 0 0 10px rgba(124, 110, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.shield-btn.active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 12px rgba(124, 110, 255, 0.5);
+}
+
+/* Selector en el modal */
+.modal-select {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.modal-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(124, 110, 255, 0.25);
+}
+
+.modal-select option {
+  background: var(--surface);
+  color: var(--text);
+}
+
+/* Tarjeta de diagnóstico de escudo */
+.shield-diagnostic-card {
+  background: rgba(20, 20, 24, 0.8);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.shield-diagnostic-card.viable {
+  border-color: var(--green);
+  background: rgba(74, 222, 128, 0.06);
+}
+
+.shield-diagnostic-card.unviable {
+  border-color: var(--accent2);
+  background: rgba(255, 107, 107, 0.06);
+}
+
+.shield-diag-title {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.shield-diag-detail {
+  color: var(--text-dim);
+  line-height: 1.4;
+  font-size: 0.72rem;
+}
+
+.shield-diag-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface2);
+  padding: 6px 10px;
+  border-radius: 4px;
+  border-left: 3px solid var(--accent);
+}
+
+/* Chip en la barra de estadísticas */
+.stat-chip-shield {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  background: rgba(124, 110, 255, 0.1);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-chip-shield-btn {
+  background: transparent;
+  border: none;
+  color: var(--accent2);
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0 2px;
+  line-height: 1;
+}
+
+.stat-chip-shield-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Bloque destacado como Escudo en la tabla del horario */
+.grid-block.shield-block {
+  border: 2px solid var(--accent) !important;
+  box-shadow: 0 0 10px rgba(124, 110, 255, 0.4) !important;
+  position: relative;
+}
+
+.grid-block.shield-block::after {
+  content: '🛡️ ESCUDO';
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  font-size: 0.58rem;
+  font-weight: bold;
+  background: var(--accent);
+  color: #fff;
+  padding: 1px 4px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  pointer-events: none;
+}
