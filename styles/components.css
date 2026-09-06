@@ -136,7 +136,8 @@
   align-items: center;
   justify-content: center;
   font-family: 'Space Mono', monospace;
-  font-size: 0.55rem;
+  font-size: 0.62rem;
+  font-weight: 700;
   color: var(--text-dim);
   padding: 0 4px;
 }
@@ -144,7 +145,7 @@
 .grid-cell {
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  min-height: 36px;
+  min-height: 3.6rem;
   position: relative;
   transition: background 0.1s;
 }

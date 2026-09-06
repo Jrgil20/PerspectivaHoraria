@@ -18,12 +18,11 @@ function buildGrid() {
 
   // Time rows
   for (let slot = 0; slot < TOTAL_SLOTS; slot++) {
-    const h = START_HOUR + Math.floor(slot / SLOTS_PER_HOUR);
-    const m = (slot % SLOTS_PER_HOUR) * 30;
+    const h = START_HOUR + slot;
 
     const timeLabel = document.createElement('div');
     timeLabel.className = 'time-label';
-    if (m === 0) timeLabel.textContent = `${String(h).padStart(2, '0')}:00`;
+    timeLabel.textContent = `${String(h).padStart(2, '0')}:00`;
     table.appendChild(timeLabel);
 
     for (let day = 0; day < 7; day++) {
@@ -89,8 +88,8 @@ function checkConflict(newSec) {
     for (const ns of newSec.slots) {
       for (const ps of placed.slots) {
         if (ns.day !== ps.day) continue;
-        const ns0 = timeToSlot(ns.start), ns1 = timeToSlot(ns.end);
-        const ps0 = timeToSlot(ps.start), ps1 = timeToSlot(ps.end);
+        const ns0 = timeToSlotStart(ns.start), ns1 = timeToSlotEnd(ns.end);
+        const ps0 = timeToSlotStart(ps.start), ps1 = timeToSlotEnd(ps.end);
         if (ns0 < ps1 && ns1 > ps0) return placed;
       }
     }
@@ -109,8 +108,8 @@ function renderPlacedBlocks() {
   placedSections.forEach(secId => {
     const sec = SECTIONS.find(s => s.id === secId);
     sec.slots.forEach(sl => {
-      const s0 = timeToSlot(sl.start);
-      const s1 = timeToSlot(sl.end);
+      const s0 = timeToSlotStart(sl.start);
+      const s1 = timeToSlotEnd(sl.end);
       for (let s = s0; s < s1; s++) {
         const key = `${sl.day}-${s}`;
         if (!occupancy[key]) occupancy[key] = [];
@@ -122,8 +121,8 @@ function renderPlacedBlocks() {
   placedSections.forEach(secId => {
     const sec = SECTIONS.find(s => s.id === secId);
     sec.slots.forEach(sl => {
-      const s0 = timeToSlot(sl.start);
-      const s1 = timeToSlot(sl.end);
+      const s0 = timeToSlotStart(sl.start);
+      const s1 = timeToSlotEnd(sl.end);
 
       // Find the first cell of the span
       const firstCell = document.querySelector(
@@ -131,7 +130,7 @@ function renderPlacedBlocks() {
       );
       if (!firstCell) return;
 
-      const spanLen = s1 - s0;
+      const spanLen = Math.max(1, s1 - s0);
 
       const isShieldBlock = typeof activeShieldState !== 'undefined' && activeShieldState && activeShieldState.shieldSectionId === secId;
 
