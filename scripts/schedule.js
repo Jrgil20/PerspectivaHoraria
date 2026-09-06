@@ -331,3 +331,68 @@ function copyNRCs() {
     showToast(`✓ NRCs copiados: ${text}`, 'var(--green)');
   });
 }
+
+// ─── COPIAR INFO DETALLADA DE MATERIAS ─────────────────────────────────────────
+function copyScheduleInfo() {
+  if (placedSections.length === 0) {
+    showToast('⚠ No hay secciones colocadas aún');
+    return;
+  }
+
+  const items = placedSections.map(id => {
+    const sec = SECTIONS.find(s => s.id === id);
+    if (!sec) return null;
+
+    let slotsStr = 'Sin horario definido';
+    let totalSecMinutes = 0;
+
+    if (sec.slots && sec.slots.length > 0) {
+      const formattedSlots = sec.slots.map(sl => {
+        const [h0, m0] = sl.start.split(':').map(Number);
+        const [h1, m1] = sl.end.split(':').map(Number);
+        totalSecMinutes += (h1 * 60 + m1) - (h0 * 60 + m0);
+
+        const dayName = (typeof DAYS !== 'undefined' && DAYS[sl.day])
+          ? DAYS[sl.day]
+          : (typeof DAY_FULL !== 'undefined' && DAY_FULL[sl.day] ? DAY_FULL[sl.day].substring(0, 3) : `Día ${sl.day}`);
+
+        return `${dayName} ${sl.start}–${sl.end}`;
+      });
+
+      const hours = (totalSecMinutes / 60).toFixed(1);
+      slotsStr = `${formattedSlots.join(', ')} (${hours}h)`;
+    }
+
+    const codeStr = sec.code ? `[${sec.code}] ` : '';
+    const profStr = sec.prof ? sec.prof : 'Por asignar';
+
+    return `• ${codeStr}${sec.subject || 'Sin nombre'}\n  NRC: ${sec.nrc || 'N/A'} | Prof: ${profStr}\n  Horario: ${slotsStr}`;
+  }).filter(Boolean);
+
+  const text = items.join('\n\n');
+
+  const notifySuccess = () => {
+    showToast(`✓ Información de ${items.length} materia${items.length > 1 ? 's' : ''} copiada`, 'var(--green)');
+  };
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(notifySuccess).catch(() => {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      notifySuccess();
+    });
+  } else {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    notifySuccess();
+  }
+}
+
