@@ -185,17 +185,95 @@ function updateStats() {
   document.getElementById('stat-placed').textContent = placedSections.length;
 
   let totalMinutes = 0;
+  let totalUC = 0;
+  let ucError = false;
+  let has4UcElective = false;
+  const semesterNumbers = new Set();
+
   placedSections.forEach(id => {
     const sec = SECTIONS.find(s => s.id === id);
     if (!sec) return;
+
+    // Horas semanales
     sec.slots.forEach(sl => {
       const [h0, m0] = sl.start.split(':').map(Number);
       const [h1, m1] = sl.end.split(':').map(Number);
       totalMinutes += (h1 * 60 + m1) - (h0 * 60 + m0);
     });
+
+    // Unidades de Crédito (UC)
+    let ucVal = null;
+    if (typeof sec.uc === 'number') {
+      ucVal = sec.uc;
+    } else if (typeof SUBJECT_UC_MAP !== 'undefined' && typeof SUBJECT_UC_MAP[sec.code] === 'number') {
+      ucVal = SUBJECT_UC_MAP[sec.code];
+    }
+
+    if (ucVal !== null && !isNaN(ucVal)) {
+      totalUC += ucVal;
+    } else {
+      ucError = true;
+    }
+
+    // Identificación de Electivas y advertencia de 4 UC
+    const isElective = sec.semester === 'ELECTIVA' ||
+                       (sec.subject && sec.subject.toLowerCase().includes('electiva')) ||
+                       sec.isElective === true;
+
+    if (isElective && ucVal === 4) {
+      has4UcElective = true;
+    }
+
+    // Rango de semestres (excluyendo electivas)
+    if (!isElective && sec.semester) {
+      const semMatch = sec.semester.match(/\d+/);
+      if (semMatch) {
+        semesterNumbers.add(parseInt(semMatch[0], 10));
+      }
+    }
   });
-  document.getElementById('stat-hours').textContent =
-    (totalMinutes / 60).toFixed(1) + 'h';
+
+  // Actualizar Horas semanales
+  const statHoursEl = document.getElementById('stat-hours');
+  if (statHoursEl) {
+    statHoursEl.textContent = (totalMinutes / 60).toFixed(1) + 'h';
+  }
+
+  // Actualizar UC colocadas
+  const statUcEl = document.getElementById('stat-uc');
+  if (statUcEl) {
+    if (ucError) {
+      statUcEl.textContent = 'ERR';
+      statUcEl.style.color = 'var(--accent2)';
+    } else {
+      statUcEl.textContent = totalUC;
+      statUcEl.style.color = 'var(--accent)';
+    }
+  }
+
+  // Actualizar Rango de Semestres
+  const statSemEl = document.getElementById('stat-semesters');
+  if (statSemEl) {
+    if (semesterNumbers.size === 0) {
+      statSemEl.textContent = '-';
+    } else {
+      const semList = Array.from(semesterNumbers).sort((a, b) => a - b);
+      const minSem = semList[0];
+      const maxSem = semList[semList.length - 1];
+
+      if (minSem === maxSem) {
+        statSemEl.textContent = `Sem ${minSem}`;
+      } else {
+        statSemEl.textContent = `Sem ${minSem} - Sem ${maxSem}`;
+      }
+    }
+  }
+
+  // Actualizar Advertencia de Electiva de 4 UC
+  const statElectiveWarnEl = document.getElementById('stat-elective-warning');
+  if (statElectiveWarnEl) {
+    statElectiveWarnEl.style.display = has4UcElective ? 'inline-flex' : 'none';
+  }
 
   // Mostrar / ocultar chip de escudo activo en la barra de estadísticas
   const statsBar = document.getElementById('stats-bar');

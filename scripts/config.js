@@ -33,3 +33,87 @@ let currentPeriodId = null;
 let placedSections = []; // ids de secciones colocadas
 let draggingId = null;
 let currentSortMode = 'alpha'; // 'alpha' | 'semester'
+
+// ─── MAPEO DE UNIDADES DE CRÉDITO (UC) ─────────────────────────────────────────
+const SUBJECT_UC_MAP = {
+  // Semestre 1
+  'FING-02002': 5,
+  'FING-02009': 4,
+  'INFO-02030': 3,
+  'INFO-02032': 5,
+  'UCAB-00001': 3,
+  'UCAB-00009': 5,
+
+  // Semestre 2
+  'FING-02003': 6,
+  'FING-02101': 5,
+  'INFO-02000': 6,
+  'INFO-02026': 4,
+  'INFO-02101': 7,
+  'UCAB-00002': 3,
+
+  // Semestre 3
+  'FACE-00024': 5,
+  'FING-02004': 5,
+  'FING-02115': 6,
+  'FING-P2115': 0,
+  'INFO-02002': 7,
+  'INFO-02004': 4,
+  'INFO-02005': 5,
+
+  // Semestre 4
+  'FING-02011': 5,
+  'FING-02016': 4,
+  'FING-02105': 6,
+  'INFO-02003': 5,
+  'INFO-02007': 5,
+  'INFO-02010': 5,
+  'UCAB-00003': 3,
+
+  // Semestre 5
+  'FING-02006': 4,
+  'FING-02107': 6,
+  'FING-P2107': 0,
+  'INFO-02011': 4,
+  'INFO-02012': 5,
+  'INFO-02013': 4,
+  'INFO-02016': 6,
+  'INFO-02104': 4,
+  'INFO-P2016': 0,
+
+  // Semestre 6
+  'FING-02010': 2,
+  'INFO-02015': 5,
+  'INFO-02017': 4,
+  'INFO-02018': 4,
+  'INFO-02019': 4,
+  'INFO-02024': 3,
+  'INFO-02102': 5,
+  'INFO-P2102': 0,
+  'UCAB-00008': 3,
+
+  // Semestre 7
+  'INFO-02020': 4,
+  'INFO-02022': 5,
+  'INFO-02025': 5,
+  'INFO-02028': 5,
+  'INFO-P2028': 0,
+
+  // Semestre 8
+  'FING-02014': 3,
+  'INFO-02027': 4,
+  'INFO-02029': 4,
+
+  // Cátedras y Electivas
+  'UCAB-02002': 3,
+  'ECON-00023': 3,
+  'INFO-02021': 3,
+  'UCAB-80013': 3,
+  'UCAB-80011': 3,
+  'UCAB-80012': 3,
+  'UCAB-80009': 3,
+  'UCAB-80014': 3,
+  'UCAB-80008': 3,
+  'UCAB-80010': 3
+};
+
