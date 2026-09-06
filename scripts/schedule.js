@@ -65,6 +65,7 @@ function handleDrop(secId) {
   buildSidebar();
   renderPlacedBlocks();
   updateStats();
+  saveScheduleToStorage();
   draggingId = null;
 }
 
@@ -73,6 +74,7 @@ function removeSection(secId) {
   buildSidebar();
   renderPlacedBlocks();
   updateStats();
+  saveScheduleToStorage();
 }
 
 function clearAll() {
@@ -80,6 +82,35 @@ function clearAll() {
   buildSidebar();
   renderPlacedBlocks();
   updateStats();
+  saveScheduleToStorage();
+}
+
+// ─── PERSISTENCIA DE HORARIO (LOCALSTORAGE) ─────────────────────────────────────
+const PH_SCHEDULE_STORAGE_KEY = 'ph_placed_sections';
+
+function saveScheduleToStorage() {
+  try {
+    localStorage.setItem(PH_SCHEDULE_STORAGE_KEY, JSON.stringify(placedSections));
+  } catch (e) {
+    console.error('Error al guardar el horario en localStorage:', e);
+  }
+}
+
+function loadScheduleFromStorage() {
+  try {
+    const saved = localStorage.getItem(PH_SCHEDULE_STORAGE_KEY);
+    if (!saved) return;
+
+    const ids = JSON.parse(saved);
+    if (Array.isArray(ids) && Array.isArray(SECTIONS) && SECTIONS.length > 0) {
+      placedSections = ids.filter(id => SECTIONS.some(s => s.id === id));
+      buildSidebar();
+      renderPlacedBlocks();
+      updateStats();
+    }
+  } catch (e) {
+    console.error('Error al cargar el horario desde localStorage:', e);
+  }
 }
 
 function checkConflict(newSec) {

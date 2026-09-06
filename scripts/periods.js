@@ -33,7 +33,11 @@ async function loadPeriod(periodId) {
     SECTIONS = await res.json();
     currentPeriodId = periodId;
 
-    clearAll();
+    if (typeof loadScheduleFromStorage === 'function') {
+      loadScheduleFromStorage();
+    } else {
+      clearAll();
+    }
     showToast(`✓ Cargado: ${period.name}`, 'var(--green)');
   } catch (err) {
     console.error(`Error cargando el período ${periodId}:`, err);
