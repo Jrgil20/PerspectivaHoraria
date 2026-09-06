@@ -9,6 +9,8 @@
     href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 
 <body>
@@ -63,6 +65,19 @@
         <h2>// horario consolidado</h2>
         <div class="schedule-header-actions">
           <button class="shield-btn" id="btn-avoid-prof" onclick="openAvoidProfModal()" title="Generar Escudo de Conflicto Anti-Profesor">🛡️ EVITAR PROFESOR</button>
+          
+          <!-- Botón Doble de Exportación -->
+          <div class="split-btn-group" id="export-split-btn">
+            <button class="split-btn-main" onclick="exportActiveFormat()" title="Exportar horario en el formato seleccionado">📥 EXPORTAR</button>
+            <button class="split-btn-arrow" id="btn-export-arrow" onclick="toggleExportMenu(event)" title="Elegir formato de exportación">PNG</button>
+            <div class="split-btn-dropdown" id="export-dropdown">
+              <button onclick="selectExportFormat('png')">🖼️ Imagen PNG (.png)</button>
+              <button onclick="selectExportFormat('jpeg')">🖼️ Imagen JPEG (.jpg)</button>
+              <button onclick="selectExportFormat('pdf')">📄 Documento PDF (.pdf)</button>
+              <button onclick="selectExportFormat('html')">🌐 Código HTML (.html)</button>
+            </div>
+          </div>
+
           <button class="clear-btn" onclick="copyNRCs()" style="border-color: var(--cyan); color: var(--cyan);">⎘ COPIAR NRCs</button>
           <button class="clear-btn" onclick="clearAll()">⟳ LIMPIAR TODO</button>
         </div>
@@ -147,6 +162,7 @@
   <script src="scripts/supabase.js"></script>
   <script src="scripts/avoid_prof.js"></script>
   <script src="scripts/schedule.js"></script>
+  <script src="scripts/export.js"></script>
   <script src="scripts/app.js"></script>
 </body>
 
