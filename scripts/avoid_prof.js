@@ -12,16 +12,9 @@ let activeShieldState = {
  * aplicando el filtro de cédula si estuviese activo.
  */
 function getAvailableSectionsForShield() {
-  const hasCedulaFilter = typeof activeCedula !== 'undefined' && activeCedula && cedulaFilteredSet && cedulaFilteredSet.size > 0;
-  if (!hasCedulaFilter) return SECTIONS;
-
-  return SECTIONS.filter(sec => {
-    const code = typeof normStr === 'function' ? normStr(sec.code) : (sec.code || '').toLowerCase();
-    const subject = typeof normStr === 'function' ? normStr(sec.subject) : (sec.subject || '').toLowerCase();
-    const nrc = typeof normStr === 'function' ? normStr(sec.nrc) : (sec.nrc || '').toLowerCase();
-
-    return cedulaFilteredSet.has(code) || cedulaFilteredSet.has(subject) || cedulaFilteredSet.has(nrc);
-  });
+  // NOTA: Filtrado por cédula deshabilitado ya que el período de inscripciones ha finalizado.
+  // Se evalúa la totalidad de las secciones disponibles (SECTIONS).
+  return SECTIONS;
 }
 
 /**

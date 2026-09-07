@@ -14,21 +14,13 @@ let cedulaFilteredSet = null; // Set de nombres, códigos y NRCs permitidos
 
 /**
  * Carga el filtro por cédula guardado en localStorage al iniciar la aplicación.
+ * NOTA: Deshabilitado ya que el período de inscripciones ha finalizado.
  */
 function initCedulaFilter() {
-  try {
-    const saved = localStorage.getItem('ph_cedula_filter');
-    if (saved) {
-      const data = JSON.parse(saved);
-      if (data && data.cedula && Array.isArray(data.allowedKeys)) {
-        activeCedula = data.cedula;
-        cedulaFilteredSet = new Set(data.allowedKeys);
-        updateCedulaBadgeUI();
-      }
-    }
-  } catch (e) {
-    console.error("Error al cargar filtro de cédula guardado:", e);
-  }
+  // Función deshabilitada: Las inscripciones ya pasaron, por lo que el filtrado por cédula se encuentra inactivo.
+  activeCedula = null;
+  cedulaFilteredSet = null;
+  updateCedulaBadgeUI();
 }
 
 /**
@@ -206,26 +198,13 @@ async function consultarCedulaSupabase(cedula, carreraId = 2) {
 // ─── CONTROLADORES DEL MODAL DE CÉDULA ─────────────────────────────────────────
 
 function openCedulaModal() {
-  const modal = document.getElementById('cedula-modal');
-  const input = document.getElementById('cedula-input');
-  const statusEl = document.getElementById('modal-status-msg');
-
-  if (!modal) return;
-
-  if (statusEl) {
-    statusEl.className = 'modal-status';
-    statusEl.style.display = 'none';
-    statusEl.innerHTML = '';
+  // NOTA: Funcionalidad deshabilitada tras la finalización del proceso de inscripciones.
+  const msg = 'Las inscripciones ya pasaron, por lo que esta función fue deshabilitada.';
+  if (typeof showToast === 'function') {
+    showToast(msg);
+  } else {
+    alert(msg);
   }
-
-  if (input) {
-    input.value = activeCedula || '';
-  }
-
-  modal.classList.add('open');
-  setTimeout(() => {
-    if (input) input.focus();
-  }, 100);
 }
 
 function closeCedulaModal() {

@@ -21,16 +21,9 @@ function setSortMode(mode) {
 }
 
 function applyCedulaFilter(sections) {
-  if (typeof activeCedula === 'undefined' || !activeCedula || !cedulaFilteredSet || cedulaFilteredSet.size === 0) {
-    return sections;
-  }
-  return sections.filter(sec => {
-    const code = typeof normStr === 'function' ? normStr(sec.code) : (sec.code || '').toLowerCase();
-    const subject = typeof normStr === 'function' ? normStr(sec.subject) : (sec.subject || '').toLowerCase();
-    const nrc = typeof normStr === 'function' ? normStr(sec.nrc) : (sec.nrc || '').toLowerCase();
-
-    return cedulaFilteredSet.has(code) || cedulaFilteredSet.has(subject) || cedulaFilteredSet.has(nrc);
-  });
+  // NOTA: Filtrado por cédula deshabilitado ya que el proceso de inscripciones finalizó.
+  // Se retornan todas las secciones sin aplicar restricciones.
+  return sections;
 }
 
 function buildSidebar() {

@@ -33,6 +33,7 @@
       <div class="sidebar-title">
         <span>// secciones disponibles</span>
         <div style="display: flex; align-items: center; gap: 6px;">
+          <!-- Botón de filtrado por Cédula: Se mantiene visible, al hacer clic notifica que el proceso de inscripciones finalizó -->
           <button class="cedula-toggle-btn" id="btn-cedula-toggle" onclick="openCedulaModal()" title="Filtrar por Cédula (🆔)">🆔</button>
           <button class="search-toggle-btn" id="btn-search-toggle" onclick="toggleSearch()" title="Buscar sección (🔍)">🔍</button>
           <div class="sort-toggle">
@@ -106,7 +107,7 @@
 
   <div class="toast" id="toast"></div>
 
-  <!-- Modal de Consulta por Cédula -->
+  <!-- Modal de Consulta por Cédula (Deshabilitado: Proceso de inscripciones finalizado) -->
   <div class="modal-overlay" id="cedula-modal" onclick="if(event.target === this) closeCedulaModal()">
     <div class="modal-card">
       <div class="modal-header">
